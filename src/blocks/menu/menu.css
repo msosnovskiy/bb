@@ -1,0 +1,19 @@
+@import url(./__logo-wrapper/menu__logo-wrapper.css);
+@import url(./__logo-img/menu__logo-img.css);
+@import url(./__content/menu__content.css);
+@import url(./__desc/menu__desc.css);
+@import url(./__icon-wrapper/menu__icon-wrapper.css);
+@import url(./__icon/menu__icon.css);
+
+.menu {
+  min-height: 60px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

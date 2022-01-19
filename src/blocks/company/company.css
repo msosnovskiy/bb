@@ -1,0 +1,16 @@
+@import url(./__wrapper/company__wrapper.css);
+@import url(./__img/company__img.css);
+@import url(./__title/company__title.css);
+@import url(./__subtitle/company__subtitle.css);
+@import url(./__contacts/company__contacts.css);
+@import url(./__phone/company__phone.css);
+
+.company {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
