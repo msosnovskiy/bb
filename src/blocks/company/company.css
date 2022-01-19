@@ -4,6 +4,7 @@
 @import url(./__subtitle/company__subtitle.css);
 @import url(./__contacts/company__contacts.css);
 @import url(./__phone/company__phone.css);
+@import url(./__social-link/company__social-link.css);
 
 .company {
   height: 100vh;

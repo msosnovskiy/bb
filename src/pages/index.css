@@ -8,10 +8,10 @@
 
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/icon/icon.css);
 
 @import url(../blocks/company/company.css);
 @import url(../blocks/button/button.css);
+@import url(../blocks/link/link.css);
 
 
 @import url(../vendor/fonts.css);

@@ -1,0 +1,6 @@
+@import url(./__phone/link__phone.css);
+@import url(./__social/link__social.css);
+
+.link {
+  cursor: pointer;
+}
