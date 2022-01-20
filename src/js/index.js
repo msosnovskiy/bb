@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  const menuContent = document.querySelector('.menu__content');
+  const menu = document.querySelector('.menu');
 
-  menuContent.onclick = function () {
+  menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
   }
 

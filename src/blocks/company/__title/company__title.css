@@ -76,7 +76,7 @@
 }
 
 .company__title {
-  font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 50px;
   font-size: calc(2em + 4vw);
