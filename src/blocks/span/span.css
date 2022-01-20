@@ -5,11 +5,13 @@
  }
 
  .span_hidden {
-   /* display: none; */
-   /* visibility: hidden; */
    opacity: 0;
    position: absolute;
    z-index: -100;
    right: 50%;
    bottom: 0;
+ }
+
+ .span_yellow {
+   color: #F9B700;
  }
