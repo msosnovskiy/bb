@@ -10,4 +10,6 @@
    opacity: 0;
    position: absolute;
    z-index: -100;
+   right: 0;
+   bottom: 0;
  }
