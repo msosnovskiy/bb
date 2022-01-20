@@ -2,4 +2,12 @@
 
 .span_br {
   display: block;
-}
+ }
+
+ .span_hidden {
+   /* display: none; */
+   /* visibility: hidden; */
+   opacity: 0;
+   position: absolute;
+   z-index: -100;
+ }
