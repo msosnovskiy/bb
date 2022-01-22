@@ -1,6 +1,7 @@
 .button {
   width: 228px;
   height: 56px;
+  padding: 16px 32px;
   margin: 0;
   font-weight: 600;
   font-size: 1rem;
