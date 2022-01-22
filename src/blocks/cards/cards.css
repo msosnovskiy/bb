@@ -14,11 +14,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../../images/crs_cards.png);
+  background-image: url(../../images/krest_mob.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
-  background-size: 55%;
+  background-size: 45%;
 }
 
 .cards::after {
