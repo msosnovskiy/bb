@@ -1,0 +1,5 @@
+.services__price-item{
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}

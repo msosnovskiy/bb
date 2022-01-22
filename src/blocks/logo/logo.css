@@ -1,7 +1,14 @@
-.logo {
-}
+.logo {}
 
 .logo__place_header {
   width: 60px;
   height: 30px;
+  fill: #f4f4f4;
+}
+
+.logo__place_cards {
+  margin: 30px auto 30px 30px;
+  max-width: 60%;
+  max-height: 42%;
+  fill: url(#myGradient);
 }

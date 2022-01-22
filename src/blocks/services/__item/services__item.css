@@ -1,0 +1,14 @@
+.services__item {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.services__item_brow {
+  background-image: url(../../../images/banner_mob375.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}

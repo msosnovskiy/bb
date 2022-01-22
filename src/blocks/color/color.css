@@ -1,0 +1,20 @@
+.color {
+
+}
+
+.color_accent {
+  color: #F9B700;
+}
+
+.color_accent.link {
+  border-bottom: 1px solid #F9B700;
+}
+
+.color_accent.button {
+  background-color: #F9B700;
+  padding: 2px solid #F9B700;
+}
+
+.color_transparent {
+  color: #f4f4f433;
+}
