@@ -1,9 +1,9 @@
 .cards {
   margin: 60px auto;
-  max-width: 600px;
-  max-height: 375px;
-  width: 64vw;
-  height: 40vw;
+  max-width: 560px;
+  max-height: 350px;
+  width: 80vw;
+  height: 50vw;
   background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
   position: relative;
   border-radius: 0.5rem;
