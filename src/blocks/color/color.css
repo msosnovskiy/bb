@@ -1,9 +1,21 @@
 .color {
-
 }
 
 .color_accent {
   color: #F9B700;
+}
+
+.color_svg{
+  fill:#F9B700;
+}
+
+
+.color_psevdo::before {
+  background-color: #F9B700;
+}
+
+.color_psevdo::after {
+  background-color: #F9B700;
 }
 
 .color_accent.link {

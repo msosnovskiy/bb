@@ -6,12 +6,12 @@
   height: 50vw;
   background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
   position: relative;
-  border-radius: 0.5rem;
+  border-radius: 0.45rem;
 }
 
 .cards::before {
   content: "";
-  background: linear-gradient(111.47deg, #3A383E 0%, #141218 100%);
+  background: linear-gradient(120deg, #343338 0%, #141318 100%);
   box-shadow: 20px 20px 30px #0A080E;
   position: absolute;
   left:-1px;

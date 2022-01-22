@@ -1,0 +1,10 @@
+.training__item-header {
+  padding: 18px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: #2A282E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}

@@ -10,9 +10,10 @@
   content: "";
   width: 45vw;
   height: 45vw;
+  max-width: 390px;
+  max-height: 390px;
   background-image: url(../../images/dots.svg);
   background-repeat: no-repeat;
-  background-position: 0 8px;
   background-size: cover;
   position: absolute;
   top: 100px;

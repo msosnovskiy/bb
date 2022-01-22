@@ -1,0 +1,7 @@
+.training__lists {
+  margin-bottom: 40px;
+}
+
+.training__lists:nth-last-child() {
+  margin-bottom: 0;
+}
