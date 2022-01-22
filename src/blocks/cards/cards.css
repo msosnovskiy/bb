@@ -12,7 +12,7 @@
 .cards::before {
   content: "";
   background: linear-gradient(120deg, #343338 0%, #141318 100%);
-  box-shadow: 20px 20px 30px #0A080E;
+  box-shadow: 24px 20px 35px #0a080eb0;
   position: absolute;
   left:-1px;
   top:-1px;
