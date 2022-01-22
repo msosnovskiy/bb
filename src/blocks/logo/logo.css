@@ -7,8 +7,10 @@
 }
 
 .logo__place_cards {
-  margin: 30px;
-  max-width: 60%;
-  max-height: 42%;
+  margin: 10.1%;
+  width: 59.3%;
+  height: 42.3%;
   fill: url(#myGradient);
+  -webkit-filter:   drop-shadow(-2px -2px 2px rgba(59, 57, 63, 0.25));
 }
+

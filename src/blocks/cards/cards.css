@@ -1,13 +1,28 @@
 .cards {
   margin: 60px auto;
-  width: 295px;
-  height: 185px;
+  max-width: 600px;
+  max-height: 375px;
+  width: 64vw;
+  height: 40vw;
   background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
-  border-radius: 7px;
   position: relative;
+  border-radius: 0.7rem;
 }
 
 .cards::before {
+  content: "";
+  background: linear-gradient(111.47deg, #3A383E 0%, #141218 100%);
+  box-shadow: 20px 20px 30px #0A080E;
+  position: absolute;
+  left:-1px;
+  top:-1px;
+  right:-1px;
+  bottom:-1px;
+  border-radius: 0.7rem;
+  z-index: -1;
+}
+
+.cards::after {
   content: "";
   position: absolute;
   top: 0;
@@ -19,18 +34,6 @@
   background-position: bottom right;
   background-size: contain;
   background-size: 45%;
+  border-radius: 0.7rem;
 }
 
-.cards::after {
-  content: "";
-  box-shadow: 20px 20px 30px #0A080E;
-  background: linear-gradient(111.47deg, #3A383E 0%, #141218 100%);
-  z-index: 0;
-  position: absolute;
-  left:-1px;
-  top:-1px;
-  right:-1px;
-  bottom:-1px;
-  border-radius: 8px;
-  z-index: -1;
-}
