@@ -8,8 +8,8 @@
 
 .clients::after {
   content: "";
-  width: 45vw;
-  height: 45vw;
+  width: 46vw;
+  height: 46vw;
   max-width: 390px;
   max-height: 390px;
   background-image: url(../../images/dots.svg);
