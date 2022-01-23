@@ -1,0 +1,11 @@
+.training__offer {
+  min-height: 40vh;
+  text-align: center;
+  background-image: url(../../../images/dotstwo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

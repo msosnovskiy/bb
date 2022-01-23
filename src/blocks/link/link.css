@@ -3,17 +3,21 @@
   text-decoration: none;
 }
 
-.link__social {
+.link_social {
   width: 30px;
   height: 30px;
   fill: #f4f4f4;
   border-bottom: none;
 }
 
-.link__phone {
+.link_phone {
   width: 30px;
   height: 30px;
   margin-right: 20px;
   border-bottom: none;
   fill: #f4f4f4;
+}
+
+.link_pages {
+  /* text-decoration-line: underline; */
 }
