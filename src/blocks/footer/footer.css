@@ -1,0 +1,10 @@
+@import url(./__subtitle/footer__subtitle.css);
+@import url(./__social/footer__social.css);
+@import url(./__social-link/footer__social-link.css);
+@import url(./__copyright/footer__copyright.css);
+@import url(./__copyright-text/footer__copyright-text.css);
+@import url(./__copyright-link/footer__copyright-link.css);
+
+.footer {
+  background-color: #16141A;
+}
