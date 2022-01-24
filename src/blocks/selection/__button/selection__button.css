@@ -1,25 +1,23 @@
-.training__item-btn {
+.selection__button {
   width: 16px;
   height: 16px;
   position: relative;
 }
 
-.training__item-btn::before {
+.selection__button::before {
   content: "";
   width: 10px;
   height: 2px;
-  /* background-color: #F9B700; */
   border-radius: 1px;
   position: absolute;
   left: 0px;  top: 8px;
   transform: rotate(45deg);
 }
 
-.training__item-btn::after {
+.selection__button::after {
   content: "";
   width: 10px;
   height: 2px;
-  /* background-color: #F9B700; */
   border-radius: 1px;
   position: absolute;
   right: 0px;  top: 8px;
