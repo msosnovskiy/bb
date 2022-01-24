@@ -6,6 +6,8 @@
   margin: 0;
   position: relative;
   background-color: transparent;
+  color: transparent;
+  overflow: hidden;
 }
 
 .selection__button::before {
