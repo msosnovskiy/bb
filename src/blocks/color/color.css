@@ -24,7 +24,7 @@
 
 .color_accent.button {
   background-color: #F9B700;
-  padding: 2px solid #F9B700;
+  border: 2px solid #F9B700;
 }
 
 .color_transparent {
