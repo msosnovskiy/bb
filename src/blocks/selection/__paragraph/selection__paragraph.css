@@ -1,0 +1,8 @@
+.selection__paragraph {
+  margin: 0 0 20px;
+  font-weight: 300;
+}
+
+.selection__paragraph:last-of-type {
+  margin-bottom: 0;
+}

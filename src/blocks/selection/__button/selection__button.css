@@ -1,25 +1,31 @@
 .selection__button {
   width: 16px;
   height: 16px;
+  padding: 8px;
+  border: none;
+  margin: 0;
   position: relative;
+  background-color: transparent;
 }
 
 .selection__button::before {
   content: "";
   width: 10px;
   height: 2px;
-  border-radius: 1px;
-  position: absolute;
-  left: 0px;  top: 8px;
+  border-radius: 2px;
+  top: 6px;
   transform: rotate(45deg);
+  left: 0px;
+  position: absolute;
 }
 
 .selection__button::after {
   content: "";
   width: 10px;
   height: 2px;
-  border-radius: 1px;
-  position: absolute;
-  right: 0px;  top: 8px;
+  border-radius: 2px;
+  top: 6px;
   transform: rotate(-45deg);
+  right: 0px;
+  position: absolute;
 }

@@ -5,6 +5,7 @@
 @import url(./__text/selection__text.css);
 @import url(./__button/selection__button.css);
 @import url(./__content/selection__content.css);
+@import url(./__paragraph/selection__paragraph.css);
 
 .selection {
 }

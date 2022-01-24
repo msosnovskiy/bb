@@ -1,3 +1,15 @@
 .selection__item {
-  
+  min-height: 56px;
+  margin: 20px 0;
+  border-radius: 8px;
+  padding: 18px 20px;
+  background-color: #2A282E;
+}
+
+.selection__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.selection__item_opened {
+  background: linear-gradient(179.94deg, #2A282E 14.42%, #1C2C3F 99.95%), #2A282E;
 }

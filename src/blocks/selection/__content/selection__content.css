@@ -1,0 +1,8 @@
+.selection__content {
+  display: none;
+}
+
+.selection__content_visible{
+  margin-top: 20px;
+  display: inline-block;
+}
