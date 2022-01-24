@@ -1,9 +1,12 @@
-.about__video {
+.about__link {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 48px;
   margin-top: 40px;
   text-decoration: none;
   color: #f4f4f4;
   cursor: pointer;
+  justify-content: flex-start;
+  width: fit-content;
 }
