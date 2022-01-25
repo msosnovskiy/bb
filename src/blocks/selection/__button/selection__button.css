@@ -15,12 +15,12 @@
   width: 10px;
   height: 2px;
   border-radius: 2px;
-  top: 6px;
-  transform: rotate(45deg);
+  top: 8px;
   left: 0px;
+  transform: rotate(45deg);
   position: absolute;
   background-color: #F9B700;
-  transition: transform .06s ease-in, top .06s linear .06s;
+  transition: transform .1s ease-in;
 }
 
 .selection__button::after {
@@ -28,21 +28,21 @@
   width: 10px;
   height: 2px;
   border-radius: 2px;
-  top: 6px;
-  transform: rotate(-45deg);
+  top: 8px;
   right: 0px;
+  transform: rotate(-45deg);
   position: absolute;
   background-color: #F9B700;
-  transition: transform .06s ease-in, top .06s linear .06s;
+  transition: transform .1s ease-in;
 }
 
 .selection__button.selection__button_opened::before {
     background-color: #F9B700;
     transform: rotate(-45deg);
-    transition: top .06s linear, transform .06s linear .06s;
+    transition: transform .1s ease-in;
 }
 .selection__button.selection__button_opened::after {
     background-color: #F9B700;
     transform: rotate(45deg);
-    transition: top .06s linear, transform .06s linear .06s;
+    transition: transform .1s ease-in;
 }
