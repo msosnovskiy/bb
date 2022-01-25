@@ -8,8 +8,8 @@
 }
 
 .services__item_brow {
-  background-image: url(../../../images/banner_mob.jpg);
+  background-image: url(../../../images/banner2x.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: right;
 }

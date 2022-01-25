@@ -7,6 +7,7 @@
 @import url(./__social-link/company__social-link.css);
 
 .company {
+  width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -14,4 +15,25 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+
+.company::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: image-set(
+    url(../../images/banner2x.jpg) 2x,
+    url(../../images/banner1x.jpg) 1x
+  );
+  background-image: -webkit-image-set(
+    url(../../images/banner2x.jpg) 2x,
+    url(../../images/banner1x.jpg) 1x
+  );
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  top: 0;
+  right: -20px;
+  z-index: -1;
+  position: absolute;
 }
