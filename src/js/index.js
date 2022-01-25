@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const textArray = ['you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
 
   const selectionItems = document.querySelectorAll('.selection__item');
-
   const bannerText = document.querySelector('.company__title');
   const menu = document.querySelector('.menu');
 
