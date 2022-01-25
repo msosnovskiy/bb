@@ -20,7 +20,7 @@
   left: 0px;
   position: absolute;
   background-color: #F9B700;
-  transition: transform .1s ease-in, top .1s linear .1s;
+  transition: transform .06s ease-in, top .06s linear .06s;
 }
 
 .selection__button::after {
@@ -33,16 +33,16 @@
   right: 0px;
   position: absolute;
   background-color: #F9B700;
-  transition: transform .1s ease-in, top .1s linear .1s;
+  transition: transform .06s ease-in, top .06s linear .06s;
 }
 
 .selection__button.selection__button_opened::before {
     background-color: #F9B700;
     transform: rotate(-45deg);
-    transition: top .1s linear, transform .1s ease-in .1s;
+    transition: top .06s linear, transform .06s linear .06s;
 }
 .selection__button.selection__button_opened::after {
     background-color: #F9B700;
     transform: rotate(45deg);
-    transition: top .1s linear, transform .1s ease-in .1s;
+    transition: top .06s linear, transform .06s linear .06s;
 }

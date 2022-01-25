@@ -1,24 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const textArray = [ 'you are beautiful', 'Ты Прекрасна','你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+
+  const textArray = ['you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+
+  const selectionItems = document.querySelectorAll('.selection__item');
 
   const bannerText = document.querySelector('.company__title');
-
-
-
   const menu = document.querySelector('.menu');
-  const training = document.querySelector('#test');
+
+
+
+
+
+  // === OOP ===
+  const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
+  // === OOP ===
+
+  
+  selection.setEventListeners();
+
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
   }
-
-  training.onclick = function () {
-    document.querySelector('.selection__button').classList.toggle('selection__button_opened');
-  }
-
-
-  
 
   let i = 0;
   const slideText = (item, index, arrayLength) => {
