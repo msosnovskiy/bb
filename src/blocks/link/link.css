@@ -1,7 +1,6 @@
 .link {
   cursor: pointer;
   text-decoration: none;
-
 }
 
 .link_social {
@@ -17,8 +16,4 @@
   margin-right: 20px;
   border-bottom: none;
   fill: #f4f4f4;
-}
-
-.link_pages {
-  /* text-decoration-line: underline; */
 }

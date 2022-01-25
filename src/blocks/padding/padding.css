@@ -1,7 +1,9 @@
-
-@import url(./_s/padding_s.css);
-
 .padding {
   padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.padding_s {
+  padding-top: 80px;
   padding-bottom: 40px;
 }
