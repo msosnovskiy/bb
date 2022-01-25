@@ -1,8 +1,8 @@
 .selection__content {
   display: none;
+  padding: 0px 20px 18px;
 }
 
 .selection__content_opened{
-  margin-top: 20px;
   display: inline-block;
 }

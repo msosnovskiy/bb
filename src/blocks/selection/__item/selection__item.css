@@ -2,8 +2,8 @@
   min-height: 56px;
   margin: 20px 0;
   border-radius: 8px;
-  padding: 18px 20px;
   background-color: #2A282E;
+
 }
 
 .selection__item:last-of-type {
