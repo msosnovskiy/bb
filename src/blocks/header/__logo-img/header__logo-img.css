@@ -1,7 +1,7 @@
 .header__logo-img {
   width: 70px;
   height: 70px;
-  background-image: url(../../../images/crs_y.png);
+  background-image: url(../../../images/crlogo.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 66px;
@@ -9,5 +9,7 @@
   position: absolute;
   left: -10px;
   top: 2px;
+  left: 0px;
+  top: 10px;
   z-index: -1;
 }
