@@ -7,10 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const menu = document.querySelector('.menu');
+  const training = document.querySelector('#test');
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
   }
+
+  training.onclick = function () {
+    document.querySelector('.selection__button').classList.toggle('selection__button_opened');
+  }
+
+
+  
 
   let i = 0;
   const slideText = (item, index, arrayLength) => {

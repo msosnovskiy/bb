@@ -2,7 +2,7 @@
   display: none;
 }
 
-.selection__content_visible{
+.selection__content_opened{
   margin-top: 20px;
   display: inline-block;
 }
