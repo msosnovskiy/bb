@@ -8,7 +8,6 @@
   <link rel="preload" href="./vendor/fonts/Poppins-Bold.woff2" as="font" crossorigin>
   <link rel="preload" href="./vendor/fonts/Montserrat-SemiBold.woff2" as="font" crossorigin>
   <link rel="preload" href="./vendor/fonts/Montserrat-SemiBold.woff2" as="font" crossorigin>
-
   <link rel="stylesheet" href="./pages/index.css">
   <title>Beauti Baza</title>
   <meta name="description"
@@ -30,6 +29,17 @@
         <span class="menu__icon"></span>
       </button>
     </div>
+
+    <nav class="header__navigation" aria-label="Меню">
+      <ul class="header__list">
+        <li class="header__list-item"><a class="header__link link" href="#">О&nbsp;нас</a></li>
+        <li class="header__list-item"><a class="header__link link" href="#">Услуги</a></li>
+        <li class="header__list-item"><a class="header__link link" href="#">Клиентам</a></li>
+        <li class="header__list-item"><a class="header__link link" href="#">Обучение</a></li>
+        <li class="header__list-item"><a class="header__link link" href="#">Вакансии</a></li>
+        <li class="header__list-item"><a class="header__link link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="content">
@@ -70,7 +80,7 @@
       <p class="subtitle">Ищешь салон красоты, в&nbsp;который захочется возвращаться снова и&nbsp;снова?<span
           class="span span_br color color_accent">Ты&nbsp;в&nbsp;нужном месте!</span></p>
       <div class="about__slider">
-        <img loading="lazy"  class="" src="./images/about_1.jpg" alt="фото салона"
+        <img loading="lazy" class="" src="./images/about_1.jpg" alt="фото салона"
           style="object-fit:contain; width: 100%; height: auto;">
       </div>
       <div class="about__content">
@@ -133,6 +143,10 @@
           <a href="#" class="button color color_accent">Онлайн запись</a>
         </div>
       </div>
+    </section>
+
+    <section class="galery padding padding_s">
+      <h2 class="title">Галерея</h2>
     </section>
 
     <section class="clients padding padding_s" id="clients">

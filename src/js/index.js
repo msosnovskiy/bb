@@ -5,22 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
+  const root = document.querySelector('.root');
   const menu = document.querySelector('.menu');
 
 
 
+// instagram closed 
 
 
   // === OOP ===
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
-  // === OOP ===
+  // === OOP closed ===
+
 
   
-  selection.setEventListeners();
+
 
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
+    root.classList.toggle('overflow-hidden');
   }
 
   let i = 0;
@@ -59,5 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(intervalID);
     }
   }, 600);
+
+
+  selection.setEventListeners();
 
 })
