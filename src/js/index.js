@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const bannerText = document.querySelector('.company__title');
   const root = document.querySelector('.root');
   const menu = document.querySelector('.menu');
+  const menuDesc = document.querySelector('.menu__desc');
+  const navigation = document.querySelector('.header__navigation');
 
 
 
@@ -25,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
     root.classList.toggle('overflow-hidden');
+    navigation.classList.toggle('header__navigation_opened');
+    if (navigation.closest('.header__navigation_opened')) {
+      menuDesc.textContent = 'Закрыть';
+    }
+    else {
+      menuDesc.textContent = 'Меню';
+    }
   }
 
   let i = 0;
