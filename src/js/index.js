@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-  const textArray = ['you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+  const textArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
 
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
@@ -12,21 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
 
-  const toggle = document.querySelector('#toggle');
-
-
   // Yandex MAP -------------------------------------------------------
 
-  ymaps.ready(init);
+  ymaps.ready(init('map', 'buttonMaps'));
 
-  function init() {
+  function init(id, buttonId) {
 
     var myMap;
-    $('#toggle').bind({
+    $(`#${buttonId}`).bind({
       click: function () {
         if (!myMap) {
 
-          myMap = new ymaps.Map('map', {
+
+          // Изменить координаты под иниверсальную функцию !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+          myMap = new ymaps.Map(`${id}`, {
             center: [55.010251, 82.958437], // Новосибирск
             zoom: 9
           }, {
@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
             myMap.behaviors.disable('drag');
           }
           
-          $("#toggle").attr('value', 'Скрыть карту');
-          $("#map").addClass('contacts__maps_opened');
+          $(`#${buttonId}`).attr('value', 'Скрыть карту');
+          $(`#${id}`).addClass('contacts__maps_opened');
 
 
         }
         else {
           myMap.destroy();// Деструктор карты
           myMap = null;
-          $("#toggle").attr('value', 'На карте');
-          $("#map").removeClass('contacts__maps_opened');
+          $(`#${buttonId}`).attr('value', 'На карте');
+          $(`#${id}`).removeClass('contacts__maps_opened');
         }
       }
 

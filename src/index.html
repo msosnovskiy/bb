@@ -371,8 +371,12 @@
               <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
               <a href="tel:7397" class="contacts__text">7397</a>
             </div>
+
             <button class="button contacts__button color_accent">На карте</button>
             <div class="contacts__maps"></div>
+
+            <!-- <input type="button" value="На карте" id="buttonMaps" class="button contacts__button color_accent" />
+            <div id="mapOne" class="contacts__maps"></div> -->
           </div>
           <div class="contacts__item">
             <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;&nbsp;2</span></h3>
@@ -390,7 +394,7 @@
             </div>
             <!-- <button class="button contacts__button color_accent">На карте</button>
             <div class="contacts__maps"></div> -->
-            <input type="button" value="На карте" id="toggle" class="button contacts__button color_accent" />
+            <input type="button" value="На карте" id="buttonMaps" class="button contacts__button color_accent" />
             <div id="map" class="contacts__maps"></div>
           </div>
         </div>
@@ -497,10 +501,10 @@
     </svg>
   </div>
 
+  <script src="./js/components/Selection.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb"
     type="text/javascript" defer></script>
   <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript" defer></script>
-  <script src="./js/components/Selection.js"></script>
   <!-- <script src="./js/vendor/map.js"></script> -->
   <script src="./js/index.js"></script>
 </body>
