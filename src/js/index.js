@@ -32,14 +32,14 @@ function init () {
                   searchControlProvider: 'yandex#search'
               });
               $("#toggle").attr('value', 'Скрыть карту');
-              $("#map").addClass('test__maps_opened');
+              $("#map").addClass('contacts__maps_opened');
 
           }
           else {
               myMap.destroy();// Деструктор карты
               myMap = null;
-              $("#toggle").attr('value', 'Показать карту снова');
-              $("#map").removeClass('test__maps_opened');
+              $("#toggle").attr('value', 'На карте');
+              $("#map").removeClass('contacts__maps_opened');
           }
       }
   });

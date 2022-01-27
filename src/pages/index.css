@@ -32,12 +32,3 @@
 
 @import url(../vendor/fonts.css);
 
-.test__maps {
-  width: 340px;
-  height: 600px;
-  display: none;
-}
-
-.test__maps_opened {
-  display: block;
-}

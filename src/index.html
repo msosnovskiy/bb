@@ -388,17 +388,17 @@
               <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
               <a href="tel:7397" class="contacts__text">7397</a>
             </div>
-            <button class="button contacts__button color_accent">На карте</button>
-            <div class="contacts__maps"></div>
+            <!-- <button class="button contacts__button color_accent">На карте</button>
+            <div class="contacts__maps"></div> -->
+            <input type="button" value="На карте" id="toggle" class="button contacts__button color_accent"/>
+            <p>
+                <div id="map" class="contacts__maps"></div>
+            </p>
           </div>
         </div>
       </div>
 
-      <input type="button" value="Показать карту" id="toggle"/>
-      <p>
-          <!-- <div id="map" style="width: 340px; height: 660px"></div> -->
-          <div id="map" class="test__maps"></div>
-      </p>
+
 
     </section>
 
