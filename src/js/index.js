@@ -14,7 +14,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// instagram closed 
+// Yandex MAP -------------------------------------------------------
+
+ymaps.ready(init);
+
+function init () {
+  var myMap;
+
+  $('#toggle').bind({
+      click: function () {
+          if (!myMap) {
+
+              myMap = new ymaps.Map('map', {
+                  center: [55.010251, 82.958437], // Новосибирск
+                  zoom: 9
+              }, {
+                  searchControlProvider: 'yandex#search'
+              });
+              $("#toggle").attr('value', 'Скрыть карту');
+              $("#map").addClass('test__maps_opened');
+
+          }
+          else {
+              myMap.destroy();// Деструктор карты
+              myMap = null;
+              $("#toggle").attr('value', 'Показать карту снова');
+              $("#map").removeClass('test__maps_opened');
+          }
+      }
+  });
+}
+
+// --------------------------------------------------------------------
 
 
   // === OOP ===
