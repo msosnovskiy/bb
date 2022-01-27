@@ -28,15 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
-    // root.classList.toggle('overflow-hidden');
+    root.classList.toggle('overflow-hidden');
+    // блокировка скрола
     navigation.classList.toggle('header__navigation_opened');
+      // затемнение страницы при открытии меню
+    // root.classList.toggle('root__opened');
     navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
   }
 
   menuLinks.forEach((item) => {
     item.addEventListener('click', () => {
       document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
-      // root.classList.toggle('overflow-hidden');
+      // блокировка скрола
+      root.classList.toggle('overflow-hidden');
+      // затемнение страницы при открытии меню
+      // root.classList.toggle('root__opened');
       navigation.classList.toggle('header__navigation_opened');
       navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
     })
