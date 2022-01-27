@@ -12,40 +12,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
 
+  const toggle = document.querySelector('#toggle');
 
 
-// Yandex MAP -------------------------------------------------------
+  // Yandex MAP -------------------------------------------------------
 
-ymaps.ready(init);
+  ymaps.ready(init);
 
-function init () {
-  var myMap;
+  function init() {
 
-  $('#toggle').bind({
+    var myMap;
+    $('#toggle').bind({
       click: function () {
-          if (!myMap) {
+        if (!myMap) {
 
-              myMap = new ymaps.Map('map', {
-                  center: [55.010251, 82.958437], // Новосибирск
-                  zoom: 9
-              }, {
-                  searchControlProvider: 'yandex#search'
-              });
-              $("#toggle").attr('value', 'Скрыть карту');
-              $("#map").addClass('contacts__maps_opened');
+          myMap = new ymaps.Map('map', {
+            center: [55.010251, 82.958437], // Новосибирск
+            zoom: 9
+          }, {
+            searchControlProvider: 'yandex#search'
+          });
 
+          if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            //... отключаем перетаскивание карты
+            myMap.behaviors.disable('drag');
           }
-          else {
-              myMap.destroy();// Деструктор карты
-              myMap = null;
-              $("#toggle").attr('value', 'На карте');
-              $("#map").removeClass('contacts__maps_opened');
-          }
+          
+          $("#toggle").attr('value', 'Скрыть карту');
+          $("#map").addClass('contacts__maps_opened');
+
+
+        }
+        else {
+          myMap.destroy();// Деструктор карты
+          myMap = null;
+          $("#toggle").attr('value', 'На карте');
+          $("#map").removeClass('contacts__maps_opened');
+        }
       }
-  });
-}
 
-// --------------------------------------------------------------------
+    });
+
+
+  }
+
+  // --------------------------------------------------------------------
 
 
   // === OOP ===
@@ -53,7 +64,7 @@ function init () {
   // === OOP closed ===
 
 
-  
+
 
 
 
@@ -62,7 +73,7 @@ function init () {
     root.classList.toggle('overflow-hidden');
     // блокировка скрола
     navigation.classList.toggle('header__navigation_opened');
-      // затемнение страницы при открытии меню
+    // затемнение страницы при открытии меню
     // root.classList.toggle('root__opened');
     navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
   }

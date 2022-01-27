@@ -9,5 +9,5 @@
 @import url(./__maps/contacts__maps.css);
 
 .contacts {
-
+  max-width: 100%;
 }
