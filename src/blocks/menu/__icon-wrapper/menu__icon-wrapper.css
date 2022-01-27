@@ -4,9 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  border: none;
-  padding: 0;
 }
 
 .menu__icon-wrapper:hover {

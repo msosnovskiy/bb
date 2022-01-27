@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
+
   const root = document.querySelector('.root');
   const menu = document.querySelector('.menu');
-  const menuDesc = document.querySelector('.menu__desc');
+  const menuButton = document.querySelector('.menu__button');
   const navigation = document.querySelector('.header__navigation');
+  const menuLinks = document.querySelectorAll('.header__link');
 
 
 
@@ -26,15 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
-    root.classList.toggle('overflow-hidden');
+    // root.classList.toggle('overflow-hidden');
     navigation.classList.toggle('header__navigation_opened');
-    if (navigation.closest('.header__navigation_opened')) {
-      menuDesc.textContent = 'Закрыть';
-    }
-    else {
-      menuDesc.textContent = 'Меню';
-    }
+    navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
   }
+
+  menuLinks.forEach((item) => {
+    item.addEventListener('click', () => {
+      document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
+      // root.classList.toggle('overflow-hidden');
+      navigation.classList.toggle('header__navigation_opened');
+      navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
+    })
+  })
 
   let i = 0;
   const slideText = (item, index, arrayLength) => {
