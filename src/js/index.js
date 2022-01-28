@@ -12,11 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
 
-  // Yandex MAP -------------------------------------------------------
+  // ----------------------------- Yandex maps OPENED---------------------------------------
 
-  ymaps.ready(init('map', 'buttonMaps'));
+  //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты
 
-  function init(id, buttonId) {
+  ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428735', '31.007113'));
+  ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536'));
+
+  function init(id, buttonId, coordinatesX, coordinatesY) {
 
     var myMap;
     $(`#${buttonId}`).bind({
@@ -27,17 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
           // Изменить координаты под иниверсальную функцию !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
           myMap = new ymaps.Map(`${id}`, {
-            center: [55.010251, 82.958437], // Новосибирск
-            zoom: 9
+            center: [coordinatesX, coordinatesY], // Новосибирск
+            zoom: 16
           }, {
             searchControlProvider: 'yandex#search'
-          });
+          }, myPlacemark = new ymaps.Placemark([coordinatesX, coordinatesY], {
+            balloonContentHeader: 'Бьюти База',
+            // balloonContentBody: '109240, г. Москва,<br>Москворецкая набережная, д. 9, стр. 1',
+            // balloonContentFooter: 'Телефон <a href="tel:+74959265423">+74959265423</a>',
+          },
+            {
+              preset: 'islands#violetCircleDotIcon',
+              // iconColor: '#F9B700'
+            }
+          ));
+          myMap.geoObjects.add(myPlacemark);
+          myMap.controls.remove('searchControl');
+          myMap.controls.remove('trafficControl');
+
 
           if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             //... отключаем перетаскивание карты
             myMap.behaviors.disable('drag');
           }
-          
+
           $(`#${buttonId}`).attr('value', 'Скрыть карту');
           $(`#${id}`).addClass('contacts__maps_opened');
 
@@ -50,13 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
           $(`#${id}`).removeClass('contacts__maps_opened');
         }
       }
-
     });
-
-
   }
 
-  // --------------------------------------------------------------------
+  // ----------------------------- Yandex maps CLOSED---------------------------------------
 
 
   // === OOP ===
@@ -131,3 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
   selection.setEventListeners();
 
 })
+
+
+
