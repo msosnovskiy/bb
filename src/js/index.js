@@ -12,67 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
 
-  // ----------------------------- Yandex maps OPENED---------------------------------------
+  // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
+  //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
 
-  //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты
-
-  ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428735', '31.007113'));
-  ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536'));
-
-  function init(id, buttonId, coordinatesX, coordinatesY) {
-
-    var myMap;
-    $(`#${buttonId}`).bind({
-      click: function () {
-        if (!myMap) {
+  ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20'));
+  ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95'));
+  // ----------------------------- Yandex maps CLOSED ------------------------------------------------------------------
 
 
-          // Изменить координаты под иниверсальную функцию !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-          myMap = new ymaps.Map(`${id}`, {
-            center: [coordinatesX, coordinatesY], // Новосибирск
-            zoom: 16
-          }, {
-            searchControlProvider: 'yandex#search'
-          }, myPlacemark = new ymaps.Placemark([coordinatesX, coordinatesY], {
-            balloonContentHeader: 'Бьюти База',
-            // balloonContentBody: '109240, г. Москва,<br>Москворецкая набережная, д. 9, стр. 1',
-            // balloonContentFooter: 'Телефон <a href="tel:+74959265423">+74959265423</a>',
-          },
-            {
-              preset: 'islands#violetDotIcon',
-              // iconColor: '#F9B700'
-            }
-          ));
-          myMap.geoObjects.add(myPlacemark);
-          myMap.controls.remove('searchControl');
-          myMap.controls.remove('trafficControl');
-
-
-          if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            //... отключаем перетаскивание карты
-            myMap.behaviors.disable('drag');
-          }
-
-          $(`#${buttonId}`).attr('value', 'Скрыть карту');
-          $(`#${id}`).addClass('contacts__maps_opened');
-
-
-        }
-        else {
-          myMap.destroy();// Деструктор карты
-          myMap = null;
-          $(`#${buttonId}`).attr('value', 'На карте');
-          $(`#${id}`).removeClass('contacts__maps_opened');
-        }
-      }
-    });
-  }
-
-  // ----------------------------- Yandex maps CLOSED---------------------------------------
-
-
-  // === OOP ===
+  // === OOP opened ===
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
   // === OOP closed ===
 
