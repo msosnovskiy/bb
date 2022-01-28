@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // balloonContentFooter: 'Телефон <a href="tel:+74959265423">+74959265423</a>',
           },
             {
-              preset: 'islands#violetCircleDotIcon',
+              preset: 'islands#violetDotIcon',
               // iconColor: '#F9B700'
             }
           ));
