@@ -12,4 +12,5 @@
 
 .footer {
   background-color: #16141A;
+  background: linear-gradient(180deg, #201F24 0%, #16141A 100%);
 }

@@ -1,4 +1,5 @@
 .contacts__item {
-  margin: 20px auto 0;
-  margin-bottom: 40px;
+  margin: 40px auto 10px;
+  width: 100%;
+  max-width: 360px;
 }

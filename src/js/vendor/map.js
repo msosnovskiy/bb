@@ -24,13 +24,13 @@ function init(id, buttonId, coordinatesX, coordinatesY, balloonHeader, balloonCo
         myMap.geoObjects.add(myPlacemark);
         myMap.controls.remove('searchControl');
         myMap.controls.remove('trafficControl');
+        //... отключаем зум колесиком мыши
+        myMap.behaviors.disable('scrollZoom');
 
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
           //... отключаем перетаскивание карты
           myMap.behaviors.disable('drag');
-          //... отключаем зум колесиком мыши
-          // myMap.behaviors.disable('scrollZoom');
         }
 
         $(`#${buttonId}`).attr('value', 'Скрыть карту');
