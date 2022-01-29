@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
           mouseDispIntensity: 3,
           interactive : true,
           autoPlay : true,
-          autoPlaySpeed : 2500,
+          autoPlaySpeed : 3000,
       });
       
   // Glitch slider CLOSED  -----------------------
