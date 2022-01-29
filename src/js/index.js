@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
           stageWidth: 1920,
           stageHeight: 1080,
           
-          displacementImage: './images/displace-circle.png',
+          displacementImage: './images/displace-circle.jpg',
           fullScreen: false,
           transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
           transitionGhostDuration : 0.25,
