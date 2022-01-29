@@ -83,9 +83,12 @@
       <p class="subtitle">Ищешь салон красоты, в&nbsp;который захочется возвращаться снова и&nbsp;снова?<span
           class="span span_br color color_accent">Ты&nbsp;в&nbsp;нужном месте!</span></p>
       <div class="about__slider">
-        <img loading="lazy" class="" src="./images/about_1.jpg" alt="фото салона"
-          style="object-fit:contain; width: 100%; height: auto;">
+        <!-- <img loading="lazy" class="" src="./images/about_1.jpg" alt="фото салона"
+          style="object-fit:contain; width: 100%; height: auto;"> -->
+          <div id="rbgShiftSlider" class="rgbShiftSlider about__img"></div>
       </div>
+
+
       <div class="about__content">
         <h3 class="about__title color color_accent">BEAUTI BAZA</h3>
         <p class="text">В&nbsp;Бьюти Базе мы&nbsp;собрали лучших мастеров города для тебя. Хочешь что-то классическое
@@ -100,7 +103,7 @@
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="services" id="services" style="position: static;">
       <div class="services__sliders">
         <div class="services__item services__item_brow">
           <h3 class="services__title">Услуги<span class="color_transparent"> / </span><span
@@ -356,43 +359,43 @@
     <section class="contacts padding padding_s" id="contacts">
       <h2 class="title">Контакты</h2>
       <div class="contacts__container">
-          <div class="contacts__item">
-            <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;1</span></h3>
-            <div class="contacts__info">
-              <img loading="lazy" src="./images/location.svg" alt="иконка" class="contacts__image">
-              <p class="contacts__text">г. Гомель, улица&nbsp;Кирова,&nbsp;20</p>
-            </div>
-            <div class="contacts__info">
-              <img loading="lazy" src="./images/clock.svg" alt="иконка" class="contacts__image">
-              <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
-            </div>
-            <div class="contacts__info">
-              <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
-              <a href="tel:7397" class="contacts__text">7397</a>
-            </div>
+        <div class="contacts__item">
+          <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;1</span></h3>
+          <div class="contacts__info">
+            <img loading="lazy" src="./images/location.svg" alt="иконка" class="contacts__image">
+            <p class="contacts__text">г. Гомель, улица&nbsp;Кирова,&nbsp;20</p>
           </div>
-
-          <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button color_accent" />
-          <div id="mapOne" class="contacts__maps"></div>
-
-          <div class="contacts__item">
-            <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;2</span></h3>
-            <div class="contacts__info">
-              <img loading="lazy" src="./images/location.svg" alt="иконка" class="contacts__image">
-              <p class="contacts__text">г. Гомель, проспект&nbsp;Октября,&nbsp;95</p>
-            </div>
-            <div class="contacts__info">
-              <img loading="lazy" src="./images/clock.svg" alt="иконка" class="contacts__image">
-              <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
-            </div>
-            <div class="contacts__info">
-              <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
-              <a href="tel:7397" class="contacts__text">7397</a>
-            </div>
+          <div class="contacts__info">
+            <img loading="lazy" src="./images/clock.svg" alt="иконка" class="contacts__image">
+            <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
           </div>
+          <div class="contacts__info">
+            <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
+            <a href="tel:7397" class="contacts__text">7397</a>
+          </div>
+        </div>
 
-          <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button color_accent" />
-          <div id="mapTwo" class="contacts__maps"></div>
+        <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button color_accent" />
+        <div id="mapOne" class="contacts__maps"></div>
+
+        <div class="contacts__item">
+          <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;2</span></h3>
+          <div class="contacts__info">
+            <img loading="lazy" src="./images/location.svg" alt="иконка" class="contacts__image">
+            <p class="contacts__text">г. Гомель, проспект&nbsp;Октября,&nbsp;95</p>
+          </div>
+          <div class="contacts__info">
+            <img loading="lazy" src="./images/clock.svg" alt="иконка" class="contacts__image">
+            <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
+          </div>
+          <div class="contacts__info">
+            <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
+            <a href="tel:7397" class="contacts__text">7397</a>
+          </div>
+        </div>
+
+        <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button color_accent" />
+        <div id="mapTwo" class="contacts__maps"></div>
       </div>
 
 
@@ -498,12 +501,18 @@
 
   <script src="./js/components/Selection.js"></script>
   <script src="./js/vendor/map.js" defer></script>
+
+  <!-- slider  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.7/pixi.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="./js/vendor/rgbShiftSlider.js"></script>
+
+  <!-- Slider close  -->
+
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb"
     type="text/javascript" defer></script>
-  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript" defer></script>
 
-  <!-- <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" defer></script>
-  <script src="//yastatic.net/share2/share.js" defer></script> -->
+  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript" defer></script>
 
   <script src="./js/index.js"></script>
 </body>

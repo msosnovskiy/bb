@@ -24,10 +24,42 @@ document.addEventListener('DOMContentLoaded', () => {
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
   // === OOP closed ===
 
+  // Glitch slider OPENED  -----------------------
 
+  var images = [
+    // "http://hmongouachon.com/_demos/rgbShiftSlider/01-portrait-large.jpg",
+    // "http://hmongouachon.com/_demos/rgbShiftSlider/02-portrait-large.jpg",
+    // "http://hmongouachon.com/_demos/rgbShiftSlider/03-portrait-large.jpg",
+    // "http://hmongouachon.com/_demos/rgbShiftSlider/04-portrait-large.jpg",
+    // "http://hmongouachon.com/_demos/rgbShiftSlider/05-portrait-large.jpg",
 
-
-
+    '../images/about_1.jpg',
+    '../images/about_2.jpg',
+    '../images/about_3.jpg',
+    '../images/about_4.jpg',
+    '../images/about_5.jpg'
+  ];
+        // instanciate slider
+        let glitchSlider = new rbgShiftSlider({
+          nav : false,
+          // navElement: '.scene-nav',
+          slideImages: images,
+          stageWidth: 1920,
+          stageHeight: 1080,
+          
+          displacementImage: '../images/displace-circle.png',
+          fullScreen: false,
+          transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
+          transitionGhostDuration : 0.25,
+          transitionFilterIntensity: 350,
+          transitionSpriteIntensity: 2,
+          mouseDispIntensity: 3,
+          interactive : true,
+          autoPlay : true,
+          autoPlaySpeed : 2500,
+      });
+      
+  // Glitch slider CLOSED  -----------------------
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
@@ -50,6 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
       navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
     })
   })
+
+  // Glitch для текста Opened-----------------
 
   let i = 0;
   const slideText = (item, index, arrayLength) => {
