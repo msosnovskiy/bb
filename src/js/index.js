@@ -27,12 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Glitch slider OPENED  -----------------------
 
   var images = [
-    // "http://hmongouachon.com/_demos/rgbShiftSlider/01-portrait-large.jpg",
-    // "http://hmongouachon.com/_demos/rgbShiftSlider/02-portrait-large.jpg",
-    // "http://hmongouachon.com/_demos/rgbShiftSlider/03-portrait-large.jpg",
-    // "http://hmongouachon.com/_demos/rgbShiftSlider/04-portrait-large.jpg",
-    // "http://hmongouachon.com/_demos/rgbShiftSlider/05-portrait-large.jpg",
-
     './images/about_1.jpg',
     './images/about_2.jpg',
     './images/about_3.jpg',
