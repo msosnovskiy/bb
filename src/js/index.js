@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // "http://hmongouachon.com/_demos/rgbShiftSlider/04-portrait-large.jpg",
     // "http://hmongouachon.com/_demos/rgbShiftSlider/05-portrait-large.jpg",
 
-    '../images/about_1.jpg',
-    '../images/about_2.jpg',
-    '../images/about_3.jpg',
-    '../images/about_4.jpg',
-    '../images/about_5.jpg'
+    './images/about_1.jpg',
+    './images/about_2.jpg',
+    './images/about_3.jpg',
+    './images/about_4.jpg',
+    './images/about_5.jpg'
   ];
         // instanciate slider
         let glitchSlider = new rbgShiftSlider({
