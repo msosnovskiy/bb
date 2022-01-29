@@ -1,12 +1,18 @@
 .about__img {
   width: 100%;
   max-width: 600px;
-  height: auto;
+  min-height: 200px;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
-  object-fit: contain;
+
 }
 
 .about__img canvas {
   border-radius: 8px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: relative;
+  object-fit: contain;
 }
