@@ -358,17 +358,18 @@
               }
 
               // add mouse / touch event
-              slidesContainer
-                  .on('mousemove', onPointerMove)
-                  .on('touchmove', onPointerMove);
 
-              function onPointerMove(eventData) {
+            //   slidesContainer
+            //       .on('mousemove', onPointerMove)
+            //       .on('touchmove', onPointerMove);
 
-                  // get mouse value
-                  posx = eventData.data.global.x;
-                  posy = eventData.data.global.y;
+            //   function onPointerMove(eventData) {
 
-              }
+            //       // get mouse value
+            //       posx = eventData.data.global.x;
+            //       posy = eventData.data.global.y;
+
+            //   }
 
               // use raf for smooth sprites / filters animation
               ticker();
