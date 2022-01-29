@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
           nav : false,
           // navElement: '.scene-nav',
           slideImages: images,
-          stageWidth: 600,
-          stageHeight: 350,
+          stageWidth: 1920,
+          stageHeight: 1080,
           
           displacementImage: './images/displace-circle.jpg',
           fullScreen: false,
