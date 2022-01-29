@@ -5,5 +5,8 @@
   margin: 0 auto;
   text-align: center;
   object-fit: contain;
-  border-radius: 68px;
+}
+
+.about__img canvas {
+  border-radius: 8px;
 }
