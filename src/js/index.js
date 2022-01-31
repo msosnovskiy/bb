@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var tl = gsap.timeline();
 
-  tl.from('.header', { opacity: 0, duration: 1.5, ease: 'power1' })
+  tl.from('.header', { opacity: 0, duration: 1.2, ease: 'power1' })
     .from('.company', { opacity: 0, duration: .7, ease: 'power1' })
     .from('.company__wrapper', { opacity: 0, duration: .5, ease: 'power1' })
 
