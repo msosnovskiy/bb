@@ -82,13 +82,7 @@
       <h2 class="title">О&nbsp;нас</h2>
       <p class="subtitle">Ищешь салон красоты, в&nbsp;который захочется возвращаться снова и&nbsp;снова?<span
           class="span span_br color color_accent">Ты&nbsp;в&nbsp;нужном месте!</span></p>
-      <!-- <div class="about__slider"> -->
-      <!-- <img loading="lazy" class="" src="./images/about_1.jpg" alt="фото салона"
-          style="object-fit:contain; width: 100%; height: auto;"> -->
       <div id="rbgShiftSlider" class="rgbShiftSlider about__img"></div>
-      <!-- </div> -->
-
-
       <div class="about__content">
         <h3 class="about__title color color_accent">BEAUTI BAZA</h3>
         <p class="text">В&nbsp;Бьюти Базе мы&nbsp;собрали лучших мастеров города для тебя. Хочешь что-то классическое
@@ -103,52 +97,48 @@
       </div>
     </section>
 
-    <section class="services" id="services" style="position: static;">
+    <section class="services" id="services">
       <div class="services__sliders">
         <div class="services__item services__item_brow">
-          <h3 class="services__title">Услуги<span class="color_transparent"> / </span><span
-              class="color color_accent">брови</span></h3>
+          <h3 class="title">Услуги<span class="color_transparent"> / </span><span
+              class="color color_accent">ногти</span></h3>
           <div class="services__price-lists">
+            <h4 class="services__title color color_accent">Комплекс</h4>
             <div class="services__price-item">
               <p class="services__price-name">Снятие + маникюр + гель-лак</p>
-              <div class="services__price-dot"></div>
               <p class="services__price-cost">от <span class="color color_accent">29.5</span> <span
-                  class="color_transparent">р.</span></p>
+                  class="color_transparent">BYN</span></p>
             </div>
             <div class="services__price-item">
               <p class="services__price-name">Маникюр + гель-лак</p>
-              <div class="services__price-dot"></div>
               <p class="services__price-cost">от <span class="color color_accent">24.5</span> <span
-                  class="color_transparent">р.</span></p>
+                  class="color_transparent">BYN</span></p>
             </div>
             <div class="services__price-item">
               <p class="services__price-name">Маникюр + наращивание</p>
-              <div class="services__price-dot"></div>
               <p class="services__price-cost">от <span class="color color_accent">32.95</span> <span
-                  class="color_transparent">р.</span></p>
+                  class="color_transparent">BYN</span></p>
             </div>
             <div class="services__price-item">
               <p class="services__price-name">Педикюр + гель-лак</p>
-              <div class="services__price-dot"></div>
               <p class="services__price-cost">от <span class="color color_accent">21.5</span> <span
-                  class="color_transparent">р.</span></p>
+                  class="color_transparent">BYN</span></p>
             </div>
             <div class="services__price-item">
               <p class="services__price-name">Дизайн ноготков</p>
-              <div class="services__price-dot"></div>
               <p class="services__price-cost">от <span class="color color_accent">0.75</span> <span
-                  class="color_transparent">р.</span></p>
+                  class="color_transparent">BYN</span></p>
             </div>
             <div class="services__price-item">
               <p class="services__price-name">Парафинотерапия</p>
-              <div class="services__price-dot"></div>
               <p class="services__price-cost">от <span class="color color_accent">7.5</span> <span
-                  class="color_transparent">р.</span></p>
+                  class="color_transparent">BYN</span></p>
             </div>
           </div>
-          <a href="#" class="button color color_accent">Онлайн запись</a>
         </div>
+
       </div>
+      <a href="#" class="button color color_accent services__button">Онлайн запись</a>
     </section>
 
     <!-- <section class="galery padding padding_s">
@@ -501,16 +491,21 @@
 
   <script src="./js/components/Selection.js"></script>
   <script src="./js/components/Map.js"></script>
-  
+
+  <!-- GSAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <!-- GSAP CLOSED  -->
+
   <!-- slider  -->
   <script src="./js/vendor/pixi.min.js" defer></script>
   <script src="./js/vendor/TweenMax.min.js" defer></script>
   <script src="./js/vendor/rgbShiftSlider.min.js" defer></script>
   <!-- Slider close  -->
-  
+
   <!-- y map  -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb"
-  type="text/javascript" defer></script>
+    type="text/javascript" defer></script>
   <script src="./js/vendor/jquery.min.js" type="text/javascript" defer></script>
   <script src="./js/vendor/ymap.js" defer></script>
   <!-- y map close 

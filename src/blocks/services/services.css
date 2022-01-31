@@ -4,10 +4,11 @@
 @import url(./__price-lists/services__price-lists.css);
 @import url(./__price-item/services__price-item.css);
 @import url(./__price-name/services__price-name.css);
-@import url(./__price-dot/services__price-dot.css);
 @import url(./__price-cost/services__price-cost.css);
+@import url(./__button/services__button.css);
 
 .services {
   padding: 80px 0 20px;
   height: 100vh;
+  position: relative;
 }

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  gsap.registerPlugin(ScrollTrigger);
 
   const textArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
 
@@ -15,6 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapTwo = document.querySelector('#mapTwo');
 
 
+
+  // GSAP Scroll trigger ---------   OPENED    ------------------
+
+  gsap.fromTo('.company', {x: 200,opacity: 0,},{x: 0,opacity: 1,duration: 1});
+  gsap.fromTo('.company__wrapper', {x: -200,opacity: 0,},{x: 0,opacity: 1,duration: 0.5});
+  gsap.fromTo('.button', {x: -200,},{x: 0, duration: 1});
+
+
+  // GSAP Scroll trigger ---------   CLOSED    ------------------
 
 
   // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
@@ -73,8 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
     root.classList.toggle('overflow-hidden');
     // блокировка скрола
     navigation.classList.toggle('header__navigation_opened');
-    // затемнение страницы при открытии меню
-    // root.classList.toggle('root__opened');
     navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
   }
 
@@ -83,8 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
       // блокировка скрола
       root.classList.toggle('overflow-hidden');
-      // затемнение страницы при открытии меню
-      // root.classList.toggle('root__opened');
       navigation.classList.toggle('header__navigation_opened');
       navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
     })
@@ -140,16 +146,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // // animare 3D Cards OPENED ------------
-  
+
     // .cards__wrapper {
     //   perspective: 1000px;
     //   transform-style: preserve-3d;
     // }
-  
+
     // .cards{
     //   transition: transform 0.4s linear;
     // } 
-    
+
   // const card = document.querySelector('.cards');
 
 

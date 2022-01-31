@@ -16,33 +16,33 @@
   }
 }
 
+ /* контур карты */
 .cards {
   margin: 60px auto;
   max-width: 560px;
   max-height: 350px;
   width: 80vw;
   height: 50vw;
-  background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
-  position: relative;
-  border-radius: 0.45rem;
-
-  transition-duration: .4s;
-
-}
-
-.cards::before {
-  content: "";
   background: linear-gradient(120deg, #343338 0%, #141318 100%);
   box-shadow: 24px 20px 35px #0a080eb0;
-  position: absolute;
-  left:-1px;
-  top:-1px;
-  right:-1px;
-  bottom:-1px;
+  position: relative;
   border-radius: 0.5rem;
-  z-index: -1;
+  transition-duration: .4s;
 }
 
+/* карточка  */
+.cards::before {
+  content: "";
+  background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
+  position: absolute;
+  border-radius: 0.4rem;
+  left:2px;
+  top:2px;
+  right:2px;
+  bottom:2px;
+}
+
+/* изобращение на карточке */
 .cards::after {
   content: "";
   position: absolute;

@@ -22,7 +22,9 @@
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/text/text.css);
 @import url(../blocks/services/services.css);
+
 @import url(../blocks/clients/clients.css);
+
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/training/training.css);
 @import url(../blocks/selection/selection.css);
