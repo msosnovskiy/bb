@@ -25,7 +25,7 @@
 }
 
 .contacts__maps_cover::after {
-  content: "Чтобы переместить карту, проведите по ней двумя пальцами";
+  content: "Чтобы переместить карту проведите по ней двумя пальцами";
   font-weight: 500;
   color: #f4f4f4;
   text-align: center;
