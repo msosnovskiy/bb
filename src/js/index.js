@@ -15,18 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
 
-
-
-  // GSAP Scroll trigger ---------   OPENED    ------------------
-
-  gsap.fromTo('.company', {x: 200,opacity: 0,},{x: 0,opacity: 1,duration: 1});
-  gsap.fromTo('.company__wrapper', {x: -200,opacity: 0,},{x: 0,opacity: 1,duration: 0.5});
-  gsap.fromTo('.button', {x: -200,},{x: 0, duration: 1});
-
-
-  // GSAP Scroll trigger ---------   CLOSED    ------------------
-
-
   // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
   //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
 
