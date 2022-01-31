@@ -16,3 +16,30 @@
 .root.overflow-hidden {
   overflow: hidden;
 }
+
+.block_wrap {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.block {
+  width: 33.3vw;
+  height: 100vh;
+}
+
+.blockOne {
+  background-color: #403E44;
+}
+
+.blockTwo {
+  background-color: #39373D;
+}
+
+.blockThree {
+  width: 33.4vw;
+  background-color: #2B292F;
+}

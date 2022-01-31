@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const textArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+  const textArray = ['Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
 
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
@@ -12,6 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.header__link');
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
+
+
+  var tl = gsap.timeline();
+
+  tl.to('.blockOne', { opacity: 0, yPercent: -100, duration: .5, ease: 'power1' })
+    .to('.blockTwo', { opacity: 0, yPercent: -100, duration: .5, ease: 'power1' })
+    .to('.blockThree', { opacity: 0, yPercent: -100, duration: .5, ease: 'power1' })
+    .from('.header', { opacity: 0, ease: 'power1' })
+    .from('.company', { opacity: 0, duration: .5, ease: 'power1' })
+    .from('.company__title', { y: 20, opacity: 0, duration: .35, ease: 'power4' })
+    .from('.company__subtitle', { y: 20, opacity: 0, duration: .35, ease: 'power4' })
+    .from('.company__button', { y: 20, opacity: 0, duration: .35, ease: 'power4' })
+
 
   // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
   //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
