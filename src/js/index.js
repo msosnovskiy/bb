@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const textArray = ['Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+  const textArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
 
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
@@ -12,14 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.header__link');
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
-
-
-  var tl = gsap.timeline();
-
-  tl.from('.header', { opacity: 0, duration: 1.2, ease: 'power1' })
-    .from('.company', { opacity: 0, duration: .7, ease: 'power1' })
-    .from('.company__wrapper', { opacity: 0, duration: .5, ease: 'power1' })
-
 
   // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
   //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
