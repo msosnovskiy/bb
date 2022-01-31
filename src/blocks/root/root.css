@@ -27,19 +27,6 @@
 }
 
 .block {
-  width: 33.3vw;
+  width: 10vw;
   height: 100vh;
-}
-
-.blockOne {
-  background-color: #403E44;
-}
-
-.blockTwo {
-  background-color: #39373D;
-}
-
-.blockThree {
-  width: 33.4vw;
-  background-color: #2B292F;
 }
