@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Glitch slider OPENED  -----------------------
 
-  var images = [
-    './images/about_1.jpg',
-    './images/about_2.jpg',
-    './images/about_3.jpg',
-    './images/about_4.jpg',
-    './images/about_5.jpg'
-  ];
+  // var images = [
+  //   './images/about_1.jpg',
+  //   './images/about_2.jpg',
+  //   './images/about_3.jpg',
+  //   './images/about_4.jpg',
+  //   './images/about_5.jpg'
+  // ];
   // instanciate slider
   // let glitchSlider = new rbgShiftSlider({
   //   nav: false,
