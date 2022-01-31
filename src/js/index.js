@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.querySelector('.menu__button');
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
+  const mapOne = document.querySelector('#mapOne');
+  const mapTwo = document.querySelector('#mapTwo');
+
+
+
 
   // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
   //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
@@ -22,7 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // === OOP opened ===
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
+  const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
+  const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
   // === OOP closed ===
+
+
 
   // Glitch slider OPENED  -----------------------
 
@@ -33,27 +42,31 @@ document.addEventListener('DOMContentLoaded', () => {
     './images/about_4.jpg',
     './images/about_5.jpg'
   ];
-        // instanciate slider
-        let glitchSlider = new rbgShiftSlider({
-          nav : false,
-          // navElement: '.scene-nav',
-          slideImages: images,
-          stageWidth: 1920,
-          stageHeight: 1080,
-          
-          displacementImage: './images/displace-circle.jpg',
-          fullScreen: false,
-          transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
-          transitionGhostDuration : 0.25,
-          transitionFilterIntensity: 350,
-          transitionSpriteIntensity: 2,
-          mouseDispIntensity: 3,
-          interactive : true,
-          autoPlay : true,
-          autoPlaySpeed : 3000,
-      });
-      
+  // instanciate slider
+  let glitchSlider = new rbgShiftSlider({
+    nav: false,
+    // navElement: '.scene-nav',
+    slideImages: images,
+    stageWidth: 1920,
+    stageHeight: 1080,
+
+    displacementImage: './images/displace-circle.jpg',
+    fullScreen: false,
+    transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
+    transitionGhostDuration: 0.25,
+    transitionFilterIntensity: 350,
+    transitionSpriteIntensity: 2,
+    mouseDispIntensity: 3,
+    interactive: true,
+    autoPlay: true,
+    autoPlaySpeed: 3000,
+  });
+
   // Glitch slider CLOSED  -----------------------
+
+
+
+  // Menu OPENED ---------------------------------
 
   menu.onclick = function () {
     document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
@@ -76,6 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
       navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
     })
   })
+  // Menu CLOSED ---------------------------------
+
 
   // Glitch для текста Opened-----------------
 
@@ -118,8 +133,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   selection.setEventListeners();
-
+  mapOnePrompt.setEventListener();
+  mapTwoPrompt.setEventListener();
 })
 
 
 
+  // // animare 3D Cards OPENED ------------
+  
+    // .cards__wrapper {
+    //   perspective: 1000px;
+    //   transform-style: preserve-3d;
+    // }
+  
+    // .cards{
+    //   transition: transform 0.4s linear;
+    // } 
+    
+  // const card = document.querySelector('.cards');
+
+
+  // function startRotate(event) {
+  //   const halfHeight = card.offsetHeight / 2;
+  //   const halfWidth = card.offsetWidth / 2;
+  //   card.style.transform = 'rotateX(' + -(event.offsetY - halfHeight) /20 + 'deg) rotateY(' + (event.offsetX - halfWidth) / 30 + 'deg)'
+  // }
+
+  // function stopRotate() {
+  //   card.style.transform = 'rotate(0)'
+  // }
+
+  // // mousemove 
+  // card.addEventListener('mousemove', (event) => {
+  //   startRotate(event);
+  // })
+  // // mouseout
+  // card.addEventListener('mouseout', (event) => {
+  //   stopRotate(event);
+  // })
+
+  // // animare 3D Cards CLOSED ------------

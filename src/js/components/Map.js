@@ -1,4 +1,4 @@
-export default class Map {
+class Map {
   constructor(ymap, classPrompt) {
     this.ymap = ymap;
     this.classPrompt = classPrompt;

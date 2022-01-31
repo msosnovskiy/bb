@@ -1,3 +1,21 @@
+@keyframes translateCards {
+  0% {
+    transform: rotateX(3.5deg) rotateY(-0.5deg);
+  }
+  25% {
+    transform: rotateX(0.5deg) rotateY(12deg);
+  }
+  50% {
+    transform: rotateX(-7deg) rotateY(-0.5deg);
+  }
+  75% {
+    transform: rotateX(0.5deg) rotateY(-12deg);
+  }
+  100% {
+    transform: rotateX(3.5deg) rotateY(-0.5deg);
+  }
+}
+
 .cards {
   margin: 60px auto;
   max-width: 560px;
@@ -7,6 +25,9 @@
   background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
   position: relative;
   border-radius: 0.45rem;
+
+  transition-duration: .4s;
+
 }
 
 .cards::before {
@@ -36,4 +57,3 @@
   background-size: 45%;
   border-radius: 0.5rem;
 }
-
