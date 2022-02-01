@@ -41,24 +41,25 @@ document.addEventListener('DOMContentLoaded', () => {
     './images/about_5.jpg'
   ];
   // instanciate slider
-  // let glitchSlider = new rbgShiftSlider({
-  //   nav: false,
-  //   // navElement: '.scene-nav',
-  //   slideImages: images,
-  //   stageWidth: 1920,
-  //   stageHeight: 1080,
 
-  //   displacementImage: './images/displace-circle.jpg',
-  //   fullScreen: false,
-  //   transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
-  //   transitionGhostDuration: 0.25,
-  //   transitionFilterIntensity: 350,
-  //   transitionSpriteIntensity: 2,
-  //   mouseDispIntensity: 3,
-  //   interactive: true,
-  //   autoPlay: true,
-  //   autoPlaySpeed: 3000,
-  // });
+  let glitchSlider = new rbgShiftSlider({
+    nav: false,
+    // navElement: '.scene-nav',
+    slideImages: images,
+    stageWidth: 1920,
+    stageHeight: 1080,
+
+    displacementImage: './images/displace-circle.jpg',
+    fullScreen: false,
+    transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
+    transitionGhostDuration: 0.25,
+    transitionFilterIntensity: 350,
+    transitionSpriteIntensity: 2,
+    mouseDispIntensity: 3,
+    interactive: true,
+    autoPlay: true,
+    autoPlaySpeed: 3000,
+  });
 
   // Glitch slider CLOSED  -----------------------
 
