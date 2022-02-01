@@ -49,13 +49,13 @@
         <h1 class="company__title">Beauti<span class="span span_br"></span>Baza</h1>
         <p class="company__subtitle color color_accent">Бьюти пространство<span class="span span_br"></span>твоего
           города</p>
-          <a href="#" class="company__button button color color_accent">Онлайн запись</a>
+        <a href="#" class="company__button button color color_accent">Онлайн запись</a>
       </div>
 
       <div class="company__contacts">
         <a href="tel:7397" class="company__phone">
           <svg class="link link_phone">
-            <use xlink:href="#phone"></use>
+            <use xlink:href="#phonenumb"></use>
           </svg>
           7397
         </a>
@@ -101,7 +101,6 @@
 
     <section class="services" id="services">
       <div class="services__sliders">
-        <!-- <div class="services__item services__item_brow"> -->
         <div class="services__item services__item_brow">
           <h3 class="title">Услуги<span class="color_transparent"> / </span><span
               class="color color_accent">ногти</span></h3>
@@ -327,7 +326,9 @@
         <div class="training__wrap">
           <a href="https://my-bb.by/" class="training__link link link_pages" target="_blank" rel="noopener">Beauti Baza
             SHOP</a>
-          <img loading="lazy" src="./images/basket.svg" alt="иконка" class="training__icon">
+            <svg class="link link_social training__icon">
+              <use xlink:href="#basket"></use>
+            </svg>
         </div>
       </div>
     </section>
@@ -355,15 +356,21 @@
         <div class="contacts__item">
           <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;1</span></h3>
           <div class="contacts__info">
-            <img loading="lazy" src="./images/location.svg" alt="иконка" class="contacts__image">
+            <svg class="contacts__image">
+              <use xlink:href="#location"></use>
+            </svg>
             <p class="contacts__text">г. Гомель, улица&nbsp;Кирова,&nbsp;20</p>
           </div>
           <div class="contacts__info">
-            <img loading="lazy" src="./images/clock.svg" alt="иконка" class="contacts__image">
+            <svg class="contacts__image">
+              <use xlink:href="#clock"></use>
+            </svg>
             <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
           </div>
           <div class="contacts__info">
-            <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
+            <svg class="contacts__image">
+              <use xlink:href="#phone"></use>
+            </svg>
             <a href="tel:7397" class="contacts__text">7397</a>
           </div>
         </div>
@@ -374,15 +381,21 @@
         <div class="contacts__item">
           <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;2</span></h3>
           <div class="contacts__info">
-            <img loading="lazy" src="./images/location.svg" alt="иконка" class="contacts__image">
+            <svg class="contacts__image">
+              <use xlink:href="#location"></use>
+            </svg>
             <p class="contacts__text">г. Гомель, проспект&nbsp;Октября,&nbsp;95</p>
           </div>
           <div class="contacts__info">
-            <img loading="lazy" src="./images/clock.svg" alt="иконка" class="contacts__image">
+            <svg class="contacts__image">
+              <use xlink:href="#clock"></use>
+            </svg>
             <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
           </div>
           <div class="contacts__info">
-            <img loading="lazy" src="./images/phone.svg" alt="иконка" class="contacts__image">
+            <svg class="contacts__image">
+              <use xlink:href="#phone"></use>
+            </svg>
             <a href="tel:7397" class="contacts__text">7397</a>
           </div>
         </div>
@@ -459,7 +472,7 @@
         <path
           d="M13.0593 10.5992c1.2495.2686 2.2533.8987 3.0113 1.8905.7579.971 1.1369 2.0867 1.1369 3.3471 0 1.8182-.6351 3.2644-1.9051 4.3388-1.2496 1.0537-3.0011 1.5806-5.2545 1.5806H0V0h9.71c2.1918 0 3.9023.5062 5.1315 1.5186 1.2495 1.0124 1.8743 2.3864 1.8743 4.1219 0 1.281-.338 2.345-1.014 3.1921-.6555.8472-1.5364 1.436-2.6425 1.7666ZM5.2544 8.8017H8.696c.8604 0 1.5159-.186 1.9666-.5579.4712-.3926.7067-.9607.7067-1.7045 0-.7439-.2355-1.312-.7067-1.7046-.4507-.3925-1.1062-.5888-1.9666-.5888H5.2544v4.5558Zm3.8717 8.6776c.8809 0 1.5569-.1962 2.028-.5888.4917-.4132.7375-1.0021.7375-1.7665 0-.7645-.2561-1.3637-.7682-1.7976-.4916-.4338-1.1779-.6508-2.0587-.6508H5.2544v4.8037h3.8717ZM24.5876 4.2459v4.4008h7.0367v4.0909h-7.0367v4.7727h7.9585v4.2459H19.3332V0h13.2129v4.2459h-7.9585ZM48.4635 17.9132h-8.0506l-1.2906 3.843H33.622L41.4269 0h6.084l7.8049 21.7562h-5.5617l-1.2906-3.843Zm-1.352-4.0909-2.6733-7.9649-2.6426 7.9649h5.3159ZM61.9316 0v13.0165c0 1.3017.3175 2.3037.9525 3.0062.6351.7025 1.5671 1.0537 2.7962 1.0537 1.2291 0 2.1715-.3512 2.827-1.0537.6555-.7025.9833-1.7045.9833-3.0062V0h5.2544v12.9855c0 1.9422-.4097 3.5847-1.2291 4.9277-.8194 1.343-1.9256 2.3554-3.3186 3.0372-1.3725.6818-2.9089 1.0227-4.6091 1.0227-1.7003 0-3.2264-.3305-4.5785-.9917-1.3315-.6818-2.3865-1.6942-3.1649-3.0372-.7784-1.3636-1.1677-3.0165-1.1677-4.9587V0h5.2545ZM93.0304 0v4.2459H87.315v17.5103h-5.2544V4.2459h-5.7154V0h16.6852ZM100 0v21.7562h-5.2544V0H100ZM13.0593 33.843c1.2495.2686 2.2533.8987 3.0113 1.8905.7579.971 1.1369 2.0867 1.1369 3.3471 0 1.8182-.6351 3.2644-1.9051 4.3388C14.0528 44.4731 12.3013 45 10.0479 45H0V23.2438h9.71c2.1918 0 3.9023.5062 5.1315 1.5186 1.2495 1.0124 1.8743 2.3864 1.8743 4.1219 0 1.281-.338 2.345-1.014 3.1921-.6555.8472-1.5364 1.436-2.6425 1.7666Zm-7.8049-1.7975H8.696c.8604 0 1.5159-.186 1.9666-.5579.4712-.3926.7067-.9607.7067-1.7045 0-.7438-.2355-1.312-.7067-1.7046-.4507-.3926-1.1062-.5888-1.9666-.5888H5.2544v4.5558Zm3.8717 8.6776c.8809 0 1.5569-.1962 2.028-.5888.4917-.4132.7375-1.0021.7375-1.7665 0-.7645-.2561-1.3637-.7682-1.7976-.4916-.4338-1.1779-.6508-2.0587-.6508H5.2544v4.8037h3.8717ZM32.7612 41.157h-8.0507L23.42 45h-5.5003l7.8049-21.7562h6.084L39.6135 45h-5.5617l-1.2906-3.843Zm-1.352-4.0909-2.6733-7.9649-2.6426 7.9649h5.3159ZM46.6595 40.6612h9.2797V45H40.6983v-4.0289l9.2183-13.3885h-9.2183v-4.3388h15.2409v4.0289l-9.2797 13.3885ZM71.8777 41.157h-8.0506L62.5365 45h-5.5002l7.8048-21.7562h6.0841L78.73 45h-5.5617l-1.2906-3.843Zm-1.352-4.0909-2.6733-7.9649-2.6426 7.9649h5.3159Z" />
       </symbol>
-      <symbol id="phone" viewBox="0 0 30 30" width="30" height="30">
+      <symbol id="phonenumb" viewBox="0 0 30 30" width="30" height="30">
         <path
           d="M7.82667 13.3867C9.74667 17.16 12.84 20.24 16.6133 22.1733L19.5467 19.24C19.9067 18.88 20.44 18.76 20.9067 18.92C22.4 19.4133 24.0133 19.68 25.6667 19.68C26.4 19.68 27 20.28 27 21.0133V25.6667C27 26.4 26.4 27 25.6667 27C13.1467 27 3 16.8533 3 4.33333C3 3.6 3.6 3 4.33333 3H9C9.73333 3 10.3333 3.6 10.3333 4.33333C10.3333 6 10.6 7.6 11.0933 9.09333C11.24 9.56 11.1333 10.08 10.76 10.4533L7.82667 13.3867Z" />
       </symbol>
@@ -489,6 +502,18 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M0 26.4443c0-.6136.4975-1.1111 1.1111-1.1111h23.3332c.6137 0 1.1111.4975 1.1111 1.1111 0 .6137-.4974 1.1111-1.1111 1.1111H1.1111C.4975 27.5554 0 27.058 0 26.4443ZM8.8888 2C9.5025 2 10 2.4975 10 3.1111v4.4444c0 .6137-.4975 1.1111-1.1112 1.1111-.6136 0-1.111-.4974-1.111-1.111V3.111C7.7777 2.4975 8.2751 2 8.8887 2ZM13.3333 2c.6136 0 1.1111.4975 1.1111 1.1111v4.4444c0 .6137-.4975 1.1111-1.1111 1.1111-.6137 0-1.1111-.4974-1.1111-1.111V3.111c0-.6136.4974-1.1111 1.1111-1.1111ZM17.7777 2c.6136 0 1.1111.4975 1.1111 1.1111v4.4444c0 .6137-.4975 1.1111-1.1111 1.1111-.6137 0-1.1111-.4974-1.1111-1.111V3.111c0-.6136.4974-1.1111 1.1111-1.1111ZM26.971 13.3683c-.2634-.1366-.6981-.2572-1.4156-.2572v-2.2223c.9492 0 1.7645.1572 2.4386.5067.6938.3598 1.1672.8871 1.4719 1.4964.5362 1.0725.535 2.4144.534 3.4286l-.0001.1239c0 1.3916-.5254 2.8091-1.6769 3.872-1.1522 1.0636-2.8326 1.6835-4.9897 1.6835v-2.2222c1.7318 0 2.8292-.4912 3.4825-1.0942.654-.6038.9619-1.4086.9619-2.2391 0-1.1954-.0244-2.0087-.2993-2.5587-.112-.224-.2636-.3911-.5073-.5174Z" />
       </symbol>
+      <symbol id="basket" viewBox="0 0 30 30" width="30" height="30">
+        <path d="M14 25a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM26 25a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M3.848 4.5H1v-3h3.232a2.5 2.5 0 0 1 2.415 1.856L10.152 16.5h13.67l.767-3.136H14v-3h11.323l.766-3.137H10v-3h16.726a2.5 2.5 0 0 1 2.429 3.094l-2.512 10.273a2.5 2.5 0 0 1-2.428 1.906H9.768a2.5 2.5 0 0 1-2.415-1.856L3.848 4.5Z"/>
+      </symbol>
+      <symbol id="location" width="32" height="32" viewBox="0 0 32 32">
+        <path d="M16 2a12 12 0 0 1 12 12c0 4.968-3.787 10.173-11.2 15.733a1.333 1.333 0 0 1-1.6 0C7.787 24.173 4 18.968 4 14A12 12 0 0 1 16 2Zm0 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/>
+      </symbol>
+      <symbol id="clock" width="32" height="32" viewBox="0 0 32 32">
+        <path d="M15.987 3C8.811 3 3 8.824 3 16s5.811 13 12.987 13C23.176 29 29 23.176 29 16S23.176 3 15.987 3ZM21.2 21.2a1.296 1.296 0 0 1-1.833 0l-4.277-4.277A1.3 1.3 0 0 1 14.7 16v-5.2c0-.715.585-1.3 1.3-1.3.715 0 1.3.585 1.3 1.3v4.667l3.9 3.9a1.295 1.295 0 0 1 0 1.833Z"/>
+      </symbol>
+      <symbol id="phone" width="32" height="32" viewBox="0 0 32 32">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 29c7.18 0 13-5.82 13-13S23.18 3 16 3 3 8.82 3 16s5.82 13 13 13Zm.941-8.816a11.782 11.782 0 0 1-5.125-5.125l1.71-1.711a.78.78 0 0 0 .195-.794 8.835 8.835 0 0 1-.443-2.776A.78.78 0 0 0 12.5 9H9.778A.78.78 0 0 0 9 9.778C9 17.08 14.919 23 22.222 23a.78.78 0 0 0 .778-.778v-2.714a.78.78 0 0 0-.778-.778 8.874 8.874 0 0 1-2.776-.443.773.773 0 0 0-.794.186l-1.71 1.711Z"/>
+      </symbol>
     </svg>
   </div>
 
@@ -496,17 +521,18 @@
   <script src="./js/components/Map.js"></script>
 
   <!-- slider ABOUT -->
-  <!-- <script src="./js/vendor/pixi.min.js" defer></script> -->
-  <!-- <script src="./js/vendor/TweenMax2.1.3.min.js" defer></script> -->
-  <!-- <script src="./js/vendor/rgbShiftSlider.min.js" defer></script> -->
+  <script src="./js/vendor/pixi.min.js" defer></script>
+  <script src="./js/vendor/TweenMax2.1.3.min.js" defer></script>
+  <script src="./js/vendor/rgbShiftSlider.min.js" defer></script>
   <!-- Slider close  -->
 
   <!-- y map  -->
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb" type="text/javascript" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb"
+    type="text/javascript" defer></script>
   <script src="./js/vendor/jquery.min.js" type="text/javascript" defer></script>
-  <script src="./js/vendor/ymap.js" defer></script> -->
+  <script src="./js/vendor/ymap.js" defer></script>
   <!-- y map close  -->
-  
+
   <script src="./js/index.js"></script>
 </body>
 

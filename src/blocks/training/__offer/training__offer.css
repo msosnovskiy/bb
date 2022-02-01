@@ -2,11 +2,22 @@
   margin-top: 60px;
   min-height: 40vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.training__offer::after {
+  content: "";
+  width: 40vw;
+  height: 40vh;
   background-image: url(../../../images/dotstwo.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
