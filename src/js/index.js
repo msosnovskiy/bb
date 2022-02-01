@@ -1,6 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const textArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+  const imagesGlitchSlider = [
+    './images/about_1.jpg',
+    './images/about_2.jpg',
+    './images/about_3.jpg',
+    './images/about_4.jpg',
+    './images/about_5.jpg'
+  ];
+
+  const glitchSliderConfig = {
+    nav: false,
+    // navElement: '.scene-nav',
+    slideImages: imagesGlitchSlider,
+    stageWidth: 1920,
+    stageHeight: 1080,
+
+    displacementImage: './images/displace-circle.jpg',
+    fullScreen: false,
+    transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
+    transitionGhostDuration: 0.25,
+    transitionFilterIntensity: 350,
+    transitionSpriteIntensity: 2,
+    mouseDispIntensity: 3,
+    interactive: true,
+    autoPlay: true,
+    autoPlaySpeed: 3000,
+  };
+
 
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
@@ -36,42 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
-  // === OOP closed ===
+  const glitchSlider = new rbgShiftSlider(glitchSliderConfig);
 
-
-
-  // Glitch slider OPENED  -----------------------
-
-  var images = [
-    './images/about_1.jpg',
-    './images/about_2.jpg',
-    './images/about_3.jpg',
-    './images/about_4.jpg',
-    './images/about_5.jpg'
-  ];
-  // instanciate slider
-
-  let glitchSlider = new rbgShiftSlider({
-    nav: false,
-    // navElement: '.scene-nav',
-    slideImages: images,
-    stageWidth: 1920,
-    stageHeight: 1080,
-
-    displacementImage: './images/displace-circle.jpg',
-    fullScreen: false,
-    transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
-    transitionGhostDuration: 0.25,
-    transitionFilterIntensity: 350,
-    transitionSpriteIntensity: 2,
-    mouseDispIntensity: 3,
-    interactive: true,
-    autoPlay: true,
-    autoPlaySpeed: 3000,
-  });
-
-  // Glitch slider CLOSED  -----------------------
-
+// --------------------------------------------------------------------------------------------------------------------
 
 
 
