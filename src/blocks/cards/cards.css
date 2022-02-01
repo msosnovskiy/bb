@@ -33,7 +33,7 @@
 /* карточка  */
 .cards::before {
   content: "";
-  background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
+  background: linear-gradient(120deg, #302E34 0%, #1A181E 100%);
   position: absolute;
   border-radius: .9rem;
   left:2px;

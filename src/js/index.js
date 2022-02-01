@@ -6,25 +6,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const bannerText = document.querySelector('.company__title');
 
   const root = document.querySelector('.root');
-  const menu = document.querySelector('.menu');
+  const menuContainer = document.querySelector('.menu');
   const menuButton = document.querySelector('.menu__button');
+  const menuIcon = document.querySelector('.menu__icon');
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
 
-  
+
+
+  // GSAP
+
+  // var tl = gsap.timeline();
+  // tl.to('.cards', { duration: 2 })
+
+
+  // GSAP END
+
 
   // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
   //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
 
   ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20'));
   ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95'));
-  // ----------------------------- Yandex maps CLOSED ------------------------------------------------------------------
 
-
-  // === OOP opened ===
+  const menu = new Menu(root, menuContainer, menuButton, menuIcon, navigation, menuLinks);
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
+
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
   // === OOP closed ===
@@ -64,27 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Glitch slider CLOSED  -----------------------
 
 
-
-  // Menu OPENED ---------------------------------
-
-  menu.onclick = function () {
-    document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
-    root.classList.toggle('overflow-hidden');
-    // блокировка скрола
-    navigation.classList.toggle('header__navigation_opened');
-    navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
-  }
-
-  menuLinks.forEach((item) => {
-    item.addEventListener('click', () => {
-      document.querySelector('.menu__icon').classList.toggle('menu__icon_active');
-      // блокировка скрола
-      root.classList.toggle('overflow-hidden');
-      navigation.classList.toggle('header__navigation_opened');
-      navigation.closest('.header__navigation_opened') ? menuButton.textContent = 'Закрыть' : menuButton.textContent = 'Меню';
-    })
-  })
-  // Menu CLOSED ---------------------------------
 
 
   // Glitch для текста Opened-----------------
@@ -127,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 600);
 
 
+  menu.setEventListener();
   selection.setEventListeners();
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
