@@ -26,7 +26,7 @@
   background: linear-gradient(120deg, #343338 0%, #141318 100%);
   box-shadow: 24px 20px 35px #0a080eb0;
   position: relative;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   transition-duration: .4s;
 }
 
@@ -35,7 +35,7 @@
   content: "";
   background: linear-gradient(111.47deg, #302E34 0%, #1A181E 100%);
   position: absolute;
-  border-radius: 0.4rem;
+  border-radius: .9rem;
   left:2px;
   top:2px;
   right:2px;
@@ -55,5 +55,5 @@
   background-position: bottom right;
   background-size: contain;
   background-size: 45%;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
