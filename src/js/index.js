@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
   const glitchSlider = new rbgShiftSlider(glitchSliderConfig);
-  const smoothScroll = new SmoothScroll(root);
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -113,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
   selection.setEventListeners();
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
-  smoothScroll.setEventListener();
 })
 
 
