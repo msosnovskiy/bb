@@ -1,0 +1,5 @@
+.popup__name {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 10px 0 0;
+}

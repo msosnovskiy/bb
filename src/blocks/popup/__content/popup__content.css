@@ -1,0 +1,8 @@
+.popup__content {
+  /* overflow: scroll; */
+  overflow-y: scroll;
+}
+
+.popup ::-webkit-scrollbar { 
+  display: none; 
+}

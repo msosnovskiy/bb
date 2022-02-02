@@ -1,0 +1,40 @@
+@import url(./__header/popup__header.css);
+@import url(./__name/popup__name.css);
+@import url(./__wrapper/popup__wrapper.css);
+
+@import url(./__cost/popup__cost.css);
+@import url(./__value/popup__value.css);
+@import url(./__button/popup__button.css);
+@import url(./__content/popup__content.css);
+
+@import url(./__content-item/popup__content-item.css);
+@import url(./__content-title/popup__content-title.css);
+@import url(./__content-cost/popup__content-cost.css);
+@import url(./__content-subtitle/popup__content-subtitle.css);
+@import url(./__content-dots/popup__content-dots.css);
+@import url(./__content-price/popup__content-price.css);
+
+
+@import url(./__footer/popup__footer.css);
+@import url(./__link/popup__link.css);
+
+.popup {
+  position: fixed;
+  width: calc(100% - 40px);
+  max-height: calc(100vh - 200px);
+  height: auto;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  display: none;
+  flex-direction: column;
+  color: #201E24;
+  padding: 18px 20px 20px;
+  justify-content: space-between;
+}
+
+.popup_opened {
+  display: flex;
+}

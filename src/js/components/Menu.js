@@ -10,8 +10,9 @@ class Menu {
 
   _switch() {
     this.burger.classList.toggle('menu__icon_active');
-    this.body.classList.toggle('overflow-hidden');
+    this.body.classList.toggle('no-scroll');
     this.navigation.classList.toggle('header__navigation_opened');
+    this.navigation.closest('.header__navigation_opened') ? this.button.textContent = 'Закрыть' : this.button.textContent = 'Меню';
     this.navigation.closest('.header__navigation_opened') ? this.button.textContent = 'Закрыть' : this.button.textContent = 'Меню';
   }
 

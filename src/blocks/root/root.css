@@ -13,10 +13,11 @@
   position: relative;
 }
 
-.root.overflow-hidden {
+.root.no-scroll {
   overflow: hidden;
 }
 
+/* 
 .block_wrap {
   display: flex;
   flex-direction: row;
@@ -29,4 +30,4 @@
 .block {
   width: 10vw;
   height: 100vh;
-}
+} */

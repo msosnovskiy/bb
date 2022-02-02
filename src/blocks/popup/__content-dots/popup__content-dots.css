@@ -1,0 +1,7 @@
+.popup__content-dots {
+  flex: 1 0;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.322);
+  height: 0.7em;
+  margin: 0 2px;
+  
+}
