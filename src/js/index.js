@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const textArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+  const prazeArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
   const imagesGlitchSlider = [
     './images/about_1.jpg',
     './images/about_2.jpg',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.header__link');
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
-  const allLinksId = document.querySelectorAll('a[href*="#"]');
+  // const allLinksId = document.querySelectorAll('a[href*="#"]');
 
   // GSAP
 
@@ -63,51 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
   const glitchSlider = new rbgShiftSlider(glitchSliderConfig);
+  const glitch = new Glitch(prazeArray, bannerText, 600);
 
 // --------------------------------------------------------------------------------------------------------------------
 
-
-
-  // Glitch для текста Opened-----------------
-
-  let i = 0;
-  const slideText = (item, index, arrayLength) => {
-    //если фраза состоит более 2 слов - вставляем через перенос слова
-    if (item.split(' ').length > 1) {
-      let phrase = item.split(' ').join('<br>');
-      bannerText.innerHTML = phrase;
-
-      //Добавляем анимацию последнему слову
-      if (index === arrayLength - 1) {
-        bannerText.classList.add('company__title_glitch');
-        let spanFirst = document.createElement('span');
-        spanFirst.classList.add('company__title_span')
-        let spanSecond = document.createElement('span');
-        spanSecond.classList.add('company__title_span')
-        bannerText.prepend(spanFirst);
-        bannerText.prepend(spanSecond);
-        spanFirst.innerHTML = phrase;
-        spanSecond.innerHTML = phrase;
-
-      }
-    }
-
-    //если фраза состоит из одного слова то просто меняем текст
-    else bannerText.textContent = item;
-  }
-
-  let intervalID = setInterval(() => {
-    if (textArray[i] != undefined) {
-      slideText(textArray[i], i, textArray.length);
-      i++;
-    }
-    // Приостанавливаем выполнение функции если массив пуст
-    else {
-      clearInterval(intervalID);
-    }
-  }, 600);
-
-
+  glitch.run();
   menu.setEventListener();
   selection.setEventListeners();
   mapOnePrompt.setEventListener();
