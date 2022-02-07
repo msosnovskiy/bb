@@ -40,20 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.header__link');
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
-  // const allLinksId = document.querySelectorAll('a[href*="#"]');
 
-  // GSAP
-
-  // var tl = gsap.timeline();
-  // tl.to('.cards', { duration: 2 })
-
-
-  // GSAP END
-
-
-  // ----------------------------- Yandex maps OPENED ------------------------------------------------------------------
-  //Id - Id блока карты, buttonId - Id кнопкм, coordinatesX и coordinatesY координаты, заголовок и текст метки
-
+  //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
   ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20'));
   ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95'));
 
@@ -74,39 +62,3 @@ document.addEventListener('DOMContentLoaded', () => {
   mapTwoPrompt.setEventListener();
 })
 
-
-
-  // // animare 3D Cards OPENED ------------
-
-    // .cards__wrapper {
-    //   perspective: 1000px;
-    //   transform-style: preserve-3d;
-    // }
-
-    // .cards{
-    //   transition: transform 0.4s linear;
-    // } 
-
-  // const card = document.querySelector('.cards');
-
-
-  // function startRotate(event) {
-  //   const halfHeight = card.offsetHeight / 2;
-  //   const halfWidth = card.offsetWidth / 2;
-  //   card.style.transform = 'rotateX(' + -(event.offsetY - halfHeight) /20 + 'deg) rotateY(' + (event.offsetX - halfWidth) / 30 + 'deg)'
-  // }
-
-  // function stopRotate() {
-  //   card.style.transform = 'rotate(0)'
-  // }
-
-  // // mousemove 
-  // card.addEventListener('mousemove', (event) => {
-  //   startRotate(event);
-  // })
-  // // mouseout
-  // card.addEventListener('mouseout', (event) => {
-  //   stopRotate(event);
-  // })
-
-  // // animare 3D Cards CLOSED ------------
