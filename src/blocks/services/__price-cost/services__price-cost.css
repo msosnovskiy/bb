@@ -2,3 +2,10 @@
   font-weight: 700;
   margin: 0;
 }
+
+.services__price-cost::after {
+  content: "byn";
+  color: #f4f4f433;
+  text-transform: uppercase;
+  margin-left: 0.25rem;
+}

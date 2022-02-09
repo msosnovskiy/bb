@@ -28,5 +28,6 @@
     url(../../../images/banner2x.jpg) 2x,
     url(../../../images/banner1x.jpg) 1x
   );
+  opacity: .6;
 }
 

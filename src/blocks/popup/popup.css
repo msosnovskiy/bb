@@ -3,7 +3,6 @@
 @import url(./__wrapper/popup__wrapper.css);
 
 @import url(./__cost/popup__cost.css);
-@import url(./__value/popup__value.css);
 @import url(./__button/popup__button.css);
 
 @import url(./__content/popup__content.css);
@@ -27,14 +26,13 @@
   height: auto;
   max-height: 80vh;
   margin: 20px auto 0;
-  /* margin: 20px; */
   border-radius: 8px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
   flex-direction: column;
-  padding: 14px 20px 20px;
+  padding: 4px 20px 20px;
   justify-content: space-between;
   justify-self: center;
 }
@@ -47,7 +45,6 @@
   /* content: "";
   width: 100vw;
   height: 100vh; */
-  
 }
 
 .popup ::-webkit-scrollbar { 
