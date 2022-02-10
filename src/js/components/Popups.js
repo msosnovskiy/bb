@@ -31,7 +31,6 @@ class Popups {
         const popup = this.createPopup(this.data)._create()
         this.container.appendChild(popup);
         this._open(popup);
-        this.container.classList.add('no-scroll');
       })
     })
 
