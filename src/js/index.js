@@ -43,12 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapTwo = document.querySelector('#mapTwo');
 
   //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
-  ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20'));
-  ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95'));
+  // ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20'));
+  // ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95'));
 
   const menu = new Menu(root, menuContainer, menuButton, menuIcon, navigation, menuLinks);
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
-  const popup = new Popup(root, servicesButtons, 'popup', 'popup__button', '_opened');
+  const createPopup = (...arg) => new Popup(...arg);
+  const popups = new Popups(root, nails, servicesButtons, createPopup, 'popup', 'popup__button', '_opened');
 
 
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
@@ -61,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   glitch.run();
   menu.setEventListener();
   selection.setEventListeners();
-  popup.setEventListeners();
+
+  popups.setEventListeners();
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
 })
