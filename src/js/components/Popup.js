@@ -70,15 +70,12 @@ class Popup {
     const popupButton = this._createElement('button', 'popup__button');
     popupButton.setAttribute('aria-label', 'Закрыть')
     const popupContent = this._createElement('div', 'popup__content');
-
-
-
     this.data.service.forEach((item) => {
       popupContent.appendChild(this._createItem(item));
     })
-
     const popupFooter = this._createElement('p', 'popup__footer', '*Цены указаны с учетом ');
     const popupLink = this._createElement('a', 'popup__link', 'скидки по карте');
+    popupLink.setAttribute('href', '#clients');
 
     popup.appendChild(popupHeader);
     popupHeader.appendChild(popupName);
@@ -90,6 +87,10 @@ class Popup {
     popup.appendChild(popupFooter);
 
     popupButton.addEventListener('click', () => {
+      popup.remove();
+    })
+    
+    popupLink.addEventListener('click', () => {
       popup.remove();
     })
 

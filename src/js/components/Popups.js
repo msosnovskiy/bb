@@ -15,12 +15,12 @@ class Popups {
     popup.classList.add(`${this.popupName}${this.modificatorName}`);
   }
 
-  _close() {
-    // this.popup.classList.remove(`${this.popupName}${this.modificatorName}`);
-  }
+  // _close() {
+  // this.popup.classList.remove(`${this.popupName}${this.modificatorName}`);
+  // }
 
   _render() {
-    const popup =  this.popup(this.data)._create();
+    const popup = this.popup(this.data)._create();
     return popup;
   }
 
@@ -33,9 +33,5 @@ class Popups {
         this._open(popup);
       })
     })
-
-    // this.closeButton.addEventListener('click', () => {
-    //   this._close();
-    // })
   }
 }
