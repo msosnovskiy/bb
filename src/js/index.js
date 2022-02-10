@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.querySelector('.menu__icon');
   const navigation = document.querySelector('.header__navigation');
   const menuLinks = document.querySelectorAll('.header__link');
+  const servicesButtons = document.querySelectorAll('.services__price-more');
   const mapOne = document.querySelector('#mapOne');
   const mapTwo = document.querySelector('#mapTwo');
 
@@ -47,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menu = new Menu(root, menuContainer, menuButton, menuIcon, navigation, menuLinks);
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
+  const popup = new Popup(root, servicesButtons, 'popup', 'popup__button', '_opened');
+
 
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
@@ -58,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   glitch.run();
   menu.setEventListener();
   selection.setEventListeners();
+  popup.setEventListeners();
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
 })
