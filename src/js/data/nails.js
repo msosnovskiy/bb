@@ -117,17 +117,17 @@ const nails = {
         {
           name: 'Вросший ноготь',
           price: '7.4',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Протезирование ногтя',
           price: '12.9',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Наращивание ногтя',
           price: '5.5',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Только пальчики',
@@ -167,7 +167,7 @@ const nails = {
         {
           name: 'Ремонт ногтя',
           price: '0.95',
-          unit: false,
+          unit: true,
         },
       ]
     },
@@ -187,7 +187,7 @@ const nails = {
         {
           name: 'Наращивание ногтя (1/10)',
           price: '2.9',
-          unit: false,
+          unit: true,
         },
       ]
     },
@@ -197,47 +197,47 @@ const nails = {
         {
           name: 'Простой',
           price: '1.3',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Сложный',
           price: '3.4',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Художественная роспись',
           price: '5.5',
-          unit: false,
+          unit: true,
         },
         {
           name: 'French / Лунный',
           price: '0.75',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Кошачий',
           price: '0.34',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Обмре',
           price: '1.4',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Втирка / Фольга / Блетски',
           price: '0.75',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Стразы (1 шт.)',
           price: '0.15',
-          unit: false,
+          unit: true,
         },
         {
           name: 'Царь ноготь',
           price: '5.5',
-          unit: false,
+          unit: true,
         },
       ]
     },
@@ -247,22 +247,22 @@ const nails = {
         {
           name: 'Увлажняющие перчатки',
           price: '3.5',
-          unit: true,
+          unit: false,
         },
         {
           name: 'Массаж',
           price: '2.9',
-          unit: true,
+          unit: false,
         },
         {
           name: 'Парафинотерапия',
           price: '7.5',
-          unit: true,
+          unit: false,
         },
         {
           name: 'Уход ног (скраб + маска)',
           price: '5.5',
-          unit: true,
+          unit: false,
         },
       ]
     },

@@ -31,19 +31,19 @@ class Popup {
       const contentSubtitle = this._createElement('p', 'popup__content-subtitle', i.name);
       const contentDots = this._createElement('div', 'popup__content-dots');
       const contentPrice = this._createElement('p', 'popup__content-price', i.price);
+      contentPrice.setAttribute('data-counter', 1);
+      const contentUnit = this._createElement('p', 'popup__content-subtitle-unit');
 
       // Проверка на штучный элемент
-      if (i.unit) {
-        const contentUnit = this._createElement('p', 'popup__content-subtitle-unit');
-        contentUnit.addEventListener('click', () => {
-          // contentUnit.textContent = 
-        })
+      if (i.unit === true) {
+        console.log('добавлен шт элемент');
 
         contentCost.appendChild(contentSubtitle);
         contentCost.appendChild(contentUnit);
         contentCost.appendChild(contentDots);
         contentCost.appendChild(contentPrice);
       }
+
       else {
         contentCost.appendChild(contentSubtitle);
         contentCost.appendChild(contentDots);
@@ -53,16 +53,35 @@ class Popup {
 
       // Обновление цены при выборе услуги
       contentPrice.addEventListener('click', () => {
+
         if (!contentPrice.closest('.popup__content-price_selected')) {
           contentPrice.classList.add('popup__content-price_selected');
+
+          if (i.unit === true) {
+            contentUnit.textContent = 1;
+            contentUnit.classList.add('popup__content-subtitle-unit_opened');
+          }
+
           if (!contentButton.closest('.popup__content-button_opened')) {
             contentButton.classList.add('popup__content-button_opened');
-            console.log('открытие кнопки');
           }
+
           this.totalPrice = this.totalPrice + Number(i.price);
           this._updatePrice();
         }
+
         else {
+          if (i.unit === true) {
+
+            // !!!! Переделать штучный элемент под data-counter !!!!!!!!!!!!!!!!!!!!!
+            contentUnit.textContent++;
+            let counter = contentUnit.textContent;
+            contentPrice.setAttribute('data-counter', counter);
+
+            console.log(contentUnit.textContent * Number(i.price) + ' цена за штучные услуги');
+            this.totalPrice = this.totalPrice + Number(i.price);
+            this._updatePrice();
+          }
           return
         }
       })
@@ -72,19 +91,33 @@ class Popup {
 
     //Удаление всех услуг и цены при нажатии на крестик в секции
     contentButton.addEventListener('click', () => {
-      const selectedItem = contentItem.querySelectorAll('.popup__content-price_selected');
+      const selectedCountItems = contentItem.querySelectorAll('.popup__content-subtitle-unit_opened');
+      const selectedItems = contentItem.querySelectorAll('.popup__content-price_selected');
       let blockPrice = Number(0);
-      selectedItem.forEach((item) => {
+
+      selectedItems.forEach((item) => {
+      
         item.classList.remove('popup__content-price_selected');
-        blockPrice = blockPrice + Number(item.textContent);
+        blockPrice = blockPrice + Number(item.textContent) * item.dataset.counter;
       })
+
       this.totalPrice = this.totalPrice - blockPrice.toFixed(2);
       this._updatePrice();
       contentButton.classList.remove('popup__content-button_opened');
+
+      if (selectedCountItems.length !== 0) {
+        selectedCountItems.forEach((item) => {
+          item.classList.remove('popup__content-subtitle-unit_opened');
+        })
+      }
+
     })
 
     return contentItem;
   }
+
+
+
 
   // Обновление итоговой стоимости выбранных услуг
   _updatePrice() {

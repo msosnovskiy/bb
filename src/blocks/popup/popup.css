@@ -38,6 +38,7 @@
   padding: 4px 20px 20px;
   justify-content: space-between;
   justify-self: center;
+  overflow: hidden;
 }
 
 .popup_opened {
