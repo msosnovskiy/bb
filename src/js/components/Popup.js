@@ -4,6 +4,7 @@ class Popup {
     this.totalPrice = Number(0);
   }
 
+  // создание элемента по тегу и классу + добавление текста
   _createElement(tag, className, text) {
     const element = document.createElement(tag);
     element.classList.add(className);
@@ -14,41 +15,78 @@ class Popup {
     else return element;
   }
 
-  _createCost(text, cost) {
-    const element = this._createElement('div', 'popup__content-cost');
-    const name = this._createElement('p', 'popup__content-subtitle', text);
-    const dots = this._createElement('div', 'popup__content-dots');
-    const price = this._createElement('p', 'popup__content-price', cost);
-    element.appendChild(name);
-    element.appendChild(dots);
-    element.appendChild(price);
+  // Создание блока услуг
+  _createItem(data) {
+    const contentItem = this._createElement('div', 'popup__content-item');
+    const contentWrapper = this._createElement('div', 'popup__content-wrapper');
+    const contentTitle = this._createElement('h4', 'popup__content-title', data.name);
+    const contentButton = this._createElement('button', 'popup__content-button');
+    contentButton.setAttribute('aria-label', 'Закрыть');
+    contentWrapper.appendChild(contentTitle);
+    contentWrapper.appendChild(contentButton);
+    contentItem.appendChild(contentWrapper);
 
-    price.addEventListener('click', () => {
-      if (price.closest('.popup__content-price_selected')) {
-        price.classList.remove('popup__content-price_selected');
-        this.totalPrice = this.totalPrice - Number(cost);
+    data.item.forEach((i) => {
+      const contentCost = this._createElement('div', 'popup__content-cost');
+      const contentSubtitle = this._createElement('p', 'popup__content-subtitle', i.name);
+      const contentDots = this._createElement('div', 'popup__content-dots');
+      const contentPrice = this._createElement('p', 'popup__content-price', i.price);
+
+      // Проверка на штучный элемент
+      if (i.unit) {
+        const contentUnit = this._createElement('p', 'popup__content-subtitle-unit');
+        contentUnit.addEventListener('click', () => {
+          // contentUnit.textContent = 
+        })
+
+        contentCost.appendChild(contentSubtitle);
+        contentCost.appendChild(contentUnit);
+        contentCost.appendChild(contentDots);
+        contentCost.appendChild(contentPrice);
       }
       else {
-        price.classList.add('popup__content-price_selected');
-        this.totalPrice = this.totalPrice + Number(cost);
+        contentCost.appendChild(contentSubtitle);
+        contentCost.appendChild(contentDots);
+        contentCost.appendChild(contentPrice);
       }
+
+
+      // Обновление цены при выборе услуги
+      contentPrice.addEventListener('click', () => {
+        if (!contentPrice.closest('.popup__content-price_selected')) {
+          contentPrice.classList.add('popup__content-price_selected');
+          if (!contentButton.closest('.popup__content-button_opened')) {
+            contentButton.classList.add('popup__content-button_opened');
+            console.log('открытие кнопки');
+          }
+          this.totalPrice = this.totalPrice + Number(i.price);
+          this._updatePrice();
+        }
+        else {
+          return
+        }
+      })
+
+      contentItem.appendChild(contentCost);
+    })
+
+    //Удаление всех услуг и цены при нажатии на крестик в секции
+    contentButton.addEventListener('click', () => {
+      const selectedItem = contentItem.querySelectorAll('.popup__content-price_selected');
+      let blockPrice = Number(0);
+      selectedItem.forEach((item) => {
+        item.classList.remove('popup__content-price_selected');
+        blockPrice = blockPrice + Number(item.textContent);
+      })
+      this.totalPrice = this.totalPrice - blockPrice.toFixed(2);
       this._updatePrice();
+      contentButton.classList.remove('popup__content-button_opened');
     })
 
-    return element
+    return contentItem;
   }
 
-  _createItem(data) {
-    const item = this._createElement('div', 'popup__content-item');
-    const title = this._createElement('h4', 'popup__content-title', data.name);
-    item.appendChild(title);
-    data.item.forEach((i) => {
-      item.appendChild(this._createCost(i.name, i.price));
-    })
-
-    return item;
-  }
-
+  // Обновление итоговой стоимости выбранных услуг
   _updatePrice() {
     const cost = document.querySelector('.popup__cost');
     if (this.totalPrice.toFixed(2) < 0 || this.totalPrice.toFixed(2) == 0.00) {
@@ -60,6 +98,7 @@ class Popup {
     }
   }
 
+  // Создание попапа
   _create() {
     const popup = this._createElement('div', 'popup');
 
@@ -89,7 +128,7 @@ class Popup {
     popupButton.addEventListener('click', () => {
       popup.remove();
     })
-    
+
     popupLink.addEventListener('click', () => {
       popup.remove();
     })

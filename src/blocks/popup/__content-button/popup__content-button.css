@@ -1,0 +1,42 @@
+.popup__content-button {
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-right: -6px;
+  display: none;
+}
+
+.popup__content-button::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #201E24;
+  position: absolute;
+  transition: transform .1s ease-in, top .1s linear .1s;
+  top: 12px;
+  left: 5px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.popup__content-button::after {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #201E24;
+  position: absolute;
+  transition: transform .1s ease-in, top .1s linear .1s;
+  top: 12px;
+  left: 5px;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+.popup__content-button_opened {
+  display: block;
+}

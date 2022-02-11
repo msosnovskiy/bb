@@ -19,10 +19,10 @@ class Popups {
   // this.popup.classList.remove(`${this.popupName}${this.modificatorName}`);
   // }
 
-  _render() {
-    const popup = this.popup(this.data)._create();
-    return popup;
-  }
+  // _render() {
+  //   const popup = this.popup(this.data)._create();
+  //   return popup;
+  // }
 
   setEventListeners() {
 

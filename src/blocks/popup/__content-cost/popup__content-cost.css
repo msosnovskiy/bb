@@ -5,6 +5,7 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
 .popup__content-cost:last-of-type {
   margin-bottom: 0;
 }

@@ -7,9 +7,12 @@
 
 @import url(./__content/popup__content.css);
 @import url(./__content-item/popup__content-item.css);
+@import url(./__content-wrapper/popup__content-wrapper.css);
 @import url(./__content-title/popup__content-title.css);
+@import url(./__content-button/popup__content-button.css);
 @import url(./__content-cost/popup__content-cost.css);
 @import url(./__content-subtitle/popup__content-subtitle.css);
+@import url(./__content-unit/popup__content-unit.css);
 @import url(./__content-dots/popup__content-dots.css);
 @import url(./__content-price/popup__content-price.css);
 
