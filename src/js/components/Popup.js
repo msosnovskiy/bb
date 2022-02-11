@@ -1,7 +1,7 @@
 class Popup {
   constructor(data) {
     this.data = data;
-    this.totalPrice = Number(0);
+    this.totalPrice = 0;
   }
 
   // создание элемента по тегу и классу + добавление текста
@@ -10,7 +10,7 @@ class Popup {
     element.classList.add(className);
     if (text !== undefined) {
       element.textContent = text;
-      return element
+      return element;
     }
     else return element;
   }
@@ -36,8 +36,6 @@ class Popup {
 
       // Проверка на штучный элемент
       if (i.unit === true) {
-        console.log('добавлен шт элемент');
-
         contentCost.appendChild(contentSubtitle);
         contentCost.appendChild(contentUnit);
         contentCost.appendChild(contentDots);
@@ -49,8 +47,7 @@ class Popup {
         contentCost.appendChild(contentDots);
         contentCost.appendChild(contentPrice);
       }
-
-
+      
       // Обновление цены при выборе услуги
       contentPrice.addEventListener('click', () => {
 
@@ -58,7 +55,7 @@ class Popup {
           contentPrice.classList.add('popup__content-price_selected');
 
           if (i.unit === true) {
-            contentUnit.textContent = 1;
+            contentUnit.textContent = contentPrice.dataset.counter;
             contentUnit.classList.add('popup__content-subtitle-unit_opened');
           }
 
@@ -66,24 +63,22 @@ class Popup {
             contentButton.classList.add('popup__content-button_opened');
           }
 
-          this.totalPrice = this.totalPrice + Number(i.price);
+          this.totalPrice = new Number(this.totalPrice) + new Number(contentPrice.textContent);
           this._updatePrice();
         }
 
         else {
           if (i.unit === true) {
-
-            // !!!! Переделать штучный элемент под data-counter !!!!!!!!!!!!!!!!!!!!!
-            contentUnit.textContent++;
-            let counter = contentUnit.textContent;
+            let counter = contentPrice.dataset.counter;
+            counter++;
+            contentUnit.textContent = counter;
             contentPrice.setAttribute('data-counter', counter);
 
-            console.log(contentUnit.textContent * Number(i.price) + ' цена за штучные услуги');
-            this.totalPrice = this.totalPrice + Number(i.price);
+            this.totalPrice = new Number(this.totalPrice) + new Number(contentPrice.textContent);
             this._updatePrice();
           }
-          return
         }
+
       })
 
       contentItem.appendChild(contentCost);
@@ -91,17 +86,19 @@ class Popup {
 
     //Удаление всех услуг и цены при нажатии на крестик в секции
     contentButton.addEventListener('click', () => {
+
       const selectedCountItems = contentItem.querySelectorAll('.popup__content-subtitle-unit_opened');
       const selectedItems = contentItem.querySelectorAll('.popup__content-price_selected');
-      let blockPrice = Number(0);
+
+      let sectionPrice = Number(0);
 
       selectedItems.forEach((item) => {
-      
         item.classList.remove('popup__content-price_selected');
-        blockPrice = blockPrice + Number(item.textContent) * item.dataset.counter;
+        sectionPrice = sectionPrice + (Number(item.textContent) * Number(item.dataset.counter));
+        item.setAttribute('data-counter', 1);
       })
 
-      this.totalPrice = this.totalPrice - blockPrice.toFixed(2);
+      this.totalPrice = Number(this.totalPrice) - Number(sectionPrice.toFixed(2));
       this._updatePrice();
       contentButton.classList.remove('popup__content-button_opened');
 
@@ -117,12 +114,11 @@ class Popup {
   }
 
 
-
-
   // Обновление итоговой стоимости выбранных услуг
   _updatePrice() {
     const cost = document.querySelector('.popup__cost');
-    if (this.totalPrice.toFixed(2) < 0 || this.totalPrice.toFixed(2) == 0.00) {
+
+    if (this.totalPrice.toFixed(2) < 0 || this.totalPrice.toFixed(2) == 0) {
       this.totalPrice = 0;
       cost.textContent = this.totalPrice;
     }
@@ -139,12 +135,15 @@ class Popup {
     const popupName = this._createElement('h3', 'popup__name', this.data.name);
     const popupWrapper = this._createElement('div', 'popup__wrapper');
     const popupCost = this._createElement('p', 'popup__cost', this.totalPrice);
+
     const popupButton = this._createElement('button', 'popup__button');
     popupButton.setAttribute('aria-label', 'Закрыть')
     const popupContent = this._createElement('div', 'popup__content');
+
     this.data.service.forEach((item) => {
       popupContent.appendChild(this._createItem(item));
     })
+
     const popupFooter = this._createElement('p', 'popup__footer', '*Цены указаны с учетом ');
     const popupLink = this._createElement('a', 'popup__link', 'скидки по карте');
     popupLink.setAttribute('href', '#clients');
@@ -166,7 +165,10 @@ class Popup {
       popup.remove();
     })
 
+    this.popupButton = popupButton;
+    this.popupLink = popupLink;
+    this.popup = popup;
+
     return popup;
   }
-
 }
