@@ -70,12 +70,14 @@ class Popup {
         else {
           if (i.unit === true) {
             let counter = contentPrice.dataset.counter;
-            counter++;
-            contentUnit.textContent = counter;
-            contentPrice.setAttribute('data-counter', counter);
-
-            this.totalPrice = new Number(this.totalPrice) + new Number(contentPrice.textContent);
-            this._updatePrice();
+            if (counter < i.counter) {
+              counter++;
+              contentUnit.textContent = counter;
+              contentPrice.setAttribute('data-counter', counter);
+              this.totalPrice = new Number(this.totalPrice) + new Number(contentPrice.textContent);
+              this._updatePrice();
+            }
+            else return;
           }
         }
 
@@ -143,6 +145,8 @@ class Popup {
     this.data.service.forEach((item) => {
       popupContent.appendChild(this._createItem(item));
     })
+
+    // \xa0
 
     const popupFooter = this._createElement('p', 'popup__footer', '*Цены указаны с учетом ');
     const popupLink = this._createElement('a', 'popup__link', 'скидки по карте');

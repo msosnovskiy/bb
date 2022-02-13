@@ -118,16 +118,19 @@ const nails = {
           name: 'Вросший ноготь',
           price: '7.4',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Протезирование ногтя',
           price: '12.9',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Наращивание ногтя',
           price: '5.5',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Только пальчики',
@@ -168,6 +171,7 @@ const nails = {
           name: 'Ремонт ногтя',
           price: '0.95',
           unit: true,
+          counter: 10,
         },
       ]
     },
@@ -188,6 +192,7 @@ const nails = {
           name: 'Наращивание ногтя (1/10)',
           price: '2.9',
           unit: true,
+          counter: 10,
         },
       ]
     },
@@ -198,46 +203,55 @@ const nails = {
           name: 'Простой',
           price: '1.3',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Сложный',
           price: '3.4',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Художественная роспись',
           price: '5.5',
           unit: true,
+          counter: 10,
         },
         {
           name: 'French / Лунный',
           price: '0.75',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Кошачий',
           price: '0.34',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Обмре',
           price: '1.4',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Втирка / Фольга / Блетски',
           price: '0.75',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Стразы (1 шт.)',
           price: '0.15',
           unit: true,
+          counter: 10,
         },
         {
           name: 'Царь ноготь',
           price: '5.5',
           unit: true,
+          counter: 10,
         },
       ]
     },
