@@ -1,6 +1,0 @@
-.popup__content {
-  overflow-y: scroll;
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-row-gap: 20px;
-}
