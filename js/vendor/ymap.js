@@ -1,5 +1,4 @@
 function init(id, buttonId, coordinatesX, coordinatesY, balloonHeader, balloonContent) {
-
   var myMap;
   $(`#${buttonId}`).bind({
     click: function () {
