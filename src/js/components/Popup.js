@@ -149,7 +149,7 @@ class Popup {
     // \xa0
 
     const popupFooter = this._createElement('p', 'popup__footer', '*Цены указаны с учетом ');
-    const popupLink = this._createElement('a', 'popup__link', 'скидки по карте');
+    const popupLink = this._createElement('a', 'popup__link', 'скидки\xa0по\xa0карте');
     popupLink.setAttribute('href', '#clients');
 
     popup.appendChild(popupHeader);

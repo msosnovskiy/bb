@@ -57,7 +57,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const glitchSlider = new rbgShiftSlider(glitchSliderConfig);
   const glitch = new Glitch(prazeArray, bannerText, 600);
 
-// --------------------------------------------------------------------------------------------------------------------
+  // --------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+  // --------------------------------------------- GSAP -------------------------------------------
+
+
+  // gsap.registerPlugin(ScrollTrigger);
+  // let tl = gsap.timeline();
+
+  // gsap.timeline()
+  //   .from('.services__item_nails', {
+  //     scrollTrigger: '.about__link',
+  //     opacity: 0,
+  //     duration: 3
+  //   })
+  //   .from('.services__item_brows', {
+  //     scrollTrigger: '.about__link',
+  //     opacity: 0,
+  //     duration: 3
+  //   })
+
+
+
+
+
+
+  // ------------------------------------------- GSAP closed --------------------------------------
+
+
 
   glitch.run();
   menu.setEventListener();
