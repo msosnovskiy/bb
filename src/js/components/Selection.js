@@ -1,4 +1,4 @@
-class Selection {
+export default class Selection {
   constructor(items, itemName, headerName, contentName, buttonName, modificatorName) {
     this.items = items;
     this.itemName = itemName;

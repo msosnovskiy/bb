@@ -1,4 +1,18 @@
+import '../pages/index.css';
+import Selection from './components/Selection.js';
+import Menu from './components/Menu.js';
+import Glitch from './components/Glitch.js';
+import Map from './components/Map.js';
+import Ymaps from './components/Ymaps';
+import Popup from './components/Popup.js';
+import Popups from './components/Popups.js';
+
 document.addEventListener('DOMContentLoaded', () => {
+
+
+
+  //избавиться от jquery в картах и переписать Ymap 
+  //Не забыть про предзагрузку шрифтов
 
   const prazeArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
   const imagesGlitchSlider = [
@@ -28,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     autoPlaySpeed: 3000,
   };
 
-
   const selectionItems = document.querySelectorAll('.selection__item');
   const bannerText = document.querySelector('.company__title');
 
@@ -40,62 +53,67 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuLinks = document.querySelectorAll('.header__link');
   const servicesButtons = document.querySelectorAll('.services__price-more');
   const mapOne = document.querySelector('#mapOne');
+  const buttonMapsOne = document.querySelector('#buttonMapsOne');
   const mapTwo = document.querySelector('#mapTwo');
+  const buttonMapsTwo = document.querySelector('#buttonMapsTwo');
 
   //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
-  ymaps.ready(init('mapOne', 'buttonMapsOne', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20'));
-  ymaps.ready(init('mapTwo', 'buttonMapsTwo', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95'));
+
 
   const menu = new Menu(root, menuContainer, menuButton, menuIcon, navigation, menuLinks);
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
   const createPopup = (...arg) => new Popup(...arg);
   const popups = new Popups(root, nails, servicesButtons, createPopup, 'popup', 'popup__button', '_opened');
+  const ymapsOne = new Ymaps(buttonMapsOne, 'mapOne', 'contacts__maps_opened', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20');
+  const ymapsTwo = new Ymaps(buttonMapsTwo, 'mapTwo', 'contacts__maps_opened', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95');
 
 
+  const glitch = new Glitch(prazeArray, bannerText, 600);
+  // const glitchSlider = new rbgShiftSlider(glitchSliderConfig);
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
-  const glitchSlider = new rbgShiftSlider(glitchSliderConfig);
-  const glitch = new Glitch(prazeArray, bannerText, 600);
+
 
   // --------------------------------------------------------------------------------------------------------------------
 
+  let scriptsLoaded = false;
 
+  document.addEventListener('scroll', () => {
+    const glitchSlider = () => {
+      new rbgShiftSlider(glitchSliderConfig);
+    };
 
+    let createScript = (url, func) => {
+      let script = document.createElement('script');
+      script.src = url;
+      document.head.append(script);
+      script.onload = () => {
+        if (func !== undefined) {
+          setTimeout(func, 100);
+        }
+      };
+    }
 
+    if (!scriptsLoaded) {
+      scriptsLoaded = true;
 
-  // --------------------------------------------- GSAP -------------------------------------------
+      createScript('./js/vendor/pixi.min.js');
+      createScript('./js/vendor/TweenMax2.1.3.min.js');
+      createScript('./js/vendor/rgbShiftSlider.min.js', glitchSlider);
+      createScript('https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb');
 
+    }
+    else return;
+  });
 
-  // gsap.registerPlugin(ScrollTrigger);
-  // let tl = gsap.timeline();
-
-  // gsap.timeline()
-  //   .from('.services__item_nails', {
-  //     scrollTrigger: '.about__link',
-  //     opacity: 0,
-  //     duration: 3
-  //   })
-  //   .from('.services__item_brows', {
-  //     scrollTrigger: '.about__link',
-  //     opacity: 0,
-  //     duration: 3
-  //   })
-
-
-
-
-
-
-  // ------------------------------------------- GSAP closed --------------------------------------
-
-
-
-  glitch.run();
   menu.setEventListener();
+  glitch.run();
   selection.setEventListeners();
-
-  popups.setEventListeners();
+  ymapsOne.setEventListener();
+  ymapsTwo.setEventListener();
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
+  popups.setEventListeners();
+
 })
 

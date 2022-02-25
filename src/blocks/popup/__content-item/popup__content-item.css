@@ -7,9 +7,9 @@
 }
 
 .popup__content-item:first-of-type {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .popup__content-item:last-of-type {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }

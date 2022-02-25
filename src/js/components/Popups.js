@@ -1,4 +1,4 @@
-class Popups {
+export default  class Popups {
   constructor(container, data, openingButtons, createPopup, popupName, closeButtonClass, modificatorName) {
     this.container = container;
     this.data = data;

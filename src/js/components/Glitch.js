@@ -1,4 +1,4 @@
-class Glitch {
+export default  class Glitch {
   constructor(prazeArray, phraze, interval) {
     this.prazeArray = prazeArray;
     this.phraze = phraze;

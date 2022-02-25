@@ -1,4 +1,4 @@
-class Popup {
+export default  class Popup {
   constructor(data) {
     this.data = data;
     this.totalPrice = 0;
@@ -145,8 +145,6 @@ class Popup {
     this.data.service.forEach((item) => {
       popupContent.appendChild(this._createItem(item));
     })
-
-    // \xa0
 
     const popupFooter = this._createElement('p', 'popup__footer', '*Цены указаны с учетом ');
     const popupLink = this._createElement('a', 'popup__link', 'скидки\xa0по\xa0карте');

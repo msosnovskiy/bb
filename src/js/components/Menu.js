@@ -1,4 +1,4 @@
-class Menu {
+export default  class Menu {
   constructor(body, menu, button, burger, navigation, navigationLinks) {
     this.body = body;
     this.menu = menu;
