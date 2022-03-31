@@ -4,8 +4,16 @@
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  font-size: calc(16px + .4vw);
 }
 
 button {
   cursor: pointer;
 }
+/* 
+@media screen and (min-width: 1260px) {
+  html {
+    font-size: 20px;
+  }
+} */

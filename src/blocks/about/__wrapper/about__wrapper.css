@@ -1,0 +1,23 @@
+.about__wrapper {
+  margin: 40px auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .about__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vw;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .about__wrapper {
+    margin: 60px auto;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  .about__wrapper {
+    grid-gap: 6vw;
+  }
+}

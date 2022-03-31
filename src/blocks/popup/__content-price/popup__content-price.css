@@ -14,3 +14,7 @@
 .popup__content-price_selected {
   font-weight: 700;
 }
+
+.popup__content-price:hover {
+  cursor: pointer;
+}

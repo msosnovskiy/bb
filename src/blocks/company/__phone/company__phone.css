@@ -8,3 +8,9 @@
   color: #f4f4f4;
   max-height: 30px;
 }
+
+@media screen and (min-width: 1520px) {
+  .company__phone {
+    font-size: 1.25rem;
+  }
+}

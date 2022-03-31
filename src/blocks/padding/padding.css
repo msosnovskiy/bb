@@ -1,9 +1,16 @@
 .padding {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
 .padding_s {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1260px) {
+  .padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
 }

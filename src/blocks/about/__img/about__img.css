@@ -1,15 +1,15 @@
 .about__img {
   width: 100%;
-  max-width: 600px;
+  min-height: 210px;
   margin: 0 auto;
   text-align: center;
-  min-height: 200px;
+  position: relative;
 }
 
 .about__img canvas {
   width: 100%;
   max-width: 600px;
-  max-height: inherit;
+  min-height: inherit;
   height: 100%;
   border-radius: 8px;
   left: 0;
@@ -18,3 +18,15 @@
   position: relative;
   object-fit: cover;
 }
+
+/* @media screen and (min-width: 1000px) {
+  .about__img {
+    grid-area: 1/2/1/2;
+  }
+} */
+
+/* @media screen and (min-width: 1920px) {
+  .about__img {
+    max-width: 80%;
+  }
+} */

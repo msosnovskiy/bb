@@ -1,6 +1,7 @@
 .selection__paragraph {
   margin: 0 0 20px;
   font-weight: 300;
+  font-size: 1rem;
 }
 
 .selection__paragraph:last-of-type {

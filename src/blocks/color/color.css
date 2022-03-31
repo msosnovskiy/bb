@@ -31,3 +31,8 @@
 .color_transparent {
   color: #f4f4f433;
 }
+
+.color_spinner {
+	border-color: rgba(250, 183, 0);
+	border-bottom-color: rgba(250, 183, 0, 0.45);
+}

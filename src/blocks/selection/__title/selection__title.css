@@ -5,6 +5,8 @@
   margin: 0;
 }
 
-.selection__title_light {
-
+@media screen and (min-width: 1260px) {
+  .selection__title {
+    font-size: 1.5rem;
+  }
 }

@@ -13,3 +13,14 @@
   display: block;
 }
 
+@media screen and (min-width: 1000px) {
+  .about__title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .about__title {
+    margin-bottom: 30px;
+  }
+}

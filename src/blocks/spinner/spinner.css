@@ -1,0 +1,25 @@
+.spinner {
+  display: block;
+	width: 74px;
+	height: 74px;
+	border-width: 3px;
+  border-style: solid;
+	/* border: 3px solid #F9B700; */
+  border-radius: 50%;
+
+	margin: auto;
+	animation: spin .75s infinite linear;
+	position: absolute;
+	top: calc(50% - 37px);
+	left: calc(50% - 37px);
+}
+
+.spinner_hidden {
+	display: none;
+}
+
+@keyframes spin {
+	0% { transform: rotate(-180deg); }
+	100% { transform: rotate(180deg); }
+
+}

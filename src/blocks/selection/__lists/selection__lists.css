@@ -1,7 +1,21 @@
 .selection__lists {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+    max-width: 640px;
 }
 
 .selection__lists:last-of-type {
   margin-bottom: 0px;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .selection__lists {
+    max-width: 760px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .selection__lists {
+    max-width: 50%;
+  }
 }

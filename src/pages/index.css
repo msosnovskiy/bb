@@ -3,7 +3,7 @@
 
 @import url(../blocks/root/root.css);
 
-@import url(../blocks/content/content.css);
+@import url(../blocks/container/container.css);
 @import url(../blocks/span/span.css);
 @import url(../blocks/svg/svg.css);
 
@@ -12,14 +12,18 @@
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/color/color.css);
+@import url(../blocks/spinner/spinner.css);
+
 
 @import url(../blocks/company/company.css);
-@import url(../blocks/button/button.css);
 
+@import url(../blocks/button/button.css);
 @import url(../blocks/link/link.css);
 
 @import url(../blocks/padding/padding.css);
+
 @import url(../blocks/about/about.css);
+
 @import url(../blocks/title/title.css);
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/text/text.css);
@@ -41,4 +45,3 @@
 
 
 @import url(../vendor/fonts.css);
-

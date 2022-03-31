@@ -10,3 +10,10 @@
   justify-content: flex-start;
   width: fit-content;
 }
+
+
+@media screen and (min-width: 1260px) {
+  .about__link {
+    font-size: 1.2rem;
+  }
+}

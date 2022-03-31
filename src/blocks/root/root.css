@@ -13,6 +13,39 @@
   position: relative;
 }
 
-.root.no-scroll {
+/* .root.no-scroll {
   overflow: hidden;
+}
+
+.root::-webkit-scrollbar {
+  width: 4px;
+  background-color: #1e241e;
+  background-color: transparent;
+}
+
+.root::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #F9B700;
+}
+
+.root::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: transparent;
+} */
+
+
+@media screen and (min-width: 744px) {
+  .root {
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .root {
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .root {
+  }
 }

@@ -8,7 +8,6 @@
   <link rel="preload" href="./fonts/Poppins-Bold.woff2" as="font" crossorigin>
   <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" crossorigin>
   <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" crossorigin>
-  <!-- <link rel="stylesheet" href="./pages/index.css"> -->
 
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
   <link rel="apple-touch-icon" sizes="180x180" href="<%=require('./images/apple-touch-icon.png')%>">
@@ -29,7 +28,7 @@
       <svg class="logo logo__place_header">
         <use xlink:href="#logo"></use>
       </svg>
-      <div class="header__logo-img"></div>
+      <!-- <div class="header__logo-img"></div> -->
     </div>
 
     <div class="menu">
@@ -47,19 +46,19 @@
         <li class="header__list-item"><a class="header__link link" href="#training">Обучение</a></li>
         <li class="header__list-item"><a class="header__link link" href="#vacancy">Вакансии</a></li>
         <li class="header__list-item"><a class="header__link link" href="#contacts">Контакты</a></li>
-        <a href="#" class="button header__button color color_accent">Онлайн запись</a>
+        <a href="#" class="button header__button color color_accent">Онлайн&nbsp;запись</a>
       </ul>
     </nav>
 
   </header>
 
-  <main class="content">
+  <main class="container">
     <section class="company">
-      <div class="company__wrapper">
+      <div class="company__wrapper section-container">
         <h1 class="company__title">Beauti<span class="span span_br"></span>Baza</h1>
-        <h2 class="company__subtitle color color_accent">Бьюти пространство<span class="span span_br"></span>твоего
+        <h2 class="company__subtitle color color_accent">Бьюти пространство <span class="span span_br"></span>твоего
           города</h2>
-        <a href="#" class="button company__button color color_accent">Онлайн запись</a>
+        <a href="#" class="button company__button color color_accent">Онлайн&nbsp;запись</a>
       </div>
 
       <div class="company__contacts">
@@ -88,102 +87,139 @@
       </div>
     </section>
 
-    <section class="about padding padding_s" id="about">
+    <section class="about padding section-container" id="about">
       <h2 class="title">О&nbsp;нас</h2>
-      <p class="subtitle">Ищешь салон красоты, в&nbsp;который захочется возвращаться снова и&nbsp;снова?<span
+      <p class="subtitle">Ищешь салон красоты, в&nbsp;который захочется возвращаться снова&nbsp;и&nbsp;снова?<span
           class="span span_br color color_accent">Ты&nbsp;в&nbsp;нужном месте!</span></p>
 
-      <div id="rbgShiftSlider" class="rgbShiftSlider about__img"></div>
+      <div class="about__wrapper">
+        <div id="rbgShiftSlider" class="rgbShiftSlider about__img">
+          <div class="spinner color color_spinner spinner_visible"><i></i></div>
+        </div>
 
-      <div class="about__content">
-        <h3 class="about__title color color_accent">BEAUTI BAZA</h3>
-        <p class="text">В&nbsp;Бьюти Базе мы&nbsp;собрали лучших мастеров города для тебя. Хочешь что-то классическое
-          и&nbsp;сдержанное или новое и&nbsp;креативное&nbsp;&mdash; это к&nbsp;нам! Даже если не&nbsp;знаешь чего
-          хочешь&nbsp;&mdash; приходи, у&nbsp;нас множество идей для твоего перевоплощения.</p>
-        <p class="text">Осталось только выбрать: <a href="#contacts" class="link color_accent">Кирова</a> или <a
-            href="#contacts" class="link color color_accent">Проспект Октября</a> :)</p>
-        <a href="https://youtu.be/HiK0KuuL2t8" class="about__link">
-          <div class="about__icon"></div>
-          Cмотреть видео на&nbsp;YouTube
-        </a>
+        <div class="about__content">
+          <h3 class="about__title color color_accent">BEAUTI BAZA</h3>
+          <p class="text">В&nbsp;Бьюти Базе мы&nbsp;собрали лучших мастеров города для тебя. Хочешь что-то классическое
+            и&nbsp;сдержанное или новое и&nbsp;креативное&nbsp;&mdash; это к&nbsp;нам! Даже если не&nbsp;знаешь чего
+            хочешь&nbsp;&mdash; приходи, у&nbsp;нас множество идей для твоего перевоплощения.</p>
+          <p class="text">Осталось только выбрать: <a href="#contacts" class="link color_accent">Кирова</a> или <a
+              href="#contacts" class="link color color_accent">Проспект&nbsp;Октября</a>&nbsp;:)</p>
+          <a href="https://youtu.be/HiK0KuuL2t8" class="about__link">
+            <div class="about__icon"></div>
+            Cмотреть видео на&nbsp;YouTube
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="services" id="services">
-      <!-- <div class="services__sliders"> -->
-      <div class="services__item services__item_nails">
-        <h3 class="title">Услуги<span class="color_transparent"> / </span><span class="color color_accent">ногти</span>
-        </h3>
-        <div class="services__price-lists">
-          <h4 class="services__title color color_accent">Комплекс</h4>
-          <div class="services__price-item">
-            <p class="services__price-name">Снятие + маникюр + гель-лак</p>
-            <p class="services__price-cost">от <span class="color color_accent">29.5</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Маникюр + гель-лак</p>
-            <p class="services__price-cost">от <span class="color color_accent">24.5</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Маникюр + наращивание</p>
-            <p class="services__price-cost">от <span class="color color_accent">32.95</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Педикюр + гель-лак</p>
-            <p class="services__price-cost">от <span class="color color_accent">21.5</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Дизайн ноготков</p>
-            <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
-          </div>
-          <!-- <div class="services__price-item">
+      <div class="services__sliders">
+        <div class="services__item services__item_nails">
+          <h3 class="title">Услуги<span class="color_transparent"> / </span><span
+              class="color color_accent">ногти</span>
+          </h3>
+          <div class="services__price-lists">
+            <h4 class="services__title color color_accent">Комплекс</h4>
+            <div class="services__price-item">
+              <p class="services__price-name">Снятие + маникюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">29.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Маникюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">24.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Маникюр + наращивание</p>
+              <p class="services__price-cost">от <span class="color color_accent">32.95</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Педикюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">21.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Дизайн ноготков</p>
+              <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
+            </div>
+            <!-- <div class="services__price-item">
               <p class="services__price-name">Парафинотерапия</p>
               <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
             </div> -->
 
-          <button class="services__price-more color color_accent" id="nails">Все цены</button>
+            <button class="services__price-more color color_accent" id="nails">Все цены</button>
+          </div>
         </div>
-      </div>
 
-      <div class="services__item services__item_brows">
-        <h3 class="title">Услуги<span class="color_transparent"> / </span><span class="color color_accent">брови</span>
-        </h3>
-        <div class="services__price-lists">
-          <h4 class="services__title color color_accent">Комплекс</h4>
-          <div class="services__price-item">
-            <p class="services__price-name">Снятие + маникюр + гель-лак</p>
-            <p class="services__price-cost">от <span class="color color_accent">29.5</span></p>
+        <div class="services__item services__item_brows">
+          <h3 class="title">Услуги<span class="color_transparent"> / </span><span
+              class="color color_accent">брови</span>
+          </h3>
+          <div class="services__price-lists">
+            <h4 class="services__title color color_accent">Комплекс</h4>
+            <div class="services__price-item">
+              <p class="services__price-name">Снятие + маникюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">29.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Маникюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">24.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Маникюр + наращивание</p>
+              <p class="services__price-cost">от <span class="color color_accent">32.95</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Педикюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">21.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Дизайн ноготков</p>
+              <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
+            </div>
+            <button class="services__price-more color color_accent" id="brows">Все цены</button>
           </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Маникюр + гель-лак</p>
-            <p class="services__price-cost">от <span class="color color_accent">24.5</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Маникюр + наращивание</p>
-            <p class="services__price-cost">от <span class="color color_accent">32.95</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Педикюр + гель-лак</p>
-            <p class="services__price-cost">от <span class="color color_accent">21.5</span></p>
-          </div>
-          <div class="services__price-item">
-            <p class="services__price-name">Дизайн ноготков</p>
-            <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
-          </div>
-          <button class="services__price-more color color_accent" id="brows">Все цены</button>
         </div>
+
+        <div class="services__item services__item_hair">
+          <h3 class="title">Услуги<span class="color_transparent"> / </span><span
+              class="color color_accent">волосы</span>
+          </h3>
+          <div class="services__price-lists">
+            <h4 class="services__title color color_accent">Комплекс</h4>
+            <div class="services__price-item">
+              <p class="services__price-name">Снятие + маникюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">29.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Маникюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">24.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Маникюр + наращивание</p>
+              <p class="services__price-cost">от <span class="color color_accent">32.95</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Педикюр + гель-лак</p>
+              <p class="services__price-cost">от <span class="color color_accent">21.5</span></p>
+            </div>
+            <div class="services__price-item">
+              <p class="services__price-name">Дизайн ноготков</p>
+              <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
+            </div>
+            <button class="services__price-more color color_accent" id="brows">Все цены</button>
+          </div>
+        </div>
+
       </div>
-      <!-- </div> -->
 
 
       <a href="#" class="button color color_accent services__button">Онлайн запись</a>
     </section>
 
-    <!-- <section class="galery padding padding_s">
+    <!-- <section class="galery padding">
       <h2 class="title">Галерея</h2>
     </section> -->
 
-    <section class="clients padding padding_s" id="clients">
+    <section class="clients padding" id="clients">
       <h2 class="title">Клиентам</h2>
       <p class="subtitle">Приобретая дисконтную карту в&nbsp;салонах красоты Бьюти База, вы&nbsp;получаете
         дополнительную скидку до&nbsp;<span class="color_accent">5%</span> на&nbsp;весь перечень услуг</p>
@@ -207,10 +243,10 @@
       </div>
     </section>
 
-    <section class="training padding padding_s" id="training">
+    <section class="training padding" id="training">
       <h2 class="title">Обучение</h2>
       <p class="subtitle">Имея за&nbsp;плечами богатый опыт, мы&nbsp;со&nbsp;знанием дела проводим <span
-          class="color color_accent">индивидуальные курсы</span> по&nbsp;обучению с&nbsp;нуля, а&nbsp;также повышению
+          class="color color_accent">индивидуальные&nbsp;курсы</span> по&nbsp;обучению с&nbsp;нуля, а&nbsp;также повышению
         квалификации мастеров</p>
       <div class="selection">
         <div class="selection__lists">
@@ -369,7 +405,7 @@
       </div>
     </section>
 
-    <section class="vacancy padding padding_s" id="vacancy">
+    <section class="vacancy padding" id="vacancy">
       <h2 class="title">Вакансии</h2>
       <p class="subtitle">Наш дружный коллектив всегда нуждается в&nbsp;квалифицированных специалистах. <span
           class="span_br"></span>Если ты&nbsp;готов присоедениться к&nbsp;семье Бьюти&nbsp;База&nbsp;&mdash; пиши
@@ -386,65 +422,70 @@
       <p class="vacancy__item">Администратор</p>
     </section>
 
-    <section class="contacts padding padding_s" id="contacts">
+    <section class="contacts padding" id="contacts">
       <h2 class="title">Контакты</h2>
       <div class="contacts__container">
-        <div class="contacts__item">
-          <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;1</span></h3>
-          <div class="contacts__info">
-            <svg class="contacts__image">
-              <use xlink:href="#location"></use>
-            </svg>
-            <p class="contacts__text">г. Гомель, улица&nbsp;Кирова,&nbsp;20</p>
+        <div class="contacts__wrapper">
+          <div class="contacts__item">
+            <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;1</span></h3>
+            <div class="contacts__info">
+              <svg class="contacts__image">
+                <use xlink:href="#location"></use>
+              </svg>
+              <p class="contacts__text">г. Гомель, улица&nbsp;Кирова,&nbsp;20</p>
+            </div>
+            <div class="contacts__info">
+              <svg class="contacts__image">
+                <use xlink:href="#clock"></use>
+              </svg>
+              <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
+            </div>
+            <div class="contacts__info">
+              <svg class="contacts__image">
+                <use xlink:href="#phone"></use>
+              </svg>
+              <a href="tel:7397" class="contacts__text">7397</a>
+            </div>
           </div>
-          <div class="contacts__info">
-            <svg class="contacts__image">
-              <use xlink:href="#clock"></use>
-            </svg>
-            <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
-          </div>
-          <div class="contacts__info">
-            <svg class="contacts__image">
-              <use xlink:href="#phone"></use>
-            </svg>
-            <a href="tel:7397" class="contacts__text">7397</a>
-          </div>
+  
+          <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button color_accent" />
+          <div id="mapOne" class="contacts__maps"></div>
         </div>
 
-        <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button color_accent" />
-        <div id="mapOne" class="contacts__maps"></div>
-
-        <div class="contacts__item">
-          <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;2</span></h3>
-          <div class="contacts__info">
-            <svg class="contacts__image">
-              <use xlink:href="#location"></use>
-            </svg>
-            <p class="contacts__text">г. Гомель, проспект&nbsp;Октября,&nbsp;95</p>
+        <div class="contacts__wrapper">
+          <div class="contacts__item">
+            <h3 class="contacts__title">Бьюти база <span class="color_accent">салон&nbsp;&#8470;2</span></h3>
+            <div class="contacts__info">
+              <svg class="contacts__image">
+                <use xlink:href="#location"></use>
+              </svg>
+              <p class="contacts__text">г. Гомель, проспект&nbsp;Октября,&nbsp;95</p>
+            </div>
+            <div class="contacts__info">
+              <svg class="contacts__image">
+                <use xlink:href="#clock"></use>
+              </svg>
+              <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
+            </div>
+            <div class="contacts__info">
+              <svg class="contacts__image">
+                <use xlink:href="#phone"></use>
+              </svg>
+              <a href="tel:7397" class="contacts__text">7397</a>
+            </div>
           </div>
-          <div class="contacts__info">
-            <svg class="contacts__image">
-              <use xlink:href="#clock"></use>
-            </svg>
-            <p class="contacts__text">Пн&nbsp;– Вс: 9:00&nbsp;– 21:00</p>
-          </div>
-          <div class="contacts__info">
-            <svg class="contacts__image">
-              <use xlink:href="#phone"></use>
-            </svg>
-            <a href="tel:7397" class="contacts__text">7397</a>
-          </div>
+  
+          <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button color_accent" />
+          <div id="mapTwo" class="contacts__maps"></div>
         </div>
 
-        <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button color_accent" />
-        <div id="mapTwo" class="contacts__maps"></div>
       </div>
 
     </section>
 
   </main>
 
-  <footer class="footer content padding">
+  <footer class="footer container content padding padding_s">
     <div class="footer__wrapper">
       <svg class="logo logo__place_footer">
         <use xlink:href="#logo"></use>
@@ -496,7 +537,7 @@
     <p class="footer__info">Частное унитарное предприятие по&nbsp;оказанию услуг &laquo;База Групп&raquo; <span
         class="span span_br"></span><span class="color color_accent">УНП&nbsp;491329833</span></p>
     <div class="footer__copyright">
-      <p class="footer__copyright-text">2017 – 2022 &copy;Beauti Baza</p>
+      <p class="footer__copyright-text">2017 – 2022 &copy;Beauti&nbsp;Baza</p>
       <a href="mailto:maxim.sosnovsky@gmail.com" class="footer__copyright-link">Project by Maksim Sosnovskiy</a>
     </div>
   </footer>
@@ -832,18 +873,16 @@
     </svg>
   </div>
 
-  <script defer src="./data/nails.js"></script>
+  <script src="./data/nails.js" defer></script>
 
-   <!-- slider ABOUT -->
-  <!-- <script defer src="./js/vendor/pixi.min.js"></script> -->
-  <!-- <script defer src="./js/vendor/TweenMax2.1.3.min.js"></script> -->
-  <!-- <script defer src="./js/vendor/rgbShiftSlider.min.js"></script> -->
-  <!-- Slider close  -->
+  <!-- GSAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <!-- GSAP  -->
 
-  <!-- <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb" type="text/javascript"></script> -->
 
-  <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript"></script>
-    
+  <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript" defer></script>
+
 
 </body>
 

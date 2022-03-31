@@ -22,3 +22,11 @@
   fill: #f4f4f4;
 }
 
+@media screen and (min-width: 1260px) {
+  .logo__place_header {
+    width: 100px;
+    height: 45px;
+  }
+}
+
+
