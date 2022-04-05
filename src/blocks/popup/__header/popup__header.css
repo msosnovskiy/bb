@@ -1,12 +1,22 @@
 .popup__header {
-  /* width: 100%; */
-  width: calc(100% - 12px);
-  border-bottom: 1px solid rgba(32, 30, 36, .2);
+  width: 100%;
   text-transform: uppercase;
   height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
 
+.popup__header::after {
+  content: "";
+  width: calc(100% - 40px);
+  height: 2px;
+  border-radius: 2px;
+  border-bottom: 2px solid;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
 }

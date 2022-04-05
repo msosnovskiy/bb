@@ -173,6 +173,7 @@ export default class Popup {
     popup.setAttribute('data-name', this.data.id);
 
     const popupHeader = this._createElement('div', 'popup__header');
+    popupHeader.classList.add('color_border');
     const popupName = this._createElement('h3', 'popup__name', this.data.name);
     const popupWrapper = this._createElement('div', 'popup__wrapper');
     const popupCost = this._createElement('p', 'popup__cost', this.totalPrice);

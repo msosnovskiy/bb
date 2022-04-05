@@ -1,8 +1,8 @@
 .popup__footer {
   font-size: 0.75rem;
   text-align: center;
+  width: 100%;
   margin: 0 auto;
   font-weight: 700;
-  padding-top: 30px;
-  margin-bottom: 2px;
+  padding: 20px;
 }

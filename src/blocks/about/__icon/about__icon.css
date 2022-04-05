@@ -39,34 +39,3 @@
   left: 2.6vh;
   top: 2vh;
 }
-
-/* .about__icon {
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 50%;
-  background-color: #f4f4f4;
-  position: relative;
-  margin-right: 24px;
-
-}
-
-.about__icon::before {
-  content: "";
-  width: 64px;
-  height: 64px;
-  border-radius: 40px;
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  z-index: -1;
-  animation: swetchColor 2.6s linear infinite alternate;
-}
-
-.about__icon::after {
-  content: "";
-  border: 10px solid transparent;
-  border-left: 16px solid #201E24;
-  position: absolute;
-  left: 19px;
-  top: 14px;
-} */

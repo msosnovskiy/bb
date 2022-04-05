@@ -8,6 +8,11 @@
   z-index: 1;
   display: none;
   visibility: hidden;
+
+  /* устранение бага при изменении высоты при изменении высоты экрана
+  top: -70px;
+	padding-bottom: 70px;
+	transform: translateY(70px); */
 }
 
 .header__navigation_opened {

@@ -27,3 +27,6 @@
   border-color: rgba(250, 183, 0);
   border-bottom-color: rgba(250, 183, 0, 0.45);
 }
+.color_border.popup__header::after{
+  border-color: #F9B700;
+}
