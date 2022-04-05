@@ -11,6 +11,9 @@
   content: "";
 }
 
+.popup__content-price_selected.popup__content-price::after{
+  font-weight: 500;
+}
 .popup__content-price_selected {
   font-weight: 700;
 }

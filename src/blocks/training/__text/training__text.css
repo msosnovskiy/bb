@@ -1,5 +1,17 @@
 .training__text {
   margin: 0 auto;
-  max-width: 60%;
+  width: 100%;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  .training__text {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 780px) {
+  .training__text {
+    max-width: 60%;
+    width: 1400px;
+  }
 }

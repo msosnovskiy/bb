@@ -8,3 +8,9 @@
   margin-bottom: 4px;
   overflow: hidden;
 }
+
+@media screen and (min-width: 1260px) {
+  .popup__content-wrapper {
+    margin-bottom: 10px;
+  }
+}

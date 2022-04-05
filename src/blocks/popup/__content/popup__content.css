@@ -1,6 +1,22 @@
 .popup__content {
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  
+  padding-right: 12px;
 }
+
+@media screen and (min-width: 1260px) {
+  .popup__content {
+    grid-gap: 40px;
+    padding-right: 22px;
+  }
+}
+
+/* @media screen and (min-width: 1520px) {
+  .popup__content {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+  }
+} */

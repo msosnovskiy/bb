@@ -8,6 +8,7 @@
   background-color: transparent;
   position: relative;
   margin-right: -6px;
+  display: none;
 }
 
 .popup__button::before {
@@ -34,4 +35,8 @@
   left: 5px;
   border-radius: 2px;
   transform: rotate(-45deg);
+}
+
+.popup__button_opened {
+  display: block;
 }

@@ -1,0 +1,113 @@
+.icon__scroll {
+	border: 0.35vh solid #FFFFFF;
+	width: 3.6vh;
+	height: 5vh;
+	border-radius: 3vh;
+	text-align: center;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	display: none;
+}
+
+.icon__scroll_p1,
+.icon__scroll_p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+
+.icon__scroll_p1::after,
+.icon__scroll_p2::after {
+	content: "";
+	width: 0.6vh;
+	height: 0.6vh;
+	border-radius: 0.3vh;
+	position: absolute;
+	background-color: #fff;
+	top: 1.4vh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.icon__scroll_p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -1vh);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(0, 1vh);
+	}
+}
+
+@media screen and (min-width: 1260px) {
+	.icon__scroll {
+		display: block;
+	}
+}
+
+/* .icon__scroll {
+	border: 3px solid #FFFFFF;
+	border-radius: 30px;
+	height: 46px;
+	text-align: center;
+	width: 30px;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	display: none;
+}
+
+.icon__scroll_p1,
+.icon__scroll_p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #FFFFFF;
+}
+
+.icon__scroll_p2 {
+	animation-delay: .75s;
+}
+
+.icon__scroll svg {
+	width: 10px;
+	height: 30px;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -10px);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(0, 10px);
+	}
+}
+
+@media screen and (min-width: 1260px) {
+	.icon__scroll {
+		display: block;
+	}
+} */

@@ -1,24 +1,30 @@
 .about__content {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .about__content::after {
   content: "";
   width: 2px;
   height: 100%;
+  border-radius: 2px;
   background-color: #fff;
   position: absolute;
   top: 0;
   left: -2vw;
 
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(244, 244, 244, 0) 2%, rgba(244, 244, 244, 0.2) 50%, rgba(244, 244, 244,0) 98%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(244, 244, 244, 0) 2%, rgba(244, 244, 244, 0.2) 50%, rgba(244, 244, 244, 0) 98%);
   display: none;
 }
 
 @media screen and (min-width: 1520px) {
-.about__content:after {
+  .about__content:after {
     display: block;
     left: -3vw;
+    animation: swetchColor 2.6s linear infinite alternate;
   }
 }

@@ -1,27 +1,22 @@
 .popup__content-subtitle-unit {
-  min-width: 12px;
-  height: 12px;
-  display: flex;
-  align-items: center;
+  min-width: 0.75rem;
+  height: 0.75rem;
+  align-self: center;
   justify-content: center;
+  text-align: center;
   font-size: 0.5rem;
+  line-height: 0.6rem;
   padding: 2px;
   background-color: #F9B700;
   color: #201E24;
-  /* background-color: rgba(32, 30, 36, .4);
-  color: #f4f4f4; */
-  border-radius: 6px;
-  margin-top: -12px;
+  border-radius: 50px;
   margin: 0 0 0 4px;
   position: relative;
   top: 0px;
   left: 0;
   display: none;
-  text-align: center;
 }
 
 .popup__content-subtitle-unit_opened {
-  display: block;
-  /* background-color: #F9B700;
-  color: #201E24; */
+  display: flex;
 }

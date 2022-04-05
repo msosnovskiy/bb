@@ -9,7 +9,6 @@
 @import url(./__content-item/popup__content-item.css);
 @import url(./__content-wrapper/popup__content-wrapper.css);
 @import url(./__content-title/popup__content-title.css);
-@import url(./__content-button/popup__content-button.css);
 @import url(./__content-cost/popup__content-cost.css);
 @import url(./__content-subtitle/popup__content-subtitle.css);
 @import url(./__content-unit/popup__content-unit.css);
@@ -25,17 +24,22 @@
   color: #201E24;
   background-color: #f4f4f4;
   width: calc(100% - 40px);
-  max-width: 400px;
   height: auto;
   max-height: 80vh;
+  max-width: 600px;
   margin: 0 auto;
   border-radius: 8px;
   top: 70px;
   left: 50%;
+  font-size: 1rem;
+
   transform: translateX(-50%);
+  top: 9vh;
+
   display: none;
   flex-direction: column;
-  padding: 4px 20px 20px;
+  /* padding: 4px 20px 20px; */
+  padding: 4px 8px 20px 20px;
   justify-content: space-between;
   justify-self: center;
   overflow: hidden;
@@ -45,12 +49,21 @@
   display: flex;
 }
 
-.popup_opened::after {
-  /* content: "";
-  width: 100vw;
-  height: 100vh; */
+.popup ::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+  border-radius: 12px;
 }
 
-.popup ::-webkit-scrollbar { 
-  display: none; 
+.popup ::-webkit-scrollbar-thumb {
+  background-color: #F9B700;
+  border-radius: 10px;
+}
+
+
+@media screen and (min-width: 1260px) {
+  .popup {
+    padding: 4px 18px 40px 40px;
+    max-width: 800px;
+  }
 }

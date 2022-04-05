@@ -4,16 +4,26 @@
 }
 
 .link_social {
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  width: 3.5vh;
+  height: 3.5vh;
+  max-width: 60px;
+  max-height: 60px;
   fill: #f4f4f4;
   border-bottom: none;
 }
 
 .link_phone {
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  width: 3.5vh;
+  height: 3.5vh;
+  max-width: 60px;
+  max-height: 60px;
+
   margin-right: 20px;
   border-bottom: none;
   fill: #f4f4f4;
 }
+

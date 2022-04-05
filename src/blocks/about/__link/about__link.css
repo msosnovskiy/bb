@@ -3,10 +3,9 @@
   flex-direction: row;
   align-items: center;
   min-height: 48px;
-  margin-top: 40px;
+  margin-top: 20px;
   text-decoration: none;
   color: #f4f4f4;
-  cursor: pointer;
   justify-content: flex-start;
   width: fit-content;
 }

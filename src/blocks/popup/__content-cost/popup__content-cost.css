@@ -1,9 +1,11 @@
 .popup__content-cost {
   width: 100%;
+  font-size: inherit;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .popup__content-cost:last-of-type {

@@ -1,5 +1,5 @@
 .button {
-  min-width: 230px;
+  min-width: 12rem;
   min-height: 2.5rem;
   padding: 16px 32px;
   font-weight: 600;
@@ -7,8 +7,9 @@
   color: #201E24;
   border-radius: 8px;
   display: flex;
-  text-decoration: none;
   text-align: center;
   justify-content: center;
+  text-decoration: none;
   cursor: pointer;
 }
+

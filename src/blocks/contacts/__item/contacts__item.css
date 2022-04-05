@@ -1,5 +1,24 @@
 .contacts__item {
   margin: 40px auto 10px;
   width: 100%;
-  max-width: 480px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 400px;
+
+  align-items: center;
+}
+
+@media screen and (min-width: 1260px) {
+  .contacts__item {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .contacts__item {
+    max-width: 600px;
+  }
 }

@@ -13,4 +13,5 @@
 .header__navigation_opened {
   display: block;
   visibility: visible;
+  backdrop-filter: blur(4px);
 }

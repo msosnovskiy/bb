@@ -3,10 +3,11 @@
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 30px;
+  max-height: 30px;
   display: flex;
   align-items: center;
+  align-self: flex-end;
   color: #f4f4f4;
-  max-height: 30px;
 }
 
 @media screen and (min-width: 1520px) {

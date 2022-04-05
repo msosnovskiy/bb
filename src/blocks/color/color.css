@@ -10,15 +10,6 @@
   fill:#F9B700;
 }
 
-
-/* .color_psevdo::before {
-  background-color: #F9B700;
-} */
-/* 
-.color_psevdo::after {
-  background-color: #F9B700;
-} */
-
 .color_accent.link {
   border-bottom: 1px solid #F9B700;
 }
@@ -33,6 +24,6 @@
 }
 
 .color_spinner {
-	border-color: rgba(250, 183, 0);
-	border-bottom-color: rgba(250, 183, 0, 0.45);
+  border-color: rgba(250, 183, 0);
+  border-bottom-color: rgba(250, 183, 0, 0.45);
 }

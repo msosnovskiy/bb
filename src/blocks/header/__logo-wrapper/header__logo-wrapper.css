@@ -2,6 +2,7 @@
   width: auto;
   height: auto;
   position: relative;
+  z-index: 2;
 }
 
 .header__logo-wrapper::after {

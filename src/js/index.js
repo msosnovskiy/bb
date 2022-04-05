@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const glitch = new Glitch(prazeArray, bannerText, 600);
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
   const createPopup = (...arg) => new Popup(...arg);
-  const popups = new Popups(root, nails, servicesButtons, createPopup, 'popup', 'popup__button', '_opened');
+  const popups = new Popups(root, [nails, brows], servicesButtons, createPopup, 'popup', 'popup__button', '_opened');
   const ymapsOne = new Ymaps(buttonMapsOne, 'mapOne', 'contacts__maps_opened', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20');
   const ymapsTwo = new Ymaps(buttonMapsTwo, 'mapTwo', 'contacts__maps_opened', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95');
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
   popups.setEventListeners();
+
 })
 
 
