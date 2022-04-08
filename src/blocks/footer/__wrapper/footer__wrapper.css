@@ -1,0 +1,11 @@
+.footer__wrapper{}
+
+.footer__wrapper-link {}
+
+@media screen and (min-width: 1260px) {
+  .footer__wrapper-link  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}

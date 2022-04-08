@@ -4,3 +4,9 @@
   font-weight: 500;
   margin: 0 auto 40px;
 }
+
+@media screen and (min-width: 1260px) {
+  .vacancy__title {
+    margin: 0 auto 60px;
+  }
+}

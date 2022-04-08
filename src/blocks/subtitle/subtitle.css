@@ -11,7 +11,7 @@
     max-width: 90%;
   }
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .subtitle {
     max-width: 80%;
     width: 1400px;
@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 1260px) {
   .subtitle {
-    max-width: 70%;
+    max-width: 68%;
     margin-bottom: 60px;
   }
 }

@@ -1,9 +1,12 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/common.css);
 
+
+
 @import url(../blocks/root/root.css);
 
 @import url(../blocks/container/container.css);
+@import url(../blocks/background/background.css);
 @import url(../blocks/span/span.css);
 @import url(../blocks/svg/svg.css);
 @import url(../blocks/icon/icon.css);

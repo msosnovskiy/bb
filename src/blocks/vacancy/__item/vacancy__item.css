@@ -3,7 +3,7 @@
   margin: 20px auto;
   border-radius: 8px;
   background-color: #2A282E;
-  padding: 18px 20px;
+  padding: 20px;
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
@@ -12,6 +12,19 @@
 
 .vacancy__item:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .vacancy__item {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .vacancy__item {
+    max-width: 80%;
+    width: 1200px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -23,6 +36,8 @@
 @media screen and (min-width: 1260px) {
   .vacancy__item {
     font-size: 1.2rem;
-    
+    padding: 30px;
+    max-width: 68%;
+    margin: 30px auto;
   }
 }

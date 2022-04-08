@@ -1,6 +1,6 @@
 .selection__item {
   min-height: 56px;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 8px;
   background-color: #2A282E;
 }
@@ -13,5 +13,8 @@
   background: linear-gradient(179.94deg, #2A282E 14.42%, #1C2C3F 99.95%), #2A282E;
 }
 
-
-
+@media screen and (min-width: 1260px) {
+  .selection__item {
+    margin: 30px auto;
+  }
+}

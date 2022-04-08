@@ -7,15 +7,22 @@
   margin-bottom: 0px;
 }
 
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 480px) {
   .selection__lists {
-    max-width: 760px;
+    max-width: 90%;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 768px) {
   .selection__lists {
-    max-width: 50%;
+    max-width: 80%;
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .selection__lists {
+    max-width: 68%;
+    margin: 0 auto 60px;
   }
 }

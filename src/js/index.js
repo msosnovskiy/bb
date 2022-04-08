@@ -6,6 +6,7 @@ import Map from './components/Map.js';
 import Ymaps from './components/Ymaps';
 import Popup from './components/Popup.js';
 import Popups from './components/Popups.js';
+import Footer from './components/Footer.js';
 import gsap from './components/GSAP.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapTwo = document.querySelector('#mapTwo');
   const buttonMapsTwo = document.querySelector('#buttonMapsTwo');
   const spinner = document.querySelector('.spinner');
+  const footerText = document.querySelector('.footer__copyright-text');
 
   //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
 
@@ -60,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ymapsTwo = new Ymaps(buttonMapsTwo, 'mapTwo', 'contacts__maps_opened', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95');
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
-
+  const footer = new Footer(footerText, '©Beauti Baza');
   // --------------------------------------------------------------------------------------------------------------------
 
   // const swiper = new Swiper('.swiper', {
@@ -156,6 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
   mapOnePrompt.setEventListener();
   mapTwoPrompt.setEventListener();
   popups.setEventListeners();
+  footer.setContent();
 
 })
 

@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.clients::after {
+.clients::before {
   content: "";
   width: 46vw;
   height: 46vw;

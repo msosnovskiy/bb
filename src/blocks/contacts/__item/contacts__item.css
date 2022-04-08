@@ -1,7 +1,6 @@
 .contacts__item {
-  margin: 40px auto 10px;
+  margin: 30px auto;
   width: 100%;
-
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 20px;
@@ -13,12 +12,14 @@
 
 @media screen and (min-width: 1260px) {
   .contacts__item {
-    max-width: 500px;
+    max-width: 450px;
+    grid-row-gap: 20px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
   .contacts__item {
-    max-width: 600px;
+    max-width: 550px;
+    grid-row-gap: 30px;
   }
 }

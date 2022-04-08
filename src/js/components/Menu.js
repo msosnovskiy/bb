@@ -12,20 +12,9 @@ export default class Menu {
     this.burger.classList.toggle('menu__icon_active');
     this.navigation.classList.toggle('header__navigation_opened');
     this.navigation.closest('.header__navigation_opened') ? this.button.textContent = 'Закрыть' : this.button.textContent = 'Меню';
-
-    if (this.navigation.closest('.header__navigation_opened')) {
-      this.body.classList.add('no-scroll');
-      this._hideScroll();
-    }
-    else {
-      this.body.classList.remove('no-scroll');
-      this.body.style.position = '';
-      this.body.style.width = '';
-      this.body.style.top = '';
-      window.scroll(0, this.scrollTop);
-    }
-    
+    this.navigation.closest('.header__navigation_opened') ? this._hideScroll() : this._resetHideScroll();
   }
+
 
   setEventListener() {
 
@@ -40,26 +29,14 @@ export default class Menu {
     })
   }
 
-  _hideScroll() {
-    console.log('3');
-    this.body.classList.add('no-scroll');
-
-    this.scrollTop = window.pageYOffset; // запоминаем текущую прокрутку сверху
-    this.body.style.position = 'fixed';
-    if (this._hasScrollbar()) {
-      // с учетом горизонтального скролла. Чтобы небыло рывка при открытии модального окна
-      this.body.style.width = `calc(100% - ${this._getScrollbarSize()}px)`;
-    } else {
-      this.body.style.width = '100%';
-    }
-    this.body.style.top = -this.scrollTop + 'px';
+  _hasScrollbar() { // проверка на боковой скролл
+    return this.body.scrollHeight > this.body.clientHeight;
   }
-
+  
   _getScrollbarSize() { // получение ширины скролла
-    console.log('2');
     let outer = document.createElement('div');
     outer.style.visibility = 'hidden';
-    outer.style.width = '100px';
+    outer.style.width = '100%';
     outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
     this.body.appendChild(outer);
 
@@ -76,9 +53,29 @@ export default class Menu {
     return widthNoScroll - widthWithScroll;
   }
 
-  _hasScrollbar() { // проверка на боковой скролл
-    console.log('1');
-    return this.body.scrollHeight > this.body.clientHeight;
+  _hideScroll() {
+    this.body.classList.add('no-scroll');
+
+    // запоминаем текущую прокрутку сверху
+    this.scrollTop = window.pageYOffset; 
+    this.body.style.position = 'fixed';
+    if (this._hasScrollbar()) {
+      // с учетом горизонтального скролла. Чтобы небыло рывка при открытии модального окна
+      this.body.style.width = `calc(100% - ${this._getScrollbarSize()}px)`;
+    } else {
+      this.body.style.width = '100%';
+    }
+    this.body.style.top = -this.scrollTop + 'px';
+    console.log(`this.scrollTop = ${this.scrollTop}`);
+    console.log(`this.body.style.top = ${this.body.style.top}`);
+  }
+
+    _resetHideScroll() {
+    this.body.classList.remove('no-scroll');
+    this.body.style.position = '';
+    this.body.style.width = '';
+    this.body.style.top = '';
+    window.scroll(0, this.scrollTop);
   }
 
 }

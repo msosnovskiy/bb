@@ -1,16 +1,24 @@
+@import url(./__content/footer__content.css);
+@import url(./__wrapper/footer__wrapper.css);
 @import url(./__subtitle/footer__subtitle.css);
 @import url(./__social/footer__social.css);
 @import url(./__social-link/footer__social-link.css);
+
 @import url(./__navigation/footer__navigation.css);
+
 @import url(./__navigation-lists/footer__navigation-lists.css);
 @import url(./__list-item/footer__list-item.css);
 @import url(./__link/footer__link.css);
+
 @import url(./__info/footer__info.css);
+
 @import url(./__copyright/footer__copyright.css);
+
 @import url(./__copyright-text/footer__copyright-text.css);
 @import url(./__copyright-link/footer__copyright-link.css);
 
 .footer {
   background-color: #16141A;
   background: linear-gradient(180deg, #201F24 0%, #16141A 100%);
+  color: #f4f4f4;
 }

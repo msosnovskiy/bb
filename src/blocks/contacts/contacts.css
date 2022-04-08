@@ -9,4 +9,22 @@
 
 .contacts {
   max-width: 100%;
+  position: relative;
 }
+
+/* .contacts::after {
+  content: "contacts";
+  writing-mode: tb-rl;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 15vh;
+  top: 50%;
+  right: 0;
+  color: #201F24;
+  text-shadow: -4px -4px 8px #2A282E, 4px 4px 8px #16141A;
+  z-index: -1;
+} */

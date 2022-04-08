@@ -1,6 +1,7 @@
 .link {
   cursor: pointer;
   text-decoration: none;
+
 }
 
 .link_social {
@@ -8,8 +9,6 @@
   min-height: 30px;
   width: 3.5vh;
   height: 3.5vh;
-  max-width: 60px;
-  max-height: 60px;
   fill: #f4f4f4;
   border-bottom: none;
 }
@@ -19,11 +18,10 @@
   min-height: 30px;
   width: 3.5vh;
   height: 3.5vh;
-  max-width: 60px;
-  max-height: 60px;
-
   margin-right: 20px;
   border-bottom: none;
   fill: #f4f4f4;
 }
+
+
 
