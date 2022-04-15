@@ -1,6 +1,7 @@
 .footer__copyright-text {
-  max-width: 50%;
+  width: auto;
   color: #f4f4f433;
   margin: 0 auto;
   font-size: 0.75rem;
+  padding: 2px;
 }

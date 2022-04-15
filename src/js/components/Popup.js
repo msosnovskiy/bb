@@ -202,10 +202,12 @@ export default class Popup {
 
     popupButton.addEventListener('click', () => {
       popup.remove();
+      // document.querySelector('.root').classList.remove('blure');
     })
 
     popupLink.addEventListener('click', () => {
       popup.remove();
+      // document.querySelector('.root').classList.remove('blure');
     })
 
     this.popupCost = popupCost;

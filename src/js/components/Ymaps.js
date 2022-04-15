@@ -59,6 +59,7 @@ export default class Ymaps {
   setEventListener() {
     this.button.addEventListener('click', (event) => {
       this._init();
+      this.button.classList.toggle('button_active');
     })
   }
 }

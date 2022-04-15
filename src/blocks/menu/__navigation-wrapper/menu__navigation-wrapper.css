@@ -1,0 +1,10 @@
+.menu__navigation-wrapper {
+  overflow: auto;
+  padding: 40px 0 20px;
+}
+
+@media screen and (min-width: 340px) {
+  .menu__navigation-wrapper {
+    padding: 50px 0 40px;
+  }
+}

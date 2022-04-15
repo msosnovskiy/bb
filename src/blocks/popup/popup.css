@@ -29,18 +29,21 @@
   max-width: 600px;
   margin: 0 auto;
   border-radius: 8px;
-  top: 70px;
   left: 50%;
   font-size: 1rem;
 
   transform: translateX(-50%);
   top: 9vh;
 
+  transform: translate(-50%, -50%);
+  top: 50%;
+
   display: none;
   flex-direction: column;
   justify-content: space-between;
   justify-self: center;
   overflow: hidden;
+  z-index: 1;
 }
 
 .popup_opened {
@@ -57,7 +60,6 @@
   background-color: #F9B700;
   border-radius: 10px;
 }
-
 
 @media screen and (min-width: 1260px) {
   .popup {

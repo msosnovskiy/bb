@@ -1,3 +1,7 @@
 .footer__social {
   margin-top: 20px;
+  display: flex;
+  align-self: flex-end;
+  height: 30px;
+  width: auto;
 }

@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuContainer = document.querySelector('.menu');
   const menuButton = document.querySelector('.menu__button');
   const menuIcon = document.querySelector('.menu__icon');
-  const navigation = document.querySelector('.header__navigation');
-  const menuLinks = document.querySelectorAll('.header__link');
+  const navigation = document.querySelector('.menu__navigation');
+  const menuLinks = document.querySelectorAll('.menu__link');
   const servicesButtons = document.querySelectorAll('.services__price-more');
   const selectionItems = document.querySelectorAll('.selection__item');
   const mapOne = document.querySelector('#mapOne');
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapTwo = document.querySelector('#mapTwo');
   const buttonMapsTwo = document.querySelector('#buttonMapsTwo');
   const spinner = document.querySelector('.spinner');
-  const footerText = document.querySelector('.footer__copyright-text');
+  const footerText = document.querySelector('#footerText');
 
   //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
 

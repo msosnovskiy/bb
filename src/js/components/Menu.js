@@ -10,9 +10,10 @@ export default class Menu {
 
   _switch() {
     this.burger.classList.toggle('menu__icon_active');
-    this.navigation.classList.toggle('header__navigation_opened');
-    this.navigation.closest('.header__navigation_opened') ? this.button.textContent = 'Закрыть' : this.button.textContent = 'Меню';
-    this.navigation.closest('.header__navigation_opened') ? this._hideScroll() : this._resetHideScroll();
+    this.navigation.classList.toggle('menu__navigation_opened');
+    this.navigation.closest('.menu__navigation_opened') ? this.button.textContent = 'Закрыть' : this.button.textContent = 'Меню';
+    this.navigation.closest('.menu__navigation_opened') ? this.body.classList.add('blure') : this.body.classList.remove('blure');
+    this.navigation.closest('.menu__navigation_opened') ? this._hideScroll() : this._resetHideScroll();
   }
 
 
@@ -58,6 +59,7 @@ export default class Menu {
 
     // запоминаем текущую прокрутку сверху
     this.scrollTop = window.pageYOffset; 
+
     this.body.style.position = 'fixed';
     if (this._hasScrollbar()) {
       // с учетом горизонтального скролла. Чтобы небыло рывка при открытии модального окна
@@ -66,8 +68,8 @@ export default class Menu {
       this.body.style.width = '100%';
     }
     this.body.style.top = -this.scrollTop + 'px';
-    console.log(`this.scrollTop = ${this.scrollTop}`);
-    console.log(`this.body.style.top = ${this.body.style.top}`);
+    // console.log(`this.scrollTop = ${this.scrollTop}`);
+    // console.log(`this.body.style.top = ${this.body.style.top}`);
   }
 
     _resetHideScroll() {

@@ -1,4 +1,7 @@
 .color {
+  color: #f4f4f4;
+  /* color: #F9B700; */
+  /* color: #F44C86; */
 }
 
 .color_accent {
@@ -6,8 +9,8 @@
   border-color: #F9B700;
 }
 
-.color_svg{
-  fill:#F9B700;
+.color_svg {
+  fill: #F9B700;
 }
 
 .color_accent.link {
@@ -19,14 +22,44 @@
   border: 2px solid #F9B700;
 }
 
+.color_accent.button_active {
+  color: #F9B700;
+  background-color: transparent;
+}
+
+.color_accent.button:hover {
+  background-color: #fdbf15;
+  border-color: #fdbf15;
+}
+
+.color_accent.button:hover.button_active {
+  background-color: transparent;
+  border-color: #F9B700;
+}
+
 .color_transparent {
   color: #f4f4f433;
+}
+
+.link:hover {
+  color: #F9B700;
+  fill: #F9B700;
+  border-color: #F9B700;
+}
+
+.link:hover svg {
+  fill: #F9B700;
 }
 
 .color_spinner {
   border-color: rgba(250, 183, 0);
   border-bottom-color: rgba(250, 183, 0, 0.45);
 }
-.color_border.popup__header::after{
+
+.color_border.popup__header::after {
   border-color: #F9B700;
+}
+
+.menu:hover .menu__button{
+  /* color: #F9B700; */
 }

@@ -1,7 +1,18 @@
 .link {
   cursor: pointer;
   text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
 
+.link_decoration::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  color: #f4f4f4;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
 }
 
 .link_social {
@@ -18,10 +29,9 @@
   min-height: 30px;
   width: 3.5vh;
   height: 3.5vh;
-  margin-right: 20px;
+  margin-right: 20px;   
   border-bottom: none;
   fill: #f4f4f4;
 }
-
 
 

@@ -1,11 +1,17 @@
 .footer__wrapper{}
 
-.footer__wrapper-link {}
+.footer__wrapper_link {}
 
 @media screen and (min-width: 1260px) {
-  .footer__wrapper-link  {
+  .footer__wrapper_link  {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr auto;
+    grid-gap: 120px;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  .footer__wrapper_link {
+    grid-gap: 200px;
   }
 }

@@ -17,37 +17,67 @@
   <link rel="shortcut icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
   <meta name="msapplication-TileColor" content="#f9b700">
   <meta name="theme-color" content="#201F24">
+  
   <title>Beauti Baza</title>
-  <meta name="description"
-    content="Бьюти БАЗА, самое прекрасное место в Гомеле, где Вам сделают красивые ручки, бровки и реснички наши опытные мастера, по приемлемым ценам.">
+  <meta name="description" content="Бьюти БАЗА, самое прекрасное место в Гомеле, где Вам сделают красивые ручки, бровки и реснички наши опытные мастера, по приемлемым ценам.">
+  <meta name="author" content="Maksim Sosnovskiy">
 </head>
 
 <body class="root">
   <header class="header">
-    <div class="header__logo-wrapper">
-      <svg class="logo logo__place_header">
-        <use xlink:href="#logo"></use>
-      </svg>
-    </div>
 
-    <div class="menu">
-      <button class="menu__button">меню</button>
-      <div class="menu__icon-wrapper">
-        <div class="menu__icon"></div>
+      <div class="header__logo-wrapper">
+        <svg class="logo logo__place_header">
+          <use xlink:href="#logo"></use>
+        </svg>
       </div>
-    </div>
+  
+      <div class="menu">
+        <button class="menu__button color">меню</button>
+        <div class="menu__icon-wrapper">
+          <div class="menu__icon"></div>
+        </div>
+      </div>
+    
 
-    <nav class="header__navigation" aria-label="Меню">
-      <ul class="header__list">
-        <li class="header__list-item"><a class="header__link link" href="#about">О&nbsp;нас</a></li>
-        <li class="header__list-item"><a class="header__link link" href="#services">Услуги</a></li>
-        <li class="header__list-item"><a class="header__link link" href="#clients">Клиентам</a></li>
-        <li class="header__list-item"><a class="header__link link" href="#training">Обучение</a></li>
-        <li class="header__list-item"><a class="header__link link" href="#vacancy">Вакансии</a></li>
-        <li class="header__list-item"><a class="header__link link" href="#contacts">Контакты</a></li>
-        <a href="#" class="button header__button color color_accent">Онлайн&nbsp;запись</a>
-      </ul>
-    </nav>
+      <nav class="menu__navigation" aria-label="Меню">
+        <div class="menu__navigation-wrapper">
+          <ul class="menu__list">
+            <li class="menu__list-item"><a class="menu__link link color" href="#about">О&nbsp;нас</a></li>
+            <li class="menu__list-item"><a class="menu__link link color" href="#services">Услуги</a></li>
+            <li class="menu__list-item"><a class="menu__link link color" href="#clients">Клиентам</a></li>
+            <li class="menu__list-item"><a class="menu__link link color" href="#training">Обучение</a></li>
+            <li class="menu__list-item"><a class="menu__link link color" href="#vacancy">Вакансии</a></li>
+            <li class="menu__list-item"><a class="menu__link link color" href="#contacts">Контакты</a></li>
+            <a href="#" class="button header__button color color_accent">Онлайн&nbsp;запись</a>
+          </ul>
+          <div class="company__contacts container">
+            <a href="tel:7397" class="company__phone link">
+              <svg class="link link_social link_phone">
+                <use xlink:href="#phonenumb"></use>
+              </svg>
+              7397
+            </a>
+            <div class="company__wrapper company__wrapper_social">
+              <a class="company__social-link" href="https://vk.com/beauti_baza" target="_blank" rel="noopener"
+                aria-label="в контакте">
+                <svg class="link link_social">
+                  <use xlink:href="#vk"></use>
+                </svg>
+                <span class="span span_hidden"></span>
+              </a>
+              <a class="company__social-link" href="https://www.instagram.com/beauti_baza/" target="_blank" rel="noopener"
+                aria-label="инстаграм">
+                <svg class="link link_social">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+                <span class="span span_hidden"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </nav>
 
   </header>
 
@@ -65,8 +95,8 @@
       </div>
 
       <div class="company__contacts">
-        <a href="tel:7397" class="link company__phone">
-          <svg class="link link_phone">
+        <a href="tel:7397" class="company__phone link">
+          <svg class="link link_phone link_social">
             <use xlink:href="#phonenumb"></use>
           </svg>
           7397
@@ -143,11 +173,8 @@
               <p class="services__price-name">Дизайн ноготков</p>
               <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
             </div>
-            <!-- <div class="services__price-item">
-              <p class="services__price-name">Парафинотерапия</p>
-              <p class="services__price-cost">от <span class="color color_accent">0.75</span></p>
-            </div> -->
 
+            <!-- <button class="services__price-more color color_accent" id="nails">Все цены</button> -->
             <button class="services__price-more color color_accent" id="nails">Все цены</button>
           </div>
         </div>
@@ -370,7 +397,7 @@
         <p class="training__text">Каждому студенту Beauti Baza SCHOOL в&nbsp;подарок BLACK SALE карта&nbsp;&mdash;
           7%&nbsp;на&nbsp;весь ассортимент магазина</p>
         <div class="training__wrap">
-          <a href="https://my-bb.by/" class="training__link link link_pages" target="_blank" rel="noopener">Beauti Baza
+          <a href="https://my-bb.by/" class="training__link link" target="_blank" rel="noopener">Beauti Baza
             SHOP</a>
           <svg class="link_social training__icon">
             <use xlink:href="#basket"></use>
@@ -413,7 +440,7 @@
             <svg class="contacts__image color color_svg">
               <use xlink:href="#phone"></use>
             </svg>
-            <a href="tel:7397" class="contacts__text">7397</a>
+            <a href="tel:7397" class="contacts__text color link">7397</a>
           </div>
 
           <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button color_accent" />
@@ -434,7 +461,7 @@
             <svg class="contacts__image color color_svg">
               <use xlink:href="#phone"></use>
             </svg>
-            <a href="tel:7397" class="contacts__text">7397</a>
+            <a href="tel:7397" class="contacts__text link color">7397</a>
           </div>
 
           <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button color_accent" />
@@ -480,21 +507,21 @@
         </div>
       </div>
   
-      <div class="footer__wrapper footer__wrapper-link">
+      <div class="footer__wrapper footer__wrapper_link">
         <nav class="footer__navigation">
           <ul class="footer__navigation-lists">
-            <li class="footer__list-item"><a href="#about" class="footer__link">О нас</a></li>
-            <li class="footer__list-item"><a href="#services" class="footer__link">Услуги</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Ногти</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Брови</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Лицо</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Ресницы</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Волосы</a></li>
-            <li class="footer__list-item"><a href="" class="footer__link">Мужчинам</a></li>
-            <li class="footer__list-item"><a href="#clients" class="footer__link">Клиентам</a></li>
-            <li class="footer__list-item"><a href="#training" class="footer__link">Обучение</a></li>
-            <li class="footer__list-item"><a href="#vacancy" class="footer__link">Вакансии</a></li>
-            <li class="footer__list-item"><a href="#contacts" class="footer__link">Контакты</a></li>
+            <li class="footer__list-item"><a href="#about" class="footer__link link">О нас</a></li>
+            <li class="footer__list-item"><a href="#services" class="footer__link link">Услуги</a></li>
+            <li class="footer__list-item"><a href="" class="footer__link link">Ногти</a></li>
+            <li class="footer__list-item"><a href="" class="footer__link link">Брови</a></li>
+            <li class="footer__list-item"><a href="" class="footer__link link">Лицо</a></li>
+            <li class="footer__list-item"><a href="" class="footer__link link">Ресницы</a></li>
+            <li class="footer__list-item"><a href="" class="footer__link link">Волосы</a></li>
+            <li class="footer__list-item"><a href="" class="footer__link link">Мужчинам</a></li>
+            <li class="footer__list-item"><a href="#clients" class="footer__link link">Клиентам</a></li>
+            <li class="footer__list-item"><a href="#training" class="footer__link link">Обучение</a></li>
+            <li class="footer__list-item"><a href="#vacancy" class="footer__link link">Вакансии</a></li>
+            <li class="footer__list-item"><a href="#contacts" class="footer__link link">Контакты</a></li>
           </ul>
         </nav>
   
@@ -504,8 +531,8 @@
     </div>
 
     <div class="footer__copyright">
-      <p class="footer__copyright-text">2017 – 2022 &copy;Beauti&nbsp;Baza</p>
-      <a href="mailto:maxim.sosnovsky@gmail.com" class="footer__copyright-link">Project by Maksim Sosnovskiy</a>
+      <p class="footer__copyright-text" id="footerText">2017 – 2022 &copy;Beauti&nbsp;Baza</p>
+      <p class="footer__copyright-text">MADE&nbsp;BY&nbsp;MAKSIM&nbsp;SOSNOVSKIY</p>
     </div>
   </footer>
 

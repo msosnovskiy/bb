@@ -1,7 +1,7 @@
 .icon__scroll {
-	border: 0.35vh solid #FFFFFF;
+	border: 0.35vh solid #FFFFFF44	;
 	width: 3.6vh;
-	height: 5vh;
+	height: 5.8vh;
 	border-radius: 3vh;
 	text-align: center;
 	transform: translateX(-50%);
@@ -22,9 +22,9 @@
 .icon__scroll_p1::after,
 .icon__scroll_p2::after {
 	content: "";
-	width: 0.6vh;
-	height: 0.6vh;
-	border-radius: 0.3vh;
+	width: 0.5vh;
+	height: 0.7vh;
+	border-radius: 0.5vh;
 	position: absolute;
 	background-color: #fff;
 	top: 1.4vh;

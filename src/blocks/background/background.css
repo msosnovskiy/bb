@@ -32,21 +32,21 @@
   content: "nails";
 } */
 
-.background_clients::after {
+/* .background_clients::after {
   content: "clients";
-}
+} */
 
-.background_training::after {
+/* .background_training::after {
   content: "training";
-}
+} */
 
-.background_vacancy::after {
+/* .background_vacancy::after {
   content: "vacancy";
-}
+} */
 
-.background_contacts::after {
+/* .background_contacts::after {
   content: "contacts";
-}
+} */
 
 @media screen and (min-width: 1260px) {
   .background::after {

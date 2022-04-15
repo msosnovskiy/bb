@@ -1,6 +1,7 @@
 .button {
   min-width: 12rem;
-  min-height: 2.5rem;
+  min-height: 56px;
+  height: 3rem;
   padding: 16px 32px;
   font-weight: 600;
   font-size: 1rem;
@@ -9,7 +10,9 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
   cursor: pointer;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
-
