@@ -3,20 +3,25 @@ const brows = {
   name: 'брови',
   service: [
     {
-      name: 'Услуга',
+      name: 'Услуги',
       item: [
+        {
+          name: 'Коррекция нитью / пинцетом / воском',
+          price: 15.5,
+          unit: false,
+        },
         {
           name: 'Коррекция + окрашивание',
           price: 18.9,
           unit: false,
         },
         {
-          name: 'Коррекция (нитью / пинцетом)',
-          price: 15.5,
+          name: 'Окрашивание краской',
+          price: 11.9,
           unit: false,
         },
         {
-          name: 'Окрашивание краской / хной',
+          name: 'Окрашивание хной',
           price: 11.9,
           unit: false,
         },
@@ -27,12 +32,17 @@ const brows = {
         },
         {
           name: 'Тонирование',
-          price: 11.9,
+          price: 9.9,
           unit: false,
         },
         {
           name: 'Ламинирование',
           price: 26.8,
+          unit: false,
+        },
+        {
+          name: 'Лечебное масло / Усьма',
+          price: 3.3,
           unit: false,
         },
         {
