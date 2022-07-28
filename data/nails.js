@@ -174,7 +174,8 @@ const nails = {
         {
           name: 'Вросший ноготь',
           price: 7.4,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'Протезирование ногтя',
@@ -194,6 +195,11 @@ const nails = {
       name: 'Покрытиe и снятие на ножках',
       item: [
         {
+          name: 'Покрытие лак',
+          price: 7.96,
+          unit: false,
+        },
+        {
           name: 'Покрытие гель-лак',
           price: 16.6,
           unit: false,
@@ -201,21 +207,17 @@ const nails = {
         {
           name: 'Дизайн',
           price: 1.5,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
-          name: 'Покрытие лак',
-          price: 7.96,
+          name: 'Снятие лак',
+          price: 3.9,
           unit: false,
         },
         {
           name: 'Снятие гель-лак',
           price: 5.99,
-          unit: false,
-        },
-        {
-          name: 'Снятие лак',
-          price: 3.9,
           unit: false,
         },
       ]
@@ -257,17 +259,20 @@ const nails = {
         {
           name: 'Простой',
           price: 1.5,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'Сложный',
           price: 3.6,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'Художественная роспись',
           price: 5.9,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'Акриловая лепка',
@@ -277,12 +282,14 @@ const nails = {
         {
           name: 'French / лунный',
           price: 0.79,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'Кошачий',
           price: 3.9,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'Омбре (1 ноготь)',
@@ -305,7 +312,8 @@ const nails = {
         {
           name: 'Царь ноготь',
           price: 5.5,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
       ]
     },
@@ -334,30 +342,5 @@ const nails = {
         },
       ]
     },
-    // {
-    //   name: '',
-    //   item: [
-    //     {
-    //       name: '',
-    //       price: ,
-    //       unit: false,
-    //     },
-    //     {
-    //       name: '',
-    //       price: ,
-    //       unit: false,
-    //     },
-    //     {
-    //       name: '',
-    //       price: ,
-    //       unit: false,
-    //     },
-    //     {
-    //       name: '',
-    //       price: ,
-    //       unit: false,
-    //     },
-    //   ]
-    // },
   ]
 }
