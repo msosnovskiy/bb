@@ -6,8 +6,32 @@
   content: '';
   border-bottom: 1px dotted rgba(0, 0, 0, 0.322);
   width: 100%;
+  width: calc(100% - 8px);
   height: 2px;
   position: absolute;
   left: 0;
   bottom: 0;
 }
+
+
+/* ------------- тест ------------- */
+/* .popup__content-dots {
+  position: relative;
+  margin-left: 4px;
+}
+
+.popup__content-dots::before {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.popup__content-dots::after {
+  content: "";
+  width: 4px;
+  height: 8px;
+  border: 8px solid transparent; border-right: 8px solid #ccc;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-8px);
+} */

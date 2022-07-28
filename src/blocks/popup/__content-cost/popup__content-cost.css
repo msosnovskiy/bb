@@ -2,9 +2,10 @@
   width: 100%;
   font-size: inherit;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   position: relative;
 }
 

@@ -1,3 +1,5 @@
 .popup__content-title {
   margin: 0;
+  max-width: calc(100% - 22px);
+  font-size: calc(14px + .4vw);
 }

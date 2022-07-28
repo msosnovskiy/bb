@@ -17,7 +17,5 @@
 @import url(./__copyright-text/footer__copyright-text.css);
 
 .footer {
-  background-color: #16141A;
   background: linear-gradient(180deg, #201F24 0%, #16141A 100%);
-  color: #f4f4f4;
 }

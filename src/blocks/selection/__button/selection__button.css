@@ -19,7 +19,7 @@
   left: 0px;
   transform: rotate(45deg);
   position: absolute;
-  background-color: #F9B700;
+  background-color: var(--accent);
   transition: transform .1s ease-in;
 }
 
@@ -32,17 +32,17 @@
   right: 0px;
   transform: rotate(-45deg);
   position: absolute;
-  background-color: #F9B700;
+  background-color: var(--accent);
   transition: transform .1s ease-in;
 }
 
 .selection__button.selection__button_opened::before {
-    background-color: #F9B700;
+    background-color: var(--accent);
     transform: rotate(-45deg);
     transition: transform .1s ease-in;
 }
 .selection__button.selection__button_opened::after {
-    background-color: #F9B700;
+    background-color: var(--accent);
     transform: rotate(45deg);
     transition: transform .1s ease-in;
 }

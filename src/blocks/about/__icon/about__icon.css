@@ -1,12 +1,14 @@
 @keyframes swetchColor {
   0% {
     background-color: #1c3f37;
+    transform: scale(0.8);
   }
   50% {
     background-color: #3f1c36;
   }
   100% {
     background-color: #1C2C3F;
+    transform: scale(1);
   }
 }
 
@@ -14,7 +16,7 @@
   min-width: 7vh;
   min-height: 7vh;
   border-radius: 50%;
-  background-color: #f4f4f4;
+  background-color: var(--white);
   position: relative;
   margin-right: 30px;
 }

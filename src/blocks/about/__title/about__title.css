@@ -2,6 +2,7 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 40px 0 20px;
+  color: var(--accent);
 }
 
 .about__title::before {
@@ -9,7 +10,7 @@
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 300;
-  color: #f4f4f4;
+  color: var(--white);
   display: block;
 }
 

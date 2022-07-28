@@ -5,7 +5,7 @@
   min-height: 48px;
   margin-top: 20px;
   text-decoration: none;
-  color: #f4f4f4;
+  color: var(--white);
   justify-content: flex-start;
   width: fit-content;
 }

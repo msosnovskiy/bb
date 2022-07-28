@@ -1,8 +1,8 @@
 .selection__item {
   min-height: 56px;
   margin: 20px auto;
-  border-radius: 8px;
-  background-color: #2A282E;
+  border-radius: 16px;
+  background-color: var(--gray);
 }
 
 .selection__item:last-of-type {
@@ -10,8 +10,13 @@
 }
 
 .selection__item_opened {
-  background: linear-gradient(179.94deg, #2A282E 14.42%, #1C2C3F 99.95%), #2A282E;
+  background: linear-gradient(179.94deg, var(--gray) 14.42%, #26273d 99.95%), var(--gray);
+  /* background: linear-gradient(179.94deg, var(--gray) 14.42%, #302238 99.95%), var(--gray); */
+  /* background: linear-gradient(179.94deg, var(--gray) 14.42%, #332B36 99.95%), var(--gray); */
 }
+
+/* .selection__item:hover {
+} */
 
 @media screen and (min-width: 1260px) {
   .selection__item {

@@ -7,20 +7,23 @@ import Ymaps from './components/Ymaps';
 import Popup from './components/Popup.js';
 import Popups from './components/Popups.js';
 import Footer from './components/Footer.js';
+import Scroll from './components/Scroll.js';
 import gsap from './components/GSAP.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const prazeArray = ['Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
-  const imagesGlitchSlider = ['./images/about_1.jpg', './images/about_2.jpg', './images/about_3.jpg', './images/about_4.jpg', './images/about_5.jpg'];
+  const prazeArray = ['Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
+  const imagesGlitchSlider = ['./images/about_1.jpg', './images/about_2.jpg', './images/about_3.jpg', './images/about_4.jpg', './images/about_5.jpg', './images/about_6.jpg'];
 
   const glitchSliderConfig = {
 
     nav: false,
     // navElement: '.scene-nav',
     slideImages: imagesGlitchSlider,
-    stageWidth: 1920,
-    stageHeight: 1080,
+    stageWidth: 1280,
+    stageHeight: 720,
+    // stageWidth: 1920,
+    // stageHeight: 1080,
     displacementImage: './images/displace-circle.jpg',
     fullScreen: false,
     transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
@@ -52,12 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
 
-
-  const menu = new Menu(root, menuContainer, menuButton, menuIcon, navigation, menuLinks);
+  const scroll = new Scroll(root);
+  const menu = new Menu(root, menuContainer, menuButton, menuIcon, navigation, menuLinks, scroll);
   const glitch = new Glitch(prazeArray, bannerText, 600);
   const selection = new Selection(selectionItems, 'selection__item', 'selection__header', 'selection__content', 'selection__button', '_opened');
   const createPopup = (...arg) => new Popup(...arg);
-  const popups = new Popups(root, [nails, brows], servicesButtons, createPopup, 'popup', 'popup__button', '_opened');
+  const popups = new Popups(root, [nails, brows, face, lashes, hair, men], servicesButtons, createPopup, 'popup', 'popup__button', '_opened', scroll, menuContainer);
   const ymapsOne = new Ymaps(buttonMapsOne, 'mapOne', 'contacts__maps_opened', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20');
   const ymapsTwo = new Ymaps(buttonMapsTwo, 'mapTwo', 'contacts__maps_opened', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95');
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
@@ -119,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // });
 
   /////////////////////////////////////////////
+
 
   let scriptsLoaded = false;
 

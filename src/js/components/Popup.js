@@ -1,6 +1,9 @@
 export default class Popup {
-  constructor(data) {
+  constructor(data, container, menu, scroll) {
     this.data = data;
+    this.container = container;
+    this.menu = menu;
+    this.scroll = scroll;
     this.totalPrice = 0;
   }
 
@@ -201,17 +204,24 @@ export default class Popup {
     popup.appendChild(popupFooter);
 
     popupButton.addEventListener('click', () => {
+      this.menu.classList.remove('menu_closed');
+      this.scroll._resetHideScroll();
       popup.remove();
-      // document.querySelector('.root').classList.remove('blure');
-    })
+      return;
+    }, false);
 
     popupLink.addEventListener('click', () => {
+      this.menu.classList.remove('menu_closed');
+      this.scroll._resetHideScroll();
       popup.remove();
-      // document.querySelector('.root').classList.remove('blure');
-    })
+      return;
+    }, false);
 
+    
+    
     this.popupCost = popupCost;
 
     return popup;
   }
+
 }

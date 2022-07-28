@@ -3,16 +3,13 @@
   text-decoration: none;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  color: var(--white);
 }
 
-.link_decoration::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  color: #f4f4f4;
-  position: absolute;
-  left: 0;
-  bottom: -2px;
+.link_accent {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-link);
 }
 
 .link_social {
@@ -20,7 +17,7 @@
   min-height: 30px;
   width: 3.5vh;
   height: 3.5vh;
-  fill: #f4f4f4;
+  fill: var(--white);
   border-bottom: none;
 }
 
@@ -31,7 +28,17 @@
   height: 3.5vh;
   margin-right: 20px;   
   border-bottom: none;
-  fill: #f4f4f4;
+  fill: var(--white);
+}
+
+.link:hover {
+  color: var(--accent);
+  fill: var(--accent);
+  border-color: var(--accent);
+}
+
+.link:hover svg {
+  fill: var(--accent);
 }
 
 

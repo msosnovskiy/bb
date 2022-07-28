@@ -2,17 +2,25 @@
 
 .span_br {
   display: block;
- }
+}
 
- .span_hidden {
-   opacity: 0;
-   position: absolute;
-   z-index: -100;
-   right: 50%;
-   bottom: 0;
-   font-size: 1px;
- }
+.span_hidden {
+  opacity: 0;
+  position: absolute;
+  z-index: -100;
+  right: 50%;
+  bottom: 0;
+  font-size: 1px;
+}
 
- .span_bold {
+.span_bold {
   font-weight: 700;
- }
+}
+
+.span_accent {
+  color: var(--accent);
+}
+
+.span_transparent {
+  color: #f4f4f433;
+}

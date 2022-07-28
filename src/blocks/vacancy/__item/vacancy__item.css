@@ -1,9 +1,9 @@
 .vacancy__item {
   min-height: 56px;
   margin: 20px auto;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: #2A282E;
-  padding: 20px;
+  padding: 24px 20px;
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
@@ -23,20 +23,19 @@
 @media screen and (min-width: 768px) {
   .vacancy__item {
     max-width: 80%;
-    width: 1200px;
+    width: 1000px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .vacancy__item {
-    max-width: 760px;
+    /* max-width: 760px; */
   }
 }
 
 @media screen and (min-width: 1260px) {
   .vacancy__item {
     padding: 30px;
-    max-width: 68%;
     margin: 30px auto;
   }
 }

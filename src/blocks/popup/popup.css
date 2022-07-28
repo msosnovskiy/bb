@@ -22,18 +22,19 @@
 .popup {
   position: fixed;
   color: #201E24;
-  background-color: #f4f4f4;
+  background-color: var(--white);
   width: calc(100% - 40px);
   height: auto;
-  max-height: 80vh;
+  /* max-height: 80vh; */
+  max-height: 73vh;
   max-width: 600px;
   margin: 0 auto;
   border-radius: 8px;
   left: 50%;
+  top: 9vh;
   font-size: 1rem;
 
   transform: translateX(-50%);
-  top: 9vh;
 
   transform: translate(-50%, -50%);
   top: 50%;
@@ -57,7 +58,7 @@
 }
 
 .popup ::-webkit-scrollbar-thumb {
-  background-color: #F9B700;
+  background-color: var(--accent);
   border-radius: 10px;
 }
 

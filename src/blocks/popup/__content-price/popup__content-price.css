@@ -1,21 +1,15 @@
 .popup__content-price {
   margin: 0;
+  font-size: calc(12px + .4vw);
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background-color .2s ease-in, border .2s ease-in;
 }
 
-.popup__content-price::after {
-  content: "/";
-  margin: 0 2px;
-}
 
-.popup__content-price:last-child::after {
-  content: "";
-}
-
-.popup__content-price_selected.popup__content-price::after{
-  font-weight: 500;
-}
 .popup__content-price_selected {
-  font-weight: 700;
+  background-color: var(--dark);
+  color: var(--white);
 }
 
 .popup__content-price:hover {

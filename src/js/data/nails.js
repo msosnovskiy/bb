@@ -3,12 +3,11 @@ const nails = {
   name: 'ногти',
   service: [
     {
-      name: 'Снятие',
+      name: 'Снятие покрытия ручки',
       item: [
         {
           name: 'Лак',
-          price: [2.79, 3.5],
-          // price: 2.79,
+          price: 2.79,
           unit: false,
         },
         {
@@ -23,7 +22,7 @@ const nails = {
         },
         {
           name: 'Без дальнейшего покрытия',
-          price: 6.85,
+          price: 9.85,
           unit: false,
         },
       ]
@@ -33,22 +32,32 @@ const nails = {
       item: [
         {
           name: 'Европейский',
-          price: 4.35,
+          price: 4.85,
           unit: false,
         },
         {
           name: 'Классический',
-          price: 7.95,
+          price: 8.95,
           unit: false,
         },
         {
-          name: 'Комб. / Аппаратный',
-          price: 7.95,
+          name: 'Комбинированный / аппаратный',
+          price: 8.95,
+          unit: false,
+        },
+        {
+          name: 'Без дальнейшего покрытия гель-лак',
+          price: 14.95,
+          unit: false,
+        },
+        {
+          name: 'Masura (Японский)',
+          price: 0,
           unit: false,
         },
         {
           name: 'Бразильский',
-          price: 10.9,
+          price: 9.9,
           unit: false,
         },
         {
@@ -58,34 +67,70 @@ const nails = {
         },
         {
           name: 'Только форма',
-          price: 3.6,
-          unit: false,
-        },
-        {
-          name: 'Без дальнейшего покрытия',
-          price: 12.95,
+          price: 4.6,
           unit: false,
         }
       ]
     },
     {
-      name: 'Покрытие LUXIO',
+      name: 'Покрытие на ручках',
       item: [
         {
-          name: 'Полное покрытие LUXIO',
-          price: 24.95,
+          name: 'Лак',
+          price: 6.96,
           unit: false,
         },
         {
-          name: 'Только гель-лак LUXIO',
-          price: 19.95,
+          name: 'Гель-лак',
+          price: 16.6,
           unit: false,
         },
         {
-          name: 'Укрепление LUXIO',
+          name: 'Лечебное',
+          price: 6.96,
+          unit: false,
+        },
+        {
+          name: 'Укрепление гель / акрил',
+          price: 10.9,
+          unit: false,
+        },
+        {
+          name: 'Укрепление перед покрытием пудрой',
+          price: 4.9,
+          unit: false,
+        },
+        {
+          name: 'Укрепление перед покрытием гелем',
+          price: 7.9,
+          unit: false,
+        },
+        {
+          name: 'Ремонт',
+          price: 0.95,
+          unit: true,
+          counter: 10,
+        },
+      ]
+    },
+    {
+      name: 'Покрытие материалами Luxio',
+      item: [
+        {
+          name: 'Полное покрытие',
+          price: 27.95,
+          unit: false,
+        },
+        {
+          name: 'Укрепление',
           price: 9.55,
           unit: false,
-        }
+        },
+        {
+          name: 'Использование только цветника (гель-лака)',
+          price: 21.95,
+          unit: false,
+        },
       ]
     },
     {
@@ -93,22 +138,32 @@ const nails = {
       item: [
         {
           name: 'Классический',
-          price: 21.45,
-          unit: false,
-        },
-        {
-          name: 'Аппаратный',
-          price: 22.46,
+          price: 23.45,
           unit: false,
         },
         {
           name: 'Гигиенический',
-          price: 18.50,
+          price: 19.9,
           unit: false,
         },
         {
-          name: 'Только стопа',
-          price: 9.98,
+          name: 'Аппаратный',
+          price: 23.9,
+          unit: false,
+        },
+        {
+          name: 'Комбинированный',
+          price: 23.9,
+          unit: false,
+        },
+        {
+          name: 'Только пальчики',
+          price: 17.6,
+          unit: false,
+        },
+        {
+          name: 'Обработка стоп',
+          price: 12.98,
           unit: false,
         },
         {
@@ -129,49 +184,70 @@ const nails = {
           counter: 10,
         },
         {
-          name: 'Наращивание ногтя',
+          name: 'Наращивание ногтя большого пальца',
           price: 5.5,
+          unit: true,
+          counter: 2,
+        },
+      ]
+    },
+    {
+      name: 'Покрытиe и снятие на ножках',
+      item: [
+        {
+          name: 'Покрытие лак',
+          price: 7.96,
+          unit: false,
+        },
+        {
+          name: 'Покрытие гель-лак',
+          price: 16.6,
+          unit: false,
+        },
+        {
+          name: 'Дизайн',
+          price: 1.5,
           unit: true,
           counter: 10,
         },
         {
-          name: 'Только пальчики',
-          price: 14.8,
+          name: 'Снятие лак',
+          price: 3.9,
+          unit: false,
+        },
+        {
+          name: 'Снятие гель-лак',
+          price: 5.99,
           unit: false,
         },
       ]
     },
     {
-      name: 'Покрытие',
+      name: 'Наращивание',
       item: [
         {
-          name: 'Лак',
-          price: 5.96,
+          name: 'Гель / акрил',
+          price: 0,
           unit: false,
         },
         {
-          name: 'Гель-лак',
-          price: 15.6,
+          name: 'Гель / акрил + покрытие гель-лак',
+          price: 34.95,
           unit: false,
         },
         {
-          name: 'Лечебное',
-          price: 5.8,
+          name: 'Коррекция',
+          price: 0,
           unit: false,
         },
         {
-          name: 'Укрепление',
-          price: 12.9,
+          name: 'Коррекция с покрытием гель-лак + снятие',
+          price: 31.5,
           unit: false,
         },
         {
-          name: 'Укрепление перед покр-м',
-          price: 5.9,
-          unit: false,
-        },
-        {
-          name: 'Ремонт ногтя',
-          price: 0.95,
+          name: 'Наращивание ногтя на руке',
+          price: 2.9,
           unit: true,
           counter: 10,
         },
@@ -182,43 +258,48 @@ const nails = {
       item: [
         {
           name: 'Простой',
-          price: 1.3,
+          price: 1.5,
           unit: true,
           counter: 10,
         },
         {
           name: 'Сложный',
-          price: 3.4,
+          price: 3.6,
           unit: true,
           counter: 10,
         },
         {
           name: 'Художественная роспись',
-          price: 5.5,
+          price: 5.9,
           unit: true,
           counter: 10,
         },
         {
-          name: 'French / Лунный',
-          price: 0.75,
+          name: 'Акриловая лепка',
+          price: 0,
+          unit: false,
+        },
+        {
+          name: 'French / лунный',
+          price: 0.79,
           unit: true,
           counter: 10,
         },
         {
           name: 'Кошачий',
-          price: 0.34,
+          price: 3.9,
           unit: true,
           counter: 10,
         },
         {
-          name: 'Обмре',
+          name: 'Омбре (1 ноготь)',
           price: 1.4,
           unit: true,
           counter: 10,
         },
         {
-          name: 'Втирка / Фольга / Блетски',
-          price: 0.75,
+          name: 'Втирка / фольга / блестки (1 ноготь)',
+          price: 0.79,
           unit: true,
           counter: 10,
         },
@@ -226,32 +307,11 @@ const nails = {
           name: 'Стразы (1 шт.)',
           price: 0.15,
           unit: true,
-          counter: 10,
+          counter: 500,
         },
         {
           name: 'Царь ноготь',
           price: 5.5,
-          unit: true,
-          counter: 10,
-        },
-      ]
-    },
-    {
-      name: 'Наращивание',
-      item: [
-        {
-          name: 'Гель / Акрил / Гель-лак',
-          price: 32.95,
-          unit: false,
-        },
-        {
-          name: 'Коррекция с г-л + снятие',
-          price: 29.5,
-          unit: false,
-        },
-        {
-          name: 'Наращивание ногтя (1/10)',
-          price: 2.9,
           unit: true,
           counter: 10,
         },
@@ -276,7 +336,7 @@ const nails = {
           unit: false,
         },
         {
-          name: 'Уход ног (скраб + маска)',
+          name: 'Уход ног (скраб-маска)',
           price: 5.5,
           unit: false,
         },

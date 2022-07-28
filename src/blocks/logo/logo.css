@@ -3,7 +3,7 @@
 .logo__place_header {
   width: 60px;
   height: 30px;
-  fill: #f4f4f4;
+  fill: var(--white);
   position: relative;
   z-index: 1;
 }
@@ -19,7 +19,7 @@
 .logo__place_footer {
   width: 226px;
   height: 101px;
-  fill: #f4f4f4;
+  fill: var(--white);
 }
 
 @media screen and (min-width: 1260px) {

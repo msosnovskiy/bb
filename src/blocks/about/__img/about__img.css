@@ -4,9 +4,12 @@
   margin: 0 auto;
   text-align: center;
   position: relative;
+  border-radius: 8px;
+  z-index: -1;
 }
 
 .about__img canvas {
+  /* filter: drop-shadow(0px 0px 24px #020005cc); */
   width: 100%;
   max-width: 600px;
   min-height: inherit;
@@ -14,19 +17,6 @@
   border-radius: 8px;
   left: 0;
   top: 0;
-  z-index: -1;
   position: relative;
   object-fit: cover;
 }
-
-/* @media screen and (min-width: 1000px) {
-  .about__img {
-    grid-area: 1/2/1/2;
-  }
-} */
-
-/* @media screen and (min-width: 1920px) {
-  .about__img {
-    max-width: 80%;
-  }
-} */

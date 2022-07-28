@@ -6,12 +6,6 @@
   .footer__wrapper_link  {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 120px;
-  }
-}
-
-@media screen and (min-width: 1520px) {
-  .footer__wrapper_link {
-    grid-gap: 200px;
+    grid-gap: 100px;
   }
 }

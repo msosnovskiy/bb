@@ -2,7 +2,8 @@
   background-color: transparent;
   border: none;
   padding: 8px 16px;
-  border: 2px solid;
+  border: 2px solid var(--accent);
+  color: var(--accent);
   border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;

@@ -1,3 +1,17 @@
+:root {
+  --dark: #201F24;
+  --blure: #16141ae3;
+  --gray: #2A282E;
+  --gray200: #ccc;
+  
+  --white: #f4f4f4;
+  /* --white: #f1f1ef; */
+  /* --accent: #F9B700; */
+  --accent: #F44C86;
+  --accent-link: #f44c8699;
+}
+
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -9,32 +23,9 @@ html {
   min-height: calc(100vh - 1px);
 }
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
-  display: none;
 }
-/* 
-html::-webkit-scrollbar-thumb {
-  display: none;
-}
-html::-webkit-scrollbar-thumb {
-  display: none;
-}
-html::-webkit-scrollbar-button {
-  display: none;
-}
-html::-webkit-scrollbar-track {
-  display: none;
-}
-html::-webkit-scrollbar-track-piece {
-  display: none;
-}
-html::-webkit-scrollbar-corner {
-  display: none;
-}
-html::-webkit-resizer {
-  display: none;
-} */
 
 button {
   cursor: pointer;

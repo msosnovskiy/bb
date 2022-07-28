@@ -11,6 +11,8 @@
 	position: absolute;
 	top: calc(50% - 37px);
 	left: calc(50% - 37px);
+	border-color: #fab700;
+  border-bottom-color: rgba(250, 183, 0, 0.45);
 }
 
 .spinner_hidden {
