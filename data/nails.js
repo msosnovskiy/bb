@@ -254,7 +254,7 @@ const nails = {
       ]
     },
     {
-      name: 'Дизайн',
+      name: 'Дизайн (1 ноготь)',
       item: [
         {
           name: 'Простой',
@@ -277,7 +277,8 @@ const nails = {
         {
           name: 'Акриловая лепка',
           price: 0,
-          unit: false,
+          unit: true,
+          counter: 10,
         },
         {
           name: 'French / лунный',
@@ -292,13 +293,13 @@ const nails = {
           counter: 10,
         },
         {
-          name: 'Омбре (1 ноготь)',
+          name: 'Омбре',
           price: 1.4,
           unit: true,
           counter: 10,
         },
         {
-          name: 'Втирка / фольга / блестки (1 ноготь)',
+          name: 'Втирка / фольга / блестки',
           price: 0.79,
           unit: true,
           counter: 10,
