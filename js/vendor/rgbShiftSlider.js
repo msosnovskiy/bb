@@ -305,7 +305,6 @@
 
             function updateTextureBgs() {
                 options.spinnerElement.classList.add('spinner_hidden');
-                console.log('updateTextureBgs');
                 for (var i = 0; i < options.slideImages.length; ++i) {
                     if (i == next) {
                         for (var j = 0, len = containers.length; j < len; j++) {
