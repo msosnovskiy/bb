@@ -85,11 +85,11 @@ const lashes = {
           price: 36.8,
           unit: false,
         },
-        {
-          name: 'Ботокс',
-          price: 0,
-          unit: false,
-        },
+        // {
+        //   name: 'Ботокс',
+        //   price: 0,
+        //   unit: false,
+        // },
         {
           name: 'Окрашивание',
           price: 5.9,

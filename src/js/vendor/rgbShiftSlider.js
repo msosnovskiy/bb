@@ -122,10 +122,6 @@
               } else {
                   renderer.view.style.maxWidth = '100%';
                   renderer.view.style.objectFit = 'cover';
-                //   renderer.view.style.top = '50%';
-                //   renderer.view.style.left = '50%';
-                //   renderer.view.style.webkitTransform = 'translate( -50%, -50% )';
-                //   renderer.view.style.transform = 'translate( -50%, -50% )';
               }
 
               render = new PIXI.ticker.Ticker();

@@ -29,8 +29,10 @@ export default class Ymaps {
           // balloonContentFooter: 'Телефон <a href="tel:+74959265423">+74959265423</a>',
         },
           {
+            // ----- ИКОНКА Yandex-а
             preset: 'islands#violetDotIcon',
             iconColor: '#201F24'
+
           });
 
       this.myMap.geoObjects.add(myPlacemark);

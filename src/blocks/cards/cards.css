@@ -19,8 +19,12 @@
  /* контур карты */
 .cards {
   margin: 60px auto;
-  max-width: 560px;
-  max-height: 350px;
+  /* max-width: 560px; */
+  /* max-height: 350px; */
+
+  /* пропорции карточки 1.6 */
+  max-width: 420px;
+  max-height: 262px;
   width: 80vw;
   height: 50vw;
   background: linear-gradient(120deg, #343338 0%, #141318 100%);

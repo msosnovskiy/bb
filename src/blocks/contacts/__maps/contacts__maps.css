@@ -13,6 +13,8 @@
   max-width: calc(100vw - 40px);
   height: 60vh;
   display: none;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .contacts__maps_opened {

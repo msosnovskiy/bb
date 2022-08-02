@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const createPopup = (...arg) => new Popup(...arg);
   const popups = new Popups(root, [nails, brows, face, lashes, hair, men], servicesButtons, createPopup, 'popup', 'popup__button', '_opened', scroll, menuContainer);
   const ymapsOne = new Ymaps(buttonMapsOne, 'mapOne', 'contacts__maps_opened', '52.428975', '31.007007', 'Бьюти База', 'г. Гомель, ул. Кирова, 20');
-  const ymapsTwo = new Ymaps(buttonMapsTwo, 'mapTwo', 'contacts__maps_opened', '52.404660', '30.941536', 'Бьюти База', 'г. Гомель, пр-т Октября, 95');
+  const ymapsTwo = new Ymaps(buttonMapsTwo, 'mapTwo', 'contacts__maps_opened', '52.404897', '30.941707', 'Бьюти База', 'г. Гомель, пр-т Октября, 95');
   const mapOnePrompt = new Map(mapOne, 'contacts__maps_cover');
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
   const footer = new Footer(footerText, '©Beauti Baza');
@@ -143,7 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!scriptsLoaded) {
       scriptsLoaded = true;
       addScript('./js/vendor/TweenMax2.1.3.min.js');
-      addScript('./js/vendor/rgbShiftSlider.min.js');
+      // addScript('./js/vendor/rgbShiftSlider.min.js');
+      addScript('./js/vendor/rgbShiftSlider.js');
       const glitchSlider = () => new rbgShiftSlider(glitchSliderConfig);
       addScript('./js/vendor/pixi.min.js', glitchSlider);
       spinner.classList.add('spinner_hidden');

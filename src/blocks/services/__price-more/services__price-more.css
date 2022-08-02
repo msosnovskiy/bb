@@ -1,11 +1,23 @@
 .services__price-more {
   background-color: transparent;
   border: none;
-  padding: 8px 16px;
+  padding: 12px 20px;
   border: 2px solid var(--accent);
-  color: var(--accent);
-  border-radius: 8px;
+  background-color: var(--accent);
+  /* color: var(--accent); */
+  /* border-radius: 8px; */
+  border-radius: 12px;
+  color: var(--dark);
   font-weight: 600;
   font-size: 1rem;
   margin-top: 20px;
+
+  /* box-shadow: 0 0 12px rgba(244, 76, 134, 0.4);  */
+  transition: 0.3s;
+}
+
+.services__price-more:hover {
+  background-color: transparent;
+  box-shadow: 0 0 8px rgba(244, 76, 134, 0.8); 
+  color: var(--accent);
 }

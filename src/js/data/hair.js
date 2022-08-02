@@ -78,7 +78,7 @@ const hair = {
       ]
     },
     {
-      name: 'Окрашивание Londa',
+      name: 'Окрашивание Londa / Matrix',
       item: [
         {
           name: 'Консультация',
@@ -90,11 +90,11 @@ const hair = {
           price: 89,
           unit: false,
         },
-        {
-          name: 'Окрашивания',
-          price: 0,
-          unit: false,
-        },
+        // {
+        //   name: 'Окрашивания',
+        //   price: 0,
+        //   unit: false,
+        // },
         {
           name: 'Окрашивание корней + тонирование (блонд)',
           price: 126,
@@ -115,11 +115,11 @@ const hair = {
           price: 117,
           unit: false,
         },
-        {
-          name: 'Окрашивание',
-          price: 0,
-          unit: false,
-        },
+        // {
+        //   name: 'Окрашивание',
+        //   price: 0,
+        //   unit: false,
+        // },
         {
           name: 'Окрашивание + тонирование (блонд)',
           price: 194,
