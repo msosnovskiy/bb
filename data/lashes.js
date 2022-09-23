@@ -7,42 +7,42 @@ const lashes = {
       item: [
         {
           name: 'Classic',
-          price: 34.5,
+          price: 38.5,
           unit: false,
         },
         {
           name: '2D',
-          price: 37.8,
-          unit: false,
-        },
-        {
-          name: '3D NEW',
           price: 41.8,
           unit: false,
         },
         {
+          name: '3D',
+          price: 45.8,
+          unit: false,
+        },
+        {
           name: '4D / 5D',
-          price: 48.5,
+          price: 53.5,
           unit: false,
         },
         {
           name: 'Hollywood lash',
-          price: 57.5,
+          price: 59.5,
           unit: false,
         },
         {
           name: 'Kim Kardashian',
-          price: 46.9,
+          price: 56.9,
           unit: false,
         },
         {
           name: '+ L / M изгиб при classic или 2D',
-          price: 4.9,
+          price: 5.9,
           unit: false,
         },
         {
           name: '+ L / M изгиб при 3D и более',
-          price: 6.9,
+          price: 7.9,
           unit: false,
         },
         {
@@ -52,12 +52,12 @@ const lashes = {
         },
         {
           name: 'Снятие',
-          price: 5.9,
+          price: 9.4,
           unit: false,
         },
         {
           name: 'Протезирование (1 участок)',
-          price: 1.8,
+          price: 1.9,
           unit: false,
         },
       ]
@@ -72,7 +72,7 @@ const lashes = {
         },
         {
           name: 'Ламинирование ресниц',
-          price: 28.8,
+          price: 29.8,
           unit: false,
         },
         {

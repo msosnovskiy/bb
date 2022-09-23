@@ -52,13 +52,18 @@ const hair = {
         },
         {
           name: 'Каре',
-          price: 19.6,
+          price: 19.8,
           unit: false,
         },
         {
           name: 'Стрижка',
-          price: [13.8, 19.6, 22.9],
+          price: [13.8, 19.8, 22.9],
           unit: false,
+        },
+        {
+          name: 'Модельная',
+          price: 17.5,
+          unit: true,
         },
       ]
     },
@@ -90,11 +95,6 @@ const hair = {
           price: 89,
           unit: false,
         },
-        // {
-        //   name: 'Окрашивания',
-        //   price: 0,
-        //   unit: false,
-        // },
         {
           name: 'Окрашивание корней + тонирование (блонд)',
           price: 126,
@@ -115,11 +115,6 @@ const hair = {
           price: 117,
           unit: false,
         },
-        // {
-        //   name: 'Окрашивание',
-        //   price: 0,
-        //   unit: false,
-        // },
         {
           name: 'Окрашивание + тонирование (блонд)',
           price: 194,
