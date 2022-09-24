@@ -41,7 +41,7 @@ const face = {
       name: 'Тридинг',
       item: [
         {
-          name: 'Скул',
+          name: 'Скулы',
           price: 5.9,
           unit: false,
         },
@@ -51,17 +51,17 @@ const face = {
           unit: false,
         },
         {
-          name: 'Верхней губы',
+          name: 'Верхняя губа',
           price: 4.6,
           unit: false,
         },
         {
-          name: 'Подбородка',
+          name: 'Подбородок',
           price: 4.9,
           unit: false,
         },
         {
-          name: 'Лица',
+          name: 'Лицо',
           price: 11.5,
           unit: false,
         },
