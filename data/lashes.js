@@ -48,7 +48,8 @@ const lashes = {
         {
           name: 'Color (10%)',
           price: 1,
-          unit: false,
+          unit: true,
+          counter: 10
         },
         {
           name: 'Снятие',
