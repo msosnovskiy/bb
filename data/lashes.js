@@ -59,7 +59,8 @@ const lashes = {
         {
           name: 'Протезирование (1 участок)',
           price: 1.9,
-          unit: false,
+          unit: true,
+          counter: 100
         },
       ]
     },

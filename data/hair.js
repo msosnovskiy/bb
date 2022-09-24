@@ -6,7 +6,7 @@ const hair = {
       name: 'Причёски & укладки',
       item: [
         {
-          name: 'Сушка + мытье',
+          name: 'Сушка + мытьё',
           price: 7.9,
           unit: false,
         },
@@ -21,12 +21,12 @@ const hair = {
           unit: false,
         },
         {
-          name: 'Локоны / Aфрокудри',
+          name: 'Локоны / афрокудри',
           price: [16, 20, 30],
           unit: false,
         },
         {
-          name: 'Прическа',
+          name: 'Причёска',
           price: 45,
           unit: false,
         },
@@ -46,7 +46,7 @@ const hair = {
           unit: false,
         },
         {
-          name: 'Челка',
+          name: 'Чёлка',
           price: 8.9,
           unit: false,
         },
