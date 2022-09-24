@@ -90,12 +90,12 @@ const hair = {
       item: [
         {
           name: 'Кератиновое выпрямление',
-          price: [0, 169, 209],
+          price: ['–', 169, 209],
           unit: false,
         },
         {
           name: 'Ботокс',
-          price: [0, 169, 209],
+          price: ['–', 169, 209],
           unit: false,
         },
       ]
