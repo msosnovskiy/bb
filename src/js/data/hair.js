@@ -6,7 +6,7 @@ const hair = {
       name: 'Причёски & укладки',
       item: [
         {
-          name: 'Сушка + мытье',
+          name: 'Сушка + мытьё',
           price: 7.9,
           unit: false,
         },
@@ -21,12 +21,12 @@ const hair = {
           unit: false,
         },
         {
-          name: 'Локоны / Aфрокудри',
+          name: 'Локоны / афрокудри',
           price: [16, 20, 30],
           unit: false,
         },
         {
-          name: 'Прическа',
+          name: 'Причёска',
           price: 45,
           unit: false,
         },
@@ -46,19 +46,24 @@ const hair = {
           unit: false,
         },
         {
-          name: 'Челка',
+          name: 'Чёлка',
           price: 8.9,
           unit: false,
         },
         {
           name: 'Каре',
-          price: 19.6,
+          price: 19.8,
           unit: false,
         },
         {
           name: 'Стрижка',
-          price: [13.8, 19.6, 22.9],
+          price: [13.8, 19.8, 22.9],
           unit: false,
+        },
+        {
+          name: 'Модельная',
+          price: 17.5,
+          unit: true,
         },
       ]
     },
@@ -90,11 +95,6 @@ const hair = {
           price: 89,
           unit: false,
         },
-        // {
-        //   name: 'Окрашивания',
-        //   price: 0,
-        //   unit: false,
-        // },
         {
           name: 'Окрашивание корней + тонирование (блонд)',
           price: 126,
@@ -115,11 +115,6 @@ const hair = {
           price: 117,
           unit: false,
         },
-        // {
-        //   name: 'Окрашивание',
-        //   price: 0,
-        //   unit: false,
-        // },
         {
           name: 'Окрашивание + тонирование (блонд)',
           price: 194,

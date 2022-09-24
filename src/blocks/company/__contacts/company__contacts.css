@@ -8,4 +8,6 @@
   left: 0;
   display: flex;
   align-self: flex-end;
+
+  opacity: 0;
 }

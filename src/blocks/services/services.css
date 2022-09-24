@@ -1,4 +1,6 @@
+@import url(./__wrapper/services__wrapper.css);
 @import url(./__item/services__item.css);
+@import url(./__header/services__header.css);
 @import url(./__title/services__title.css);
 @import url(./__price-lists/services__price-lists.css);
 @import url(./__price-item/services__price-item.css);
@@ -8,7 +10,7 @@
 @import url(./__button/services__button.css);
 
 .services {
-  width: auto;
+  width: 100%;
   position: relative;
 }
 

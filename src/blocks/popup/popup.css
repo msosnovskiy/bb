@@ -15,9 +15,9 @@
 @import url(./__content-dots/popup__content-dots.css);
 @import url(./__content-price/popup__content-price.css);
 
-
 @import url(./__footer/popup__footer.css);
 @import url(./__link/popup__link.css);
+
 
 .popup {
   position: fixed;
@@ -25,7 +25,6 @@
   background-color: var(--white);
   width: calc(100% - 40px);
   height: auto;
-  /* max-height: 80vh; */
   max-height: 73vh;
   max-width: 600px;
   margin: 0 auto;
@@ -49,6 +48,7 @@
 
 .popup_opened {
   display: flex;
+  filter: var(--shadow);
 }
 
 .popup ::-webkit-scrollbar {

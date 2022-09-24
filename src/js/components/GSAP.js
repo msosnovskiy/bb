@@ -1,14 +1,20 @@
 console.log('start GSAP');
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline({ defaults: { duration: .3, ease: "sine" } });
 
-tl.from('.company', { delay: .3, opacity: 0, })
-  .from('.company__title', { delay: .5, y: "20", opacity: 0, })
-  .from('.company__subtitle', { y: "20", opacity: 0, })
-  .from('.company__button', { opacity: 0, })
-  .from('.company__contacts, .icon__scroll', { opacity: 0, })
+// tl.from('.company', { delay: .3, opacity: 0, })
+//   .from('.company__title', { delay: .5, y: "20", opacity: 0, })
+//   .from('.company__subtitle', { y: "20", opacity: 0, })
+//   .from('.company__button', { opacity: 0, })
+//   .from('.company__contacts, .icon__scroll', { opacity: 0, })
+
+tl.to('.company', { delay: .3, opacity: 1, })
+  .fromTo('.company__title', {y: "20"}, {y: "0", delay: .3, opacity: 1, })
+  .fromTo('.company__subtitle', {y: "20"}, {y: "0",  opacity: 1, })
+  .to('.company__button', { opacity: 1, })
+  .to('.company__contacts, .icon__scroll', { opacity: 1, })
 
 // gsap.to('.company', {
 //   scrollTrigger: {

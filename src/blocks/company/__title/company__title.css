@@ -9,6 +9,8 @@
   margin: 0;
   margin-left: -4px;
   position: relative;
+
+  opacity: 0;
 }
 
 .company__title .company__title_span {

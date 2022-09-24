@@ -3,6 +3,7 @@
   margin: 20px auto;
   border-radius: 16px;
   background-color: var(--gray);
+  transition: filter .25s linear,;
 }
 
 .selection__item:last-of-type {
@@ -11,12 +12,9 @@
 
 .selection__item_opened {
   background: linear-gradient(179.94deg, var(--gray) 14.42%, #26273d 99.95%), var(--gray);
-  /* background: linear-gradient(179.94deg, var(--gray) 14.42%, #302238 99.95%), var(--gray); */
-  /* background: linear-gradient(179.94deg, var(--gray) 14.42%, #332B36 99.95%), var(--gray); */
+  filter: var(--shadow);
 }
 
-/* .selection__item:hover {
-} */
 
 @media screen and (min-width: 1260px) {
   .selection__item {

@@ -38,10 +38,20 @@ export default class Popup {
         this._updatePrice();
       }
 
+      //условие не штушной услуги
       else if (object) {
         const selected = contentCost.querySelector('.popup__content-price_selected');
         if (selected === null) {
           element.classList.add('popup__content-price_selected');
+
+          //отключение остальных цен при выборе одной;
+          const allPrices = contentCost.querySelectorAll('.popup__content-price');
+          allPrices.forEach((item) => {
+            if (!item.closest('.popup__content-price_selected')) {
+              item.classList.add('popup__content-price_disabled');
+            }
+            else return;
+          })
 
           if (!contentButton.closest('.popup__button_opened')) {
             contentButton.classList.add('popup__button_opened');
@@ -131,13 +141,19 @@ export default class Popup {
 
       const selectedCountItems = contentItem.querySelectorAll('.popup__content-subtitle-unit_opened');
       const selectedItems = contentItem.querySelectorAll('.popup__content-price_selected');
+      const disabledItems = contentItem.querySelectorAll('.popup__content-price_disabled');
 
       let sectionPrice = Number(0);
 
       selectedItems.forEach((item) => {
         item.classList.remove('popup__content-price_selected');
+
         sectionPrice = sectionPrice + (Number(item.textContent) * Number(item.dataset.counter));
         item.setAttribute('data-counter', 1);
+      })
+
+      disabledItems.forEach((item) => {
+        item.classList.remove('popup__content-price_disabled');
       })
 
       this.totalPrice = Number(this.totalPrice) - Number(sectionPrice.toFixed(2));
@@ -217,8 +233,8 @@ export default class Popup {
       return;
     }, false);
 
-    
-    
+
+
     this.popupCost = popupCost;
 
     return popup;

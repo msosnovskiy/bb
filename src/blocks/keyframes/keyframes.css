@@ -76,3 +76,25 @@
   }
 }
 
+@keyframes showopacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideopacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.opacity_hide {
+  animation: hideopacity .2s linear; 
+}
+

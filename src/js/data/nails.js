@@ -16,7 +16,7 @@ const nails = {
           unit: false,
         },
         {
-          name: 'Акрил / Гель',
+          name: 'Акрил / гель',
           price: 6.85,
           unit: false,
         },

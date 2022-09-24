@@ -1,9 +1,10 @@
 .selection__content {
   display: none;
   padding: 10px 20px 24px;
+
 }
 
-.selection__content_opened{
+.selection__content_opened {
   display: inline-block;
 }
 

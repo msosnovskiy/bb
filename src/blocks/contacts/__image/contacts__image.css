@@ -4,4 +4,5 @@
   width: 3.5vh;
   height: 3.5vh;
   fill: var(--accent);
+  margin-right: 20px;
 }

@@ -11,14 +11,13 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   position: relative;
-  /* overflow-x: hidden; */
 }
 
 .root.no-scroll {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+
 }
 
 .no-scroll::after {
@@ -30,4 +29,5 @@
   position: fixed;
   left: 0; 
   top: 0;
+  animation: showopacity .2s linear both; 
 }

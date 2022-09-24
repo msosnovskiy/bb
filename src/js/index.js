@@ -15,27 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const prazeArray = ['Beauti Baza', 'Beauti Baza', 'Beauti Baza', 'you are beautiful', 'Ты Прекрасна', '你很美丽', 'ты прыгожая', 'du bist schön', 'ти прекрасна', 'tu es belle', 'eres hermoso', 'jesteś piękna', 'BEAUTI BAZA'];
   const imagesGlitchSlider = ['./images/about_1.jpg', './images/about_2.jpg', './images/about_3.jpg', './images/about_4.jpg', './images/about_5.jpg', './images/about_6.jpg'];
 
-  const glitchSliderConfig = {
-
-    nav: false,
-    // navElement: '.scene-nav',
-    slideImages: imagesGlitchSlider,
-    stageWidth: 1280,
-    stageHeight: 720,
-    // stageWidth: 1920,
-    // stageHeight: 1080,
-    displacementImage: './images/displace-circle.jpg',
-    fullScreen: false,
-    transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
-    transitionGhostDuration: 0.25,
-    transitionFilterIntensity: 350,
-    transitionSpriteIntensity: 2,
-    mouseDispIntensity: 3,
-    interactive: true,
-    autoPlay: true,
-    autoPlaySpeed: 3000,
-  };
-
   const root = document.querySelector('.root');
   const company = document.querySelector('.company');
   const bannerText = document.querySelector('.company__title');
@@ -53,6 +32,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const spinner = document.querySelector('.spinner');
   const footerText = document.querySelector('#footerText');
 
+  const glitchSliderConfig = {
+
+    nav: false,
+    slideImages: imagesGlitchSlider,
+    stageWidth: 1280,
+    stageHeight: 720,
+    spinnerElement: spinner,
+    // stageWidth: 1920,
+    // stageHeight: 1080,
+    displacementImage: './images/displace-circle.jpg',
+    fullScreen: false,
+    transitionDuration: 0.2, // must be 0.1 > transitionGhostDuration
+    transitionGhostDuration: 0.25,
+    transitionFilterIntensity: 350,
+    transitionSpriteIntensity: 2,
+    mouseDispIntensity: 3,
+    interactive: true,
+    autoPlay: true,
+    autoPlaySpeed: 3000,
+  };
+
+
   //Id - Id блока карты, buttonId - Id кнопка, coordinatesX и coordinatesY координаты, заголовок и текст метки
 
   const scroll = new Scroll(root);
@@ -67,61 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapTwoPrompt = new Map(mapTwo, 'contacts__maps_cover');
   const footer = new Footer(footerText, '©Beauti Baza');
   // --------------------------------------------------------------------------------------------------------------------
-
-  // const swiper = new Swiper('.swiper', {
-  //   // navigation: {
-  //   //   nextEl: '.swiper-button-next', 
-  //   //   prevEL: '.swiper-button-prev'
-  //   // },
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
-  //     // type: 'fraction',
-  //   },
-  //   direction: 'vertical'
-  // });
-
-
-
-  // let useragent = detect.parse(navigator.userAgent);
-  // alert(useragent.browser.family); 
-
-  // if (useragent.browser.family === 'Mobile Safari') {
-  // company.style.height = '90vh';
-  // company.style.color = 'red';
-  // }
-
-  // Выводим нужные значения в консоли браузера
-  // console.log(
-  // useragent.browser
-  // useragent.browser.family,
-  // useragent.browser.version,
-  // useragent.os.name
-  // )
-
-
-  /////////////////////////////////////////////
-
-  // let docWidth = document.documentElement.clientWidth;
-  // const subtitle = document.querySelector('#subtitle');
-
-  // function removeTitleSpan() {
-  //   if (docWidth > 1600) {
-  //     subtitle.classList.remove('span_br');
-  //   }
-  //   else {
-  //     subtitle.classList.add('span_br');
-  //   }
-  // }
-
-  // removeTitleSpan();
-
-  // window.addEventListener('resize', () => {
-  //   docWidth = document.documentElement.clientWidth;
-  //   removeTitleSpan();
-  // });
-
-  /////////////////////////////////////////////
 
 
   let scriptsLoaded = false;
@@ -143,11 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!scriptsLoaded) {
       scriptsLoaded = true;
       addScript('./js/vendor/TweenMax2.1.3.min.js');
-      // addScript('./js/vendor/rgbShiftSlider.min.js');
-      addScript('./js/vendor/rgbShiftSlider.js');
+      addScript('./js/vendor/rgbShiftSlider.min.js');
       const glitchSlider = () => new rbgShiftSlider(glitchSliderConfig);
       addScript('./js/vendor/pixi.min.js', glitchSlider);
-      spinner.classList.add('spinner_hidden');
 
       addScript('https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0c91191e-f3dd-4782-8118-aab2a666cfbb');
     }

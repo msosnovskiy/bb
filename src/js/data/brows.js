@@ -41,7 +41,7 @@ const brows = {
           unit: false,
         },
         {
-          name: 'Лечебное масло / Усьма',
+          name: 'Лечебное масло / усьма',
           price: 3.3,
           unit: false,
         },

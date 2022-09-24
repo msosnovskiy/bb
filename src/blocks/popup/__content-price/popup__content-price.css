@@ -1,9 +1,9 @@
 .popup__content-price {
-  margin: 0;
+  margin: 0 -2px 0 4px;
   font-size: calc(12px + .4vw);
   padding: 4px 8px;
   border-radius: 8px;
-  transition: background-color .2s ease-in, border .2s ease-in;
+  transition: background-color .2s ease-in, border .2s ease-in, color .2s ease-in;
 }
 
 
@@ -14,4 +14,20 @@
 
 .popup__content-price:hover {
   cursor: pointer;
+  background-color: var(--gray200);
+  color: var(--dark);
+}
+
+.popup__content-price:hover.popup__content-price_selected {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.popup__content-price_disabled {
+  color: var(--gray200);
+}
+
+.popup__content-price:hover.popup__content-price_disabled {
+  background-color: transparent;
+  color: var(--gray200);
 }

@@ -27,12 +27,6 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .vacancy__item {
-    /* max-width: 760px; */
-  }
-}
-
 @media screen and (min-width: 1260px) {
   .vacancy__item {
     padding: 30px;

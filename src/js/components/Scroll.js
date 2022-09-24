@@ -6,7 +6,7 @@ export default class Scroll {
   _hasScrollbar() { // проверка на боковой скролл
     return this.body.scrollHeight > this.body.clientHeight;
   }
-  
+
   _getScrollbarSize() { // получение ширины скролла
     let outer = document.createElement('div');
     outer.style.visibility = 'hidden';
@@ -31,7 +31,7 @@ export default class Scroll {
     this.body.classList.add('no-scroll');
 
     // запоминаем текущую прокрутку сверху
-    this.scrollTop = window.pageYOffset; 
+    this.scrollTop = window.pageYOffset;
 
     this.body.style.position = 'fixed';
     if (this._hasScrollbar()) {
@@ -43,11 +43,32 @@ export default class Scroll {
     this.body.style.top = -this.scrollTop + 'px';
   }
 
-    _resetHideScroll() {
+  _resetHideScroll() {
+
+    // this.body.classList.add('opacity_hide');
+
+    // let closeAnim = setInterval(() => {
+    //   this.body.classList.remove('no-scroll');
+    //   this.body.style.position = '';
+    //   this.body.style.width = '';
+    //   this.body.style.top = '';
+    //   this.body.classList.remove('opacity_hide');
+    //   window.scroll(0, this.scrollTop);
+    //   clearInterval(closeAnim);
+    // }, 1250);
+
     this.body.classList.remove('no-scroll');
     this.body.style.position = '';
     this.body.style.width = '';
     this.body.style.top = '';
     window.scroll(0, this.scrollTop);
   }
+
+  // _closeAnimation() {
+  //   let closeAnim = setInterval(() => {
+  //     this.container.classList.add('.opacity_hide');
+  //     clearInterval(closeAnim);
+  //   }, 1000);
+  // }
+
 }

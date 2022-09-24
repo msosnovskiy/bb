@@ -1,4 +1,6 @@
 .company__button {
   margin: 0;
   width: fit-content;
+
+  opacity: 0;
 }

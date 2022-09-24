@@ -2,20 +2,23 @@
   width: 28px;
   height: 28px;
   padding: 6px;
+  /* margin: 0 -6px 0 0; */
   margin: 0;
   display: inline-block;
   border: none;
   background-color: transparent;
   position: relative;
-  margin-right: -6px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s linear;
+  border-radius: 6px;
 }
 
 .popup__button::before {
   content: "";
   width: 18px;
   height: 2px;
-  background-color: #201E24;
+  background-color: var(--dark);
   position: absolute;
   transition: transform .1s ease-in, top .1s linear .1s;
   top: 12px;
@@ -28,7 +31,7 @@
   content: "";
   width: 18px;
   height: 2px;
-  background-color: #201E24;
+  background-color: var(--dark);
   position: absolute;
   transition: transform .1s ease-in, top .1s linear .1s;
   top: 12px;
@@ -38,5 +41,10 @@
 }
 
 .popup__button_opened {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__button:hover {
+  background-color: var(--gray200);
 }

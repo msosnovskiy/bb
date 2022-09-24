@@ -22,11 +22,11 @@ export default  class Glitch {
         this.phraze.prepend(spanSecond);
         spanFirst.innerHTML = text;
         spanSecond.innerHTML = text;
-
       }
     }
     //если фраза состоит из одного слова то просто меняем текст
     else this.phraze.textContent = item;
+
   }
 
   run() {

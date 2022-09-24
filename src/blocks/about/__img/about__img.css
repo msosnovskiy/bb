@@ -9,7 +9,7 @@
 }
 
 .about__img canvas {
-  /* filter: drop-shadow(0px 0px 24px #020005cc); */
+  filter: var(--shadow);
   width: 100%;
   max-width: 600px;
   min-height: inherit;
@@ -19,4 +19,5 @@
   top: 0;
   position: relative;
   object-fit: cover;
+
 }

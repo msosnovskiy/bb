@@ -1,3 +1,12 @@
 .contacts__button {
-  margin: 30px auto;
+  margin: 20px auto 0;
+  max-width: fit-content;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .contacts__button {
+    margin: 20px 0 0;
+  }
 }
