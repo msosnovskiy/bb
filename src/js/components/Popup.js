@@ -38,11 +38,16 @@ export default class Popup {
 
     if (this.totalPrice.toFixed(2) < 0 || this.totalPrice.toFixed(2) == 0) {
       this.totalPrice = 0;
+      this.popupCost.classList.remove('popup__cost_active');
       this.popupCost.textContent = this.totalPrice;
+      this.popupCostSale.textContent = '';
     }
 
     else {
+      // this.popupCost.textContent = `${this.totalPrice.toFixed(2)} ${(this.totalPrice * 0.95).toFixed(2)}*`;
+      this.popupCost.classList.add('popup__cost_active');
       this.popupCost.textContent = this.totalPrice.toFixed(2);
+      this.popupCostSale.textContent = `${(this.totalPrice * 0.95).toFixed(2)}`;
     }
 
   }
@@ -252,6 +257,7 @@ export default class Popup {
     const popupName = this._createElement('h3', 'popup__name', this.data.name);
     const popupWrapper = this._createElement('div', 'popup__wrapper');
     const popupCost = this._createElement('p', 'popup__cost', this.totalPrice);
+    const popupCostSale = this._createElement('p', 'popup__cost-sale');
 
     const popupButton = this._createElement('button', 'popup__button');
     popupButton.classList.add('popup__button_opened');
@@ -269,7 +275,7 @@ export default class Popup {
       popupContent.appendChild(this._createElement('p', 'popup__exception-text', this.data.comment.exception));
     }
 
-    const popupFooter = this._createElement('p', 'popup__footer', '*Цены указаны с учетом ');
+    const popupFooter = this._createElement('p', 'popup__footer', 'Итоговая цена указана с учетом ');
     const popupLink = this._createElement('a', 'popup__link', 'скидки\xa0по\xa0карте');
     popupLink.setAttribute('href', '#clients');
 
@@ -277,6 +283,7 @@ export default class Popup {
     popupHeader.appendChild(popupName);
     popupHeader.appendChild(popupWrapper);
     popupWrapper.appendChild(popupCost);
+    popupWrapper.appendChild(popupCostSale);
     popupWrapper.appendChild(popupButton);
     popup.appendChild(popupContent);
     popupFooter.appendChild(popupLink);
@@ -297,6 +304,7 @@ export default class Popup {
     }, false);
 
     this.popupCost = popupCost;
+    this.popupCostSale = popupCostSale;
 
     return popup;
   }

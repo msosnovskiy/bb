@@ -21,7 +21,7 @@
   position: absolute;
   transition: transform .1s ease-in, top .1s linear .1s;
   top: 15px;
-  left: 8px;
+  left: 7.5px;
   border-radius: 2px;
   transform: rotate(45deg);
 }
@@ -34,7 +34,7 @@
   position: absolute;
   transition: transform .1s ease-in, top .1s linear .1s;
   top: 15px;
-  left: 8px;
+  left: 7.5px;
   border-radius: 2px;
   transform: rotate(-45deg);
 }

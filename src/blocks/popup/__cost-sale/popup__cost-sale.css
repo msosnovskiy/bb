@@ -1,0 +1,10 @@
+.popup__cost-sale {
+  font-weight: 700;
+}
+
+.popup__cost-sale::after {
+  content: "byn";
+  margin: 0 10px 0 .25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+} 

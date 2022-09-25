@@ -3,6 +3,7 @@
 @import url(./__wrapper/popup__wrapper.css);
 
 @import url(./__cost/popup__cost.css);
+@import url(./__cost-sale/popup__cost-sale.css);
 @import url(./__button/popup__button.css);
 
 @import url(./__content/popup__content.css);
