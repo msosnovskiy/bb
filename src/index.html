@@ -19,7 +19,8 @@
   <meta name="theme-color" content="#201F24">
 
   <title>Beauti Baza</title>
-  <meta name="description" content="BEAUTI BAZA — сеть салонов красоты в Гомеле | ул. Кирова 20 | пр. Октября 95. Мы собрали лучших мастеров Гомеля для тебя. Маникюр и педикюр, стрижки, окрашивания, укладки, брови и ресницы, макияж. Огромная палитра гель-лаков. Гарантия на услуги.">
+  <meta name="description"
+    content="BEAUTI BAZA — сеть салонов красоты в Гомеле | ул. Кирова 20 | пр. Октября 95. Мы собрали лучших мастеров Гомеля для тебя. Маникюр и педикюр, стрижки, окрашивания, укладки, брови и ресницы, макияж. Огромная палитра гель-лаков. Гарантия на услуги.">
   <meta name="author" content="Maksim Sosnovskiy">
 </head>
 
@@ -603,8 +604,10 @@
 
           <div class="contacts__content">
             <picture class="contacts__photo">
-              <source srcset="<%=require('./images/salon1x1.webp')%> 1x, <%=require('./images/salon1x2.webp')%> 2x" type="image/webp">
-              <img loading="lazy" src="<%=require('./images/salon1x1.jpg')%>" srcset="<%=require('./images/salon1x2.jpg')%> 2x" alt="Салон на Кирова" class="contacts__photo">
+              <source srcset="<%=require('./images/salon1x1.webp')%> 1x, <%=require('./images/salon1x2.webp')%> 2x"
+                type="image/webp">
+              <img loading="lazy" src="<%=require('./images/salon1x1.jpg')%>"
+                srcset="<%=require('./images/salon1x2.jpg')%> 2x" alt="Салон на Кирова" class="contacts__photo">
             </picture>
 
             <div class="contacts__items">
@@ -644,8 +647,11 @@
           <div class="contacts__content">
 
             <picture class="contacts__photo">
-              <source srcset="<%=require('./images/salon2x1.webp')%> 1x, <%=require('./images/salon2x2.webp')%> 2x" type="image/webp" >
-              <img loading="lazy" src="<%=require('./images/salon2x1.jpg')%>" srcset="<%=require('./images/salon2x2.jpg')%> 2x" alt="Салон на проспекте Октября" class="contacts__photo">
+              <source srcset="<%=require('./images/salon2x1.webp')%> 1x, <%=require('./images/salon2x2.webp')%> 2x"
+                type="image/webp">
+              <img loading="lazy" src="<%=require('./images/salon2x1.jpg')%>"
+                srcset="<%=require('./images/salon2x2.jpg')%> 2x" alt="Салон на проспекте Октября"
+                class="contacts__photo">
             </picture>
 
             <div class="contacts__items">
@@ -807,6 +813,88 @@
       </symbol>
     </svg>
   </div>
+
+  <!-- <div class="popup popup_opened" data-name="hair">
+    <div class="popup__header color_border">
+      <h3 class="popup__name">Волосы</h3>
+      <div class="popup__wrapper">
+        <p class="popup__cost">0</p>
+        <button class="popup__button popup__button_opened" aria-label="Закрыть"></button>
+      </div>
+    </div>
+    <div class="popup__content">
+
+      <div class="popup__comment">
+
+        <div class="popup__comment-header">
+          <p class="popup__comment-title">Оказываемая услуга</p>
+          <div class="popup__comment-dots"></div>
+          <div class="popup__comment-wrapper">
+            <p class="popup__comment-text">S</p>
+            <p class="popup__comment-text">M</p>
+            <p class="popup__comment-text">L</p>
+          </div>
+        </div>
+
+        <div class="popup__description">
+          <p class="popup__description-title">S</p>
+          <p class="popup__description-text"> – Длина волос до мочки уха</p>
+        </div>
+        <div class="popup__description">
+          <p class="popup__description-title">M</p>
+          <p class="popup__description-text"> – Длина волос до лопаток</p>
+        </div>
+        <div class="popup__description">
+          <p class="popup__description-title">L</p>
+          <p class="popup__description-text"> – Длина волос до пояса</p>
+        </div>
+      </div>
+
+
+      <div class="popup__content-item">
+        <div class="popup__content-wrapper">
+          <h4 class="popup__content-title">Причёски &amp; укладки</h4>
+          <button class="popup__button" aria-label="Очистить"></button>
+        </div>
+        <div class="popup__content-cost">
+          <p class="popup__content-subtitle">Сушка + мытьё</p>
+          <div class="popup__content-dots"></div>
+          <p class="popup__content-price" data-counter="1">7.9</p>
+        </div>
+        <div class="popup__content-cost">
+          <p class="popup__content-subtitle">Выпрямление утюжком</p>
+          <div class="popup__content-dots"></div>
+          <p class="popup__content-price" data-counter="1">7.9</p>
+        </div>
+        <div class="popup__content-cost">
+          <p class="popup__content-subtitle">Брашинг / экспресс локоны</p>
+          <div class="popup__content-dots"></div>
+          <p class="popup__content-price" data-counter="1">14</p>
+          <p class="popup__content-price" data-counter="1">18</p>
+          <p class="popup__content-price" data-counter="1">23</p>
+        </div>
+        <div class="popup__content-cost">
+          <p class="popup__content-subtitle">Локоны / афрокудри</p>
+          <div class="popup__content-dots"></div>
+          <p class="popup__content-price" data-counter="1">16</p>
+          <p class="popup__content-price" data-counter="1">20</p>
+          <p class="popup__content-price" data-counter="1">30</p>
+        </div>
+        <div class="popup__content-cost">
+          <p class="popup__content-subtitle">Причёска</p>
+          <div class="popup__content-dots"></div>
+          <p class="popup__content-price" data-counter="1">45</p>
+        </div>
+      </div>
+
+      <p class="popup__exception-text">*Цены оговариваются индивидуально, если толщина косы у основания головы свыше 4
+        см или длина волос ниже пояса</p>
+
+    </div>
+
+    <p class="popup__footer">*Цены указаны с учетом <a class="popup__link" href="#clients">скидки&nbsp;по&nbsp;карте</a>
+    </p>
+  </div> -->
 
   <script src="./data/nails.js" defer></script>
   <script src="./data/brows.js" defer></script>

@@ -1,8 +1,7 @@
 .popup__button {
-  width: 28px;
-  height: 28px;
-  padding: 6px;
-  /* margin: 0 -6px 0 0; */
+  width: 32px;
+  height: 32px;
+  padding: 8px;
   margin: 0;
   display: inline-block;
   border: none;
@@ -21,8 +20,8 @@
   background-color: var(--dark);
   position: absolute;
   transition: transform .1s ease-in, top .1s linear .1s;
-  top: 12px;
-  left: 5px;
+  top: 15px;
+  left: 8px;
   border-radius: 2px;
   transform: rotate(45deg);
 }
@@ -34,8 +33,8 @@
   background-color: var(--dark);
   position: absolute;
   transition: transform .1s ease-in, top .1s linear .1s;
-  top: 12px;
-  left: 5px;
+  top: 15px;
+  left: 8px;
   border-radius: 2px;
   transform: rotate(-45deg);
 }

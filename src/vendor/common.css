@@ -2,7 +2,7 @@
   --dark: #201F24;
   --blure: #16141ae3;
   --gray: #2A282E;
-  --gray200: rgb(179, 178, 178);
+  /* --gray200: #b3b2b2 */
   --gray200: #ccc;
   --shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.24)) drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.2));
   

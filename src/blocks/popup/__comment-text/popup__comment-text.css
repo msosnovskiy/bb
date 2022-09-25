@@ -1,0 +1,9 @@
+.popup__comment-text {
+  text-transform: uppercase;
+  padding: 4px 8px;
+  margin: 0;
+}
+
+.popup__comment-text:last-child {
+  padding-right: 0;
+}

@@ -1,0 +1,7 @@
+.popup__description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(12px + .4vw);
+  margin: 10px 0;
+}

@@ -1,0 +1,9 @@
+.popup__comment-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: calc(14px + .4vw);
+  font-weight: 700;
+  position: relative;
+}

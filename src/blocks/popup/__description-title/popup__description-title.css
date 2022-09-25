@@ -1,0 +1,9 @@
+.popup__description-title {
+  margin: 0;
+  margin-right: 4px;
+  font-weight: 700;
+  min-width: calc(12px + .4vw);
+  text-align: center;
+}
+
+

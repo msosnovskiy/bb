@@ -6,6 +6,21 @@
 @import url(./__button/popup__button.css);
 
 @import url(./__content/popup__content.css);
+
+
+@import url(./__comment/popup__comment.css);
+@import url(./__comment-header/popup__comment-header.css);
+@import url(./__comment-title/popup__comment-title.css);
+@import url(./__comment-dots/popup__comment-dots.css);
+@import url(./__comment-wrapper/popup__comment-wrapper.css);
+@import url(./__comment-text/popup__comment-text.css);
+
+@import url(./__description/popup__description.css);
+@import url(./__description-title/popup__description-title.css);
+@import url(./__description-text/popup__description-text.css);
+@import url(./__exception-text/popup__exception-text.css);
+
+
 @import url(./__content-item/popup__content-item.css);
 @import url(./__content-wrapper/popup__content-wrapper.css);
 @import url(./__content-title/popup__content-title.css);
