@@ -1,5 +1,6 @@
 .popup__cost-sale {
   font-weight: 700;
+  margin: 0;
 }
 
 .popup__cost-sale::after {

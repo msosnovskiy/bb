@@ -48,6 +48,20 @@
   }
 }
 
+@keyframes switchColor {
+  0% {
+    background-color: #571329;
+    transform: scale(0.8);
+  }
+  50% {
+    background-color: #3f1c36;
+  }
+  100% {
+    background-color: #1C2C3F;
+    transform: scale(1);
+  }
+}
+
 @keyframes moveLeft {
   0% {
     transform: translate(-.1em, -0.025em);

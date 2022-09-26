@@ -81,13 +81,23 @@ const hair = {
         {
           name: 'Модельная',
           price: 17.5,
-          unit: true,
+          unit: false,
         },
       ]
     },
     {
-      name: 'Кератин и ботокс Honma tokyo',
+      name: 'Уход',
       item: [
+        {
+          name: 'К18 проф. спрей-мист для волос',
+          price: 19.50,
+          unit: false,
+        },
+        {
+          name: 'К18 проф. маска для волос',
+          price: 19.50,
+          unit: false,
+        },
         {
           name: 'Кератиновое выпрямление',
           price: ['–', 169, 209],

@@ -25,6 +25,6 @@
   .about__content:after {
     display: block;
     left: -3vw;
-    animation: swetchColor 2.6s linear infinite alternate;
+    animation: switchColor 2.6s linear infinite alternate;
   }
 }
