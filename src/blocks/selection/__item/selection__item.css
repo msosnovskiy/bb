@@ -3,7 +3,7 @@
   margin: 20px auto;
   border-radius: 16px;
   background-color: var(--gray);
-  transition: filter .25s linear,;
+  transition: filter .15s linear,;
 }
 
 .selection__item:last-of-type {

@@ -12,6 +12,10 @@
   color: var(--white);
 }
 
+.popup__content-price.popup__content-price_selected:hover {
+  cursor: default;
+}
+
 .popup__content-price:hover {
   cursor: pointer;
   background-color: var(--gray200);
@@ -25,6 +29,10 @@
 
 .popup__content-price_disabled {
   color: var(--gray200);
+}
+
+.popup__content-price_disabled:hover {
+  cursor: default;
 }
 
 .popup__content-price:hover.popup__content-price_disabled {

@@ -4,6 +4,7 @@ export default  class Glitch {
     this.phraze = phraze;
     this.interval = interval;
     this.counter = 0;
+    this.data
   }
 
   _slideText(item, index, arrayLength) {

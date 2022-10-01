@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: //ogp.me/ns#">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauti Baza – Бьюти пространство твоего города</title>
+
+  <meta name="msapplication-TileColor" content="#F44C86">
+  <meta name="theme-color" content="#201F24">
+  <meta name="description"
+    content="Бьюти база — сеть салонов красоты в Гомеле | ул. Кирова 20 | пр. Октября 95. Мы собрали лучших мастеров Гомеля для тебя. Маникюр и педикюр, стрижки, окрашивания, укладки, брови и ресницы, макияж. Огромная палитра гель-лаков. Гарантия на услуги.">
+
+  <meta property="og:url" content="https://msosnovskiy.github.io/bb/">
+  <meta property="og:title" content="BEAUTI BAZA">
+  <meta property="og:description" content="Бьюти база — сеть салонов красоты в Гомеле | ул. Кирова 20 | пр. Октября 95. Мы собрали лучших мастеров Гомеля для тебя. Маникюр и педикюр, стрижки, окрашивания, укладки, брови и ресницы, макияж. Огромная палитра гель-лаков. Гарантия на услуги.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="<%=require('./images/opengraph_1200x630.jpg')%>">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="<%=require('./images/opengraph_600x600.jpg')%>">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+
   <link rel="preload" href="./fonts/Poppins-Bold.woff2" as="font" crossorigin>
   <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" crossorigin>
   <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" crossorigin>
-
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
-
   <link rel="apple-touch-icon" sizes="180x180" href="<%=require('./images/apple-touch-icon.png')%>">
   <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon-32x32.png')%>">
   <link rel="icon" type="image/png" sizes="16x16" href="<%=require('./images/favicon-16x16.png')%>">
   <link rel="mask-icon" href="<%=require('./images/safari-pinned-tab.svg')%>" color="#F44C86">
   <link rel="shortcut icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
-  <meta name="msapplication-TileColor" content="#F44C86">
-  <meta name="theme-color" content="#201F24">
-
-  <title>Beauti Baza</title>
-  <meta name="description"
-    content="BEAUTI BAZA — сеть салонов красоты в Гомеле | ул. Кирова 20 | пр. Октября 95. Мы собрали лучших мастеров Гомеля для тебя. Маникюр и педикюр, стрижки, окрашивания, укладки, брови и ресницы, макияж. Огромная палитра гель-лаков. Гарантия на услуги.">
-  <meta name="author" content="Maksim Sosnovskiy">
 </head>
 
 <body class="root">
@@ -52,7 +61,8 @@
           <li class="menu__list-item"><a class="menu__link link" href="#vacancy">Вакансии</a></li>
           <li class="menu__list-item"><a class="menu__link link" href="#contacts">Контакты</a></li>
           <!-- <a href="https://widget.sonline.su/ru/map/?groupid=555995" target="_blank" rel="noopener" class="button header__button">Онлайн&nbsp;запись</a> -->
-          <a href="#" onClick="showSonlineWidget(sonlineWidgetOptions);" class="button header__button">Онлайн&nbsp;запись</a>
+          <a href="#" onClick="showSonlineWidget(sonlineWidgetOptions);"
+            class="button header__button">Онлайн&nbsp;запись</a>
         </ul>
         <div class="company__contacts container">
           <a href="tel:7397" class="company__phone link">
@@ -91,7 +101,8 @@
         <h2 class="company__subtitle">Бьюти пространство <span class="span span_br"></span>твоего
           города</h2>
         <!-- <a href="https://widget.sonline.su/ru/map/?groupid=555995" target="_blank" rel="noopener" class="button company__button">Онлайн&nbsp;запись</a> -->
-        <a href="#" onClick="showSonlineWidget(sonlineWidgetOptions);" class="button company__button">Онлайн&nbsp;запись</a>
+        <a href="#" onClick="showSonlineWidget(sonlineWidgetOptions);"
+          class="button company__button">Онлайн&nbsp;запись</a>
       </div>
       <div class="icon__scroll">
         <div class="icon__scroll_p1"></div>
@@ -638,7 +649,7 @@
                 <a href="tel:7397" class="contacts__text link">7397</a>
               </div>
 
-              <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button " />
+              <input type="button" value="На карте" id="buttonMapsOne" class="button contacts__button">
             </div>
           </div>
 
@@ -682,7 +693,7 @@
                 <a href="tel:7397" class="contacts__text link">7397</a>
               </div>
 
-              <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button " />
+              <input type="button" value="На карте" id="buttonMapsTwo" class="button contacts__button">
             </div>
           </div>
 
@@ -830,12 +841,10 @@
     <script type="text/javascript" async="" src="https://sonline.su/js/widget3/widget3.js"></script>
   </div>
 
+  <!-- GSAP  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> -->
   <!-- GSAP  -->
-
-
   <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript" defer></script>
 
 
