@@ -59,7 +59,7 @@ const hair = {
           unit: false,
         },
         {
-          name: 'Мужская / детская',
+          name: 'Детская',
           price: 12.9,
           unit: false,
         },
@@ -75,7 +75,7 @@ const hair = {
         },
         {
           name: 'Стрижка',
-          price: [13.8, 19.8, 22.9],
+          price: [13.8, 19.6, 22.9],
           unit: false,
         },
         {

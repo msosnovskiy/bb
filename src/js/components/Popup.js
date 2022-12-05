@@ -246,6 +246,11 @@ export default class Popup {
 
   }
 
+  _createOnlineButton() {
+    const contentItem = this._createElement('a', 'services__button', 'Запись');
+    // contentItem.addEventListener('click', showSonlineWidget(sonlineWidgetOptions));
+    return contentItem;
+  }
 
   // Создание попапа
   _create() {
@@ -263,6 +268,7 @@ export default class Popup {
     popupButton.classList.add('popup__button_opened');
     popupButton.setAttribute('aria-label', 'Закрыть');
     const popupContent = this._createElement('div', 'popup__content');
+    // const popupOnlineButton = this._createOnlineButton();
 
     // Создание каждого блока услуги в попапе
     this.data.service.forEach((item) => {
@@ -275,9 +281,13 @@ export default class Popup {
       popupContent.appendChild(this._createElement('p', 'popup__exception-text', this.data.comment.exception));
     }
 
-    const popupFooter = this._createElement('p', 'popup__footer', 'Итоговая цена указана с учетом ');
+
+    const popupFooter = this._createElement('div', 'popup__footer');
+    const popupFooterText = this._createElement('p', 'popup__footer-text', 'Итоговая цена указана с учетом ');
     const popupLink = this._createElement('a', 'popup__link', 'скидки\xa0по\xa0карте');
     popupLink.setAttribute('href', '#clients');
+
+    // const popupFooter = this._createElement('p', 'popup__footer', 'Итоговая цена указана с учетом ');
 
     popup.appendChild(popupHeader);
     popupHeader.appendChild(popupName);
@@ -286,7 +296,9 @@ export default class Popup {
     popupWrapper.appendChild(popupCostSale);
     popupWrapper.appendChild(popupButton);
     popup.appendChild(popupContent);
-    popupFooter.appendChild(popupLink);
+    popupFooter.appendChild(popupFooterText);
+    popupFooterText.appendChild(popupLink);
+    // popupFooter.appendChild(popupOnlineButton);
     popup.appendChild(popupFooter);
 
     popupButton.addEventListener('click', () => {

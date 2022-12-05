@@ -50,16 +50,6 @@ const nails = {
           price: 14.95,
           unit: false,
         },
-        // {
-        //   name: 'Masura (Японский)',
-        //   price: 0,
-        //   unit: false,
-        // },
-        {
-          name: 'Бразильский',
-          price: 9.9,
-          unit: false,
-        },
         {
           name: 'Детский',
           price: 17.5,
@@ -96,13 +86,13 @@ const nails = {
           unit: false,
         },
         {
-          name: 'Укрепление перед покрытием пудрой',
-          price: 4.9,
+          name: 'Укрепление перед покрытием гелем',
+          price: 7.9,
           unit: false,
         },
         {
-          name: 'Укрепление перед покрытием гелем',
-          price: 7.9,
+          name: 'Укрепление перед покрытием пудрой',
+          price: 4.9,
           unit: false,
         },
         {
@@ -122,11 +112,6 @@ const nails = {
           unit: false,
         },
         {
-          name: 'Укрепление',
-          price: 9.55,
-          unit: false,
-        },
-        {
           name: 'Использование только цветника (гель-лака)',
           price: 21.95,
           unit: false,
@@ -142,17 +127,17 @@ const nails = {
           unit: false,
         },
         {
+          name: 'Комбинированный',
+          price: 23.9,
+          unit: false,
+        },
+        {
           name: 'Гигиенический',
           price: 19.9,
           unit: false,
         },
         {
           name: 'Аппаратный',
-          price: 23.9,
-          unit: false,
-        },
-        {
-          name: 'Комбинированный',
           price: 23.9,
           unit: false,
         },
@@ -174,12 +159,6 @@ const nails = {
         {
           name: 'Вросший ноготь',
           price: 7.4,
-          unit: true,
-          counter: 10,
-        },
-        {
-          name: 'Протезирование ногтя',
-          price: 12.9,
           unit: true,
           counter: 10,
         },
@@ -225,21 +204,11 @@ const nails = {
     {
       name: 'Наращивание',
       item: [
-        // {
-        //   name: 'Гель / акрил',
-        //   price: 0,
-        //   unit: false,
-        // },
         {
           name: 'Гель / акрил + покрытие гель-лак',
           price: 34.95,
           unit: false,
         },
-        // {
-        //   name: 'Коррекция',
-        //   price: 0,
-        //   unit: false,
-        // },
         {
           name: 'Коррекция с покрытием гель-лак + снятие',
           price: 31.5,
@@ -274,12 +243,6 @@ const nails = {
           unit: true,
           counter: 10,
         },
-        // {
-        //   name: 'Акриловая лепка',
-        //   price: 0,
-        //   unit: true,
-        //   counter: 10,
-        // },
         {
           name: 'French / лунный',
           price: 0.79,
@@ -289,8 +252,7 @@ const nails = {
         {
           name: 'Кошачий',
           price: 3.9,
-          unit: true,
-          counter: 10,
+          unit: false,
         },
         {
           name: 'Омбре',
@@ -301,18 +263,6 @@ const nails = {
         {
           name: 'Втирка / фольга / блестки',
           price: 0.79,
-          unit: true,
-          counter: 10,
-        },
-        {
-          name: 'Стразы (1 шт.)',
-          price: 0.15,
-          unit: true,
-          counter: 500,
-        },
-        {
-          name: 'Царь ноготь',
-          price: 5.5,
           unit: true,
           counter: 10,
         },

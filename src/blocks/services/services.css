@@ -3,10 +3,11 @@
 @import url(./__header/services__header.css);
 @import url(./__title/services__title.css);
 @import url(./__price-lists/services__price-lists.css);
+@import url(./__price-wrapper/services__price-wrapper.css);
 @import url(./__price-item/services__price-item.css);
 @import url(./__price-name/services__price-name.css);
 @import url(./__price-cost/services__price-cost.css);
-@import url(./__price-more/services__price-more.css);
+@import url(./__buttons/services__buttons.css);
 @import url(./__button/services__button.css);
 
 .services {

@@ -116,6 +116,7 @@ module.exports = {
         { from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor') },
         { from: path.resolve(__dirname, 'src/js/data'), to: path.resolve(__dirname, 'dist/data') },
         { from: path.resolve(__dirname, 'src/images/about'), to: path.resolve(__dirname, 'dist/images') },
+        { from: path.resolve(__dirname, 'src/hosting/'), to: path.resolve(__dirname, 'dist/') },
       ]
     ),
     new WebpackMd5Hash()

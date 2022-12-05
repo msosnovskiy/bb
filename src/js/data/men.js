@@ -26,18 +26,13 @@ const men = {
           unit: false,
         },
         {
-          name: 'Стрижка под насадку',
-          price: 11,
+          name: 'Стрижка',
+          price: 13.9,
           unit: false,
         },
         {
           name: 'Стрижка Fade',
           price: 16.9,
-          unit: false,
-        },
-        {
-          name: 'Стрижка',
-          price: 13.9,
           unit: false,
         },
       ]

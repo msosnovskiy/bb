@@ -1,0 +1,16 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^beauty\-baza\.by$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.beauty\-baza\.by$
+RewriteRule ^(.*)$ "https\:\/\/beauti\-baza\.by\/$1" [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^beauti\-baza\.by$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.beauti\-baza\.by$
+RewriteRule ^(.*)$ "https\:\/\/beauti\-baza\.by\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^beauti\-baza\.ru$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.beauti\-baza\.ru$
+RewriteRule ^(.*)$ "https\:\/\/beauti\-baza\.by\/$1" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]

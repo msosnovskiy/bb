@@ -17,17 +17,17 @@ const face = {
         },
         {
           name: 'Натуральный / nude',
-          price: 33,
+          price: 43,
           unit: false,
         },
         {
           name: 'Бизнес/ дневной',
-          price: 34,
+          price: 58,
           unit: false,
         },
         {
           name: 'Вечерний (Smokey eyes)',
-          price: 63,
+          price: 75,
           unit: false,
         },
         {

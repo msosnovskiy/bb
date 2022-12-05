@@ -1,5 +1,36 @@
 .services__button {
-  position: absolute;
-  left: 0px;
-  bottom: 20px;
+  background-color: transparent;
+  border: none;
+
+  padding: 12px;
+  border: 0.15rem solid var(--accent);
+  background-color: var(--accent);
+  border-radius: 12px;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-right: 1rem;
+  transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+}
+
+.services__button:last-child {
+  margin-right: 0;
+}
+
+.services__button:hover {
+  background-color: transparent;
+  box-shadow: 0 0 8px rgba(244, 76, 134, 0.8);
+  color: var(--accent);
+}
+
+
+@media screen and (min-width: 380px) {
+  .services__button {
+    padding: 12px 20px;
+  }
 }
