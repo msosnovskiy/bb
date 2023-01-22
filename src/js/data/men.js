@@ -1,41 +1,81 @@
 const men = {
+
   id: 'men',
+
   name: 'Мужчинам',
+
   service: [
+
     {
+
       name: 'Услуги',
+
       item: [
+
         {
+
           name: 'Маникюр',
-          price: 19.9,
+
+          price: 21.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Педикюр',
+
           price: 29.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Моделирование бровей',
-          price: 12.6,
+
+          price: 14.6,
+
           unit: false,
+
         },
+
         {
+
           name: 'Тонирование бровей',
-          price: 9.9,
+
+          price: 11.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Стрижка',
-          price: 13.9,
+
+          price: 14.65,
+
           unit: false,
+
         },
+
         {
+
           name: 'Стрижка Fade',
-          price: 16.9,
+
+          price: 19.9,
+
           unit: false,
+
         },
+
       ]
+
     },
+
   ]
+
 }

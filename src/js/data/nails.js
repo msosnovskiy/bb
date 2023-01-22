@@ -1,297 +1,593 @@
 const nails = {
+
   id: 'nails',
+
   name: 'ногти',
+
   service: [
+
     {
+
       name: 'Снятие покрытия ручки',
+
       item: [
+
         {
+
           name: 'Лак',
-          price: 2.79,
+
+          price: 2.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Гель-лак',
-          price: 4.99,
+
+          price: 5.39,
+
           unit: false,
+
         },
+
         {
+
           name: 'Акрил / гель',
-          price: 6.85,
+
+          price: 6.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Без дальнейшего покрытия',
-          price: 9.85,
+
+          price: 11.65,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Маникюр',
+
       item: [
+
         {
+
           name: 'Европейский',
-          price: 4.85,
+
+          price: 4.999,
+
           unit: false,
+
         },
+
         {
+
           name: 'Классический',
-          price: 8.95,
+
+          price: 9.39,
+
           unit: false,
+
         },
+
         {
+
           name: 'Комбинированный / аппаратный',
-          price: 8.95,
+
+          price: 9.39,
+
           unit: false,
+
         },
+
         {
+
           name: 'Без дальнейшего покрытия гель-лак',
-          price: 14.95,
+
+          price: 16.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Детский',
-          price: 17.5,
+
+          price: 18.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Только форма',
-          price: 4.6,
+
+          price: 4.99,
+
           unit: false,
+
         }
+
       ]
+
     },
+
     {
+
       name: 'Покрытие на ручках',
+
       item: [
+
         {
+
           name: 'Лак',
-          price: 6.96,
+
+          price: 7.45,
+
           unit: false,
+
         },
+
         {
+
           name: 'Гель-лак',
-          price: 16.6,
+
+          price: 17.55,
+
           unit: false,
+
         },
+
         {
+
           name: 'Лечебное',
-          price: 6.96,
+
+          price: 7.85,
+
           unit: false,
+
         },
+
         {
+
           name: 'Укрепление гель / акрил',
-          price: 10.9,
+
+          price: 17.55,
+
           unit: false,
+
         },
+
         {
+
           name: 'Укрепление перед покрытием гелем',
-          price: 7.9,
+
+          price: 7.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Укрепление перед покрытием пудрой',
-          price: 4.9,
+
+          price: 5.65,
+
           unit: false,
+
         },
+
         {
+
           name: 'Ремонт',
-          price: 0.95,
+
+          price: 1.25,
+
           unit: true,
+
           counter: 10,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Покрытие материалами Luxio',
+
       item: [
+
         {
+
           name: 'Полное покрытие',
-          price: 27.95,
+
+          price: 28.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Использование только цветника (гель-лака)',
-          price: 21.95,
+
+          price: 22.95,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Педикюр',
+
       item: [
+
         {
+
           name: 'Классический',
-          price: 23.45,
+
+          price: 24.75,
+
           unit: false,
+
         },
+
         {
+
           name: 'Комбинированный',
-          price: 23.9,
+
+          price: 24.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Гигиенический',
-          price: 19.9,
+
+          price: 19.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Аппаратный',
-          price: 23.9,
+
+          price: 24.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Только пальчики',
-          price: 17.6,
+
+          price: 18.55,
+
           unit: false,
+
         },
+
         {
+
           name: 'Обработка стоп',
-          price: 12.98,
+
+          price: 13.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Детский',
-          price: 14.6,
+
+          price: 14.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Вросший ноготь',
-          price: 7.4,
+
+          price: 7.95,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'Наращивание ногтя большого пальца',
-          price: 5.5,
+
+          price: 5.85,
+
           unit: true,
+
           counter: 2,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Покрытиe и снятие на ножках',
+
       item: [
+
         {
+
           name: 'Покрытие лак',
-          price: 7.96,
+
+          price: 7.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Покрытие гель-лак',
-          price: 16.6,
+
+          price: 17.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Дизайн',
+
           price: 1.5,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'Снятие лак',
-          price: 3.9,
+
+          price: 3.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Снятие гель-лак',
-          price: 5.99,
+
+          price: 6.59,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Наращивание',
+
       item: [
+
         {
+
           name: 'Гель / акрил + покрытие гель-лак',
-          price: 34.95,
+
+          price: 39.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Коррекция с покрытием гель-лак + снятие',
-          price: 31.5,
+
+          price: 35.5,
+
           unit: false,
+
         },
+
         {
+
           name: 'Наращивание ногтя на руке',
-          price: 2.9,
+
+          price: 2.95,
+
           unit: true,
+
           counter: 10,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Дизайн (1 ноготь)',
+
       item: [
+
         {
+
           name: 'Простой',
-          price: 1.5,
+
+          price: 1.55,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'Сложный',
-          price: 3.6,
+
+          price: 3.65,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'Художественная роспись',
-          price: 5.9,
+
+          price: 5.95,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'French / лунный',
+
           price: 0.79,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'Кошачий',
+
           price: 3.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Омбре',
-          price: 1.4,
+
+          price: 1.45,
+
           unit: true,
+
           counter: 10,
+
         },
+
         {
+
           name: 'Втирка / фольга / блестки',
+
           price: 0.79,
+
           unit: true,
+
           counter: 10,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'SPA',
+
       item: [
+
         {
+
           name: 'Увлажняющие перчатки',
+
           price: 3.5,
+
           unit: false,
+
         },
+
         {
+
           name: 'Массаж',
-          price: 2.9,
+
+          price: 4.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Парафинотерапия',
-          price: 7.5,
+
+          price: 7.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Уход ног (скраб-маска)',
-          price: 5.5,
+
+          price: 7.5,
+
           unit: false,
+
         },
+
       ]
+
     },
+
   ]
+
 }

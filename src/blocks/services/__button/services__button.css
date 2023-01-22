@@ -31,6 +31,12 @@
 
 @media screen and (min-width: 380px) {
   .services__button {
-    padding: 12px 20px;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services__button_solarium {
+    display: none;
   }
 }

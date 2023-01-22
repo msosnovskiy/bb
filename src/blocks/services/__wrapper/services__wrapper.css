@@ -1,10 +1,7 @@
 .services__wrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 1fr));
-  grid-column-gap: 40px;
-  grid-row-gap: 30px;
   grid-gap: 30px;
-
   margin: 40px auto 0;
   justify-content: center;
 }
@@ -26,6 +23,5 @@
 @media screen and (min-width: 1520px) {
   .services__wrapper{
     margin: 90px auto 0;
-
   }
 }
