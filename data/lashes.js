@@ -1,103 +1,205 @@
 const lashes = {
+
   id: 'lashes',
+
   name: 'ресницы',
+
   service: [
+
     {
+
       name: 'Наращивание',
+
       item: [
+
         {
+
           name: 'Classic',
-          price: 38.5,
+
+          price: 36.5,
+
           unit: false,
+
         },
+
         {
+
           name: '2D',
-          price: 41.8,
+
+          price: 39.8,
+
           unit: false,
+
         },
+
         {
+
           name: '3D',
-          price: 45.8,
+
+          price: 43.8,
+
           unit: false,
+
         },
+
         {
+
           name: '4D / 5D',
-          price: 53.5,
+
+          price: 52.5,
+
           unit: false,
+
         },
+
         {
+
           name: 'Hollywood lash',
-          price: 59.5,
+
+          price: 57.5,
+
           unit: false,
+
         },
+
         {
+
           name: 'Kim Kardashian',
-          price: 56.9,
+
+          price: 52.9,
+
           unit: false,
+
         },
+
         {
+
           name: '+ L / M изгиб при classic или 2D',
-          price: 5.9,
+
+          price: 4.99,
+
           unit: false,
+
         },
+
         {
+
           name: '+ L / M изгиб при 3D и более',
-          price: 7.9,
+
+          price: 6.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Color (10%)',
-          price: 1,
+
+          price: 1.1,
+
           unit: true,
+
           counter: 10
+
         },
+
         {
+
           name: 'Снятие',
-          price: 9.4,
+
+          price: 6.9,
+
           unit: false,
+
         },
+
         {
+
           name: 'Протезирование (1 участок)',
-          price: 1.9,
+
+          price: 1.95,
+
           unit: true,
+
           counter: 100
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Другое',
+
       item: [
+
         {
+
           name: 'Накладные (пучком)',
-          price: 7.5,
+
+          price: 7.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Ламинирование ресниц',
-          price: 29.8,
-          unit: false,
-        },
-        {
-          name: 'Реконструкция ресниц',
+
           price: 29.95,
+
           unit: false,
+
         },
+
         {
+
+          name: 'Реконструкция ресниц',
+
+          price: 29.95,
+
+          unit: false,
+
+        },
+
+        {
+
           name: 'Ламинирование + ботокс ресниц',
-          price: 36.8,
+
+          price: 37.95,
+
           unit: false,
+
         },
+
         // {
+
         //   name: 'Ботокс',
+
         //   price: 0,
+
         //   unit: false,
+
         // },
+
         {
+
           name: 'Окрашивание',
-          price: 5.9,
+
+          price: 6.55,
+
           unit: false,
+
         },
+
       ]
+
     },
+
   ]
+
 }

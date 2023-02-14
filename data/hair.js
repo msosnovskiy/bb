@@ -1,229 +1,457 @@
 const hair = {
+
   id: 'hair',
+
   name: 'Волосы',
+
   comment: {
+
     title: 'Оказываемая услуга',
+
     description: [
+
       {
+
         title: 'S',
+
         text: ' – Длина волос до мочки уха'
+
       },
+
       {
+
         title: 'M',
+
         text: ' – Длина волос до лопаток'
+
       },
+
       {
+
         title: 'L',
+
         text: ' – Длина волос до пояса'
+
       },
+
     ],
+
     exception: '*Цены оговариваются индивидуально, если толщина косы у основания головы свыше 4 см или длина волос ниже пояса',
+
   },
+
   service: [
+
     {
+
       name: 'Причёски & укладки',
+
       item: [
+
         {
+
           name: 'Сушка + мытьё',
-          price: 7.9,
+
+          price: 8.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Выпрямление утюжком',
-          price: 7.9,
+
+          price: 8.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Брашинг / экспресс локоны',
-          price: [14, 18, 23],
+
+          price: [15, 19.5, 25.5],
+
           unit: false,
+
         },
+
         {
+
           name: 'Локоны / афрокудри',
-          price: [16, 20, 30],
+
+          price: [17.5, 22, 32],
+
           unit: false,
+
         },
+
         {
+
           name: 'Причёска',
-          price: 45,
+
+          price: 50,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Стрижки',
+
       item: [
+
         {
+
           name: 'Прямой срез',
-          price: 11.9,
+
+          price: 12.95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Детская',
-          price: 12.9,
+
+          price: 13.55,
+
           unit: false,
+
         },
+
         {
+
           name: 'Чёлка',
-          price: 8.9,
+
+          price: 9.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Каре',
-          price: 19.8,
+
+          price: 19.99,
+
           unit: false,
+
         },
+
         {
+
           name: 'Стрижка',
-          price: [13.8, 19.6, 22.9],
+
+          price: [14.8, 21.5, 23.9],
+
           unit: false,
+
         },
+
         {
+
           name: 'Модельная',
-          price: 17.5,
+
+          price: 19.5,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Уход',
+
       item: [
+
         {
+
           name: 'К18 проф. спрей–мист для волос',
+
           price: 19.50,
+
           unit: false,
+
         },
+
         {
+
           name: 'К18 проф. маска для волос',
+
           price: 19.50,
+
           unit: false,
+
         },
+
         {
+
           name: 'Кератиновое выпрямление',
-          price: ['–', 169, 209],
+
+          price: ['–', 179, 219],
+
           unit: false,
+
         },
+
         {
+
           name: 'Ботокс',
-          price: ['–', 169, 209],
+
+          price: ['–', 179, 219],
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Окрашивание Londa / Matrix',
+
       item: [
+
         {
+
           name: 'Консультация',
+
           price: 0,
+
           unit: false,
+
         },
+
         {
+
           name: 'Окрашивание корней',
-          price: 89,
+
+          price: 95,
+
           unit: false,
+
         },
+
         {
+
           name: 'Однотонное',
-          price: [99, 139, 179],
+
+          price: [109, 149, 189],
+
           unit: false,
+
         },
+
         {
+
           name: 'Тонировка волос',
-          price: [64, 85, 115],
+
+          price: [74, 95, 125],
+
           unit: false,
+
         },
+
         {
+
           name: 'Мелирование + тонирование',
-          price: [98, 139, 179],
+
+          price: [108, 149, 189],
+
           unit: false,
+
         },
+
         {
+
           name: 'Выход из чёрного',
-          price: [155, 199, 229],
+
+          price: [165, 209, 239],
+
           unit: false,
+
         },
+
         {
+
           name: 'Растяжка цвет',
-          price: ['–', 117, 157],
+
+          price: ['–', 127, 167],
+
           unit: false,
+
         },
+
         {
+
           name: 'Омбре, балаяж и др.',
-          price: ['–', 159, 219],
+
+          price: ['–', 169, 229],
+
           unit: false,
+
         },
+
         {
+
           name: 'Окрашивание корней + тонирование (блонд)',
-          price: 126,
+
+          price: 136,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: `Окрашивание L'Oreal professional`,
+
       item: [
+
         {
+
           name: 'Консультация',
+
           price: 0,
+
           unit: false,
+
         },
+
         {
+
           name: 'Окрашивание корней',
-          price: 117,
+
+          price: 129,
+
           unit: false,
+
         },
+
         {
+
           name: 'Однотонное',
-          price: [159, 229, 299],
+
+          price: [171, 241, 311],
+
           unit: false,
+
         },
+
         {
+
           name: 'Тонировка волос',
-          price: [105, 125, 167],
+
+          price: [116, 136, 178],
+
           unit: false,
+
         },
+
         {
+
           name: 'Мелирование + тонирование',
-          price: [105, 165, 227],
+
+          price: [116, 176, 237],
+
           unit: false,
+
         },
+
         {
+
           name: 'Выход из чёрного',
-          price: [195, 249, 297],
+
+          price: [207, 261, 309],
+
           unit: false,
+
         },
+
         {
+
           name: 'Растяжка цвет',
-          price: ['–', 165, 219],
+
+          price: ['–', 177, 231],
+
           unit: false,
+
         },
+
         {
+
           name: 'Омбре, балаяж и др.',
-          price: ['–', 249, 319],
+
+          price: ['–', 261, 331],
+
           unit: false,
+
         },
+
         {
+
           name: 'Окрашивание + тонирование (блонд)',
-          price: 194,
+
+          price: 216,
+
           unit: false,
+
         },
+
       ]
+
     },
+
     {
+
       name: 'Окрашивание краской клиента',
+
       item: [
+
         {
+
           name: 'Окрашивание корней',
-          price: 45,
+
+          price: 47,
+
           unit: false,
+
         },
+
         {
+
           name: 'Окрашивание всей длины',
+
           price: [59, 79, 99],
+
           unit: false,
+
         },
+
       ]
+
     },
+
   ]
+
 }
