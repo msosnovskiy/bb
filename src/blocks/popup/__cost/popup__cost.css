@@ -7,4 +7,9 @@
   margin: 0 .25rem 0 0;
   color: var(--gray200);
   text-decoration: line-through;
+
+  /* font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+  line-height: 1rem;
+  align-self: flex-end; */
 }

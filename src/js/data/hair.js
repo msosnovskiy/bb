@@ -112,7 +112,7 @@ const hair = {
 
           name: 'Прямой срез',
 
-          price: 12.95,
+          price: 14.95,
 
           unit: false,
 
@@ -152,7 +152,7 @@ const hair = {
 
           name: 'Стрижка',
 
-          price: [14.8, 21.5, 23.9],
+          price: [14.8, 19.99, 23.9],
 
           unit: false,
 
